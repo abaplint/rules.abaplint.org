@@ -9,32 +9,32 @@
 <div class="content"><h1>abaplint rules documentation</h1><a href='./7bit_ascii/'><tt>7bit_ascii</tt> - Check for 7bit ascii</a><br>Only allow characters from the 7bit ASCII set.<br><br>
 <a href='./abapdoc/'><tt>abapdoc</tt> - Check abapdoc</a><br>Various checks regarding abapdoc.
 Base rule checks for existence of abapdoc for public class methods and all interface methods.<br><br>
-<a href='./allowed_object_naming/'><tt>allowed_object_naming</tt> - undefined</a><br>undefined<br><br>
+<a href='./allowed_object_naming/'><tt>allowed_object_naming</tt> - Allowed object naming</a><br>Enforces basic name length and namespace restrictions<br><br>
 <a href='./allowed_object_types/'><tt>allowed_object_types</tt> - Check allowed object types</a><br>Restricts the set of allowed object types.<br><br>
 <a href='./ambiguous_statement/'><tt>ambiguous_statement</tt> - Check for ambigious statements</a><br>Checks for ambiguity between deleting or modifying from internal and database table
 Add "TABLE" keyword or "@" for escaping SQL variables<br><br>
 <a href='./avoid_use/'><tt>avoid_use</tt> - Avoid use of certain statements</a><br>Detects usage of certain statements.<br><br>
-<a href='./begin_end_names/'><tt>begin_end_names</tt> - undefined</a><br>undefined<br><br>
+<a href='./begin_end_names/'><tt>begin_end_names</tt> - Check BEGIN END names</a><br>Check BEGIN OF and END OF names match<br><br>
 <a href='./chain_mainly_declarations/'><tt>chain_mainly_declarations</tt> - Chain mainly declarations</a><br>Chain mainly declarations<br><br>
 <a href='./check_abstract/'><tt>check_abstract</tt> - Check abstract methods and classes</a><br>Checks abstract methods and classes:
 - class defined as abstract and final,
 - non-abstract class contains abstract methods<br><br>
 <a href='./check_comments/'><tt>check_comments</tt> - Check Comments</a><br>Various checks for comment usage.<br><br>
-<a href='./check_ddic/'><tt>check_ddic</tt> - undefined</a><br>undefined<br><br>
-<a href='./check_include/'><tt>check_include</tt> - undefined</a><br>undefined<br><br>
+<a href='./check_ddic/'><tt>check_ddic</tt> - Check DDIC</a><br>Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in "errorNamespace" <br><br>
+<a href='./check_include/'><tt>check_include</tt> - Check INCLUDEs</a><br>Checks INCLUDE statements<br><br>
 <a href='./check_no_handler_pragma/'><tt>check_no_handler_pragma</tt> - Check if NO_HANDLER can be removed</a><br>Checks NO_HANDLER pragmas that can be removed<br><br>
-<a href='./check_syntax/'><tt>check_syntax</tt> - undefined</a><br>undefined<br><br>
+<a href='./check_syntax/'><tt>check_syntax</tt> - Check syntax</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg><br>Enables syntax check and variable resolution<br><br>
 <a href='./check_text_elements/'><tt>check_text_elements</tt> - Check text elements</a><br>Check text elements exists or matches code<br><br>
-<a href='./check_transformation_exists/'><tt>check_transformation_exists</tt> - undefined</a><br>undefined<br><br>
-<a href='./class_attribute_names/'><tt>class_attribute_names</tt> - undefined</a><br>undefined<br><br>
+<a href='./check_transformation_exists/'><tt>check_transformation_exists</tt> - Check transformation exists</a><br>Checks that used XSLT transformations exist.<br><br>
+<a href='./class_attribute_names/'><tt>class_attribute_names</tt> - Class attributes naming</a><br>Allows you to enforce a pattern, such as a prefix, for class variable names.<br><br>
 <a href='./cloud_types/'><tt>cloud_types</tt> - Check cloud types</a><br>Checks that the package does not contain any object types unsupported in cloud ABAP.<br><br>
-<a href='./colon_missing_space/'><tt>colon_missing_space</tt> - undefined</a><br>undefined<br><br>
+<a href='./colon_missing_space/'><tt>colon_missing_space</tt> - Colon missing space</a><br>Checks for missing spaces after colons in chained statements.<br><br>
 <a href='./commented_code/'><tt>commented_code</tt> - Find commented code</a><br>Detects usage of commented out code.<br><br>
 <a href='./constructor_visibility_public/'><tt>constructor_visibility_public</tt> - Check constructor visibility is public</a><br>Constructor must be placed in the public section, even if the class is not CREATE PUBLIC.<br><br>
-<a href='./contains_tab/'><tt>contains_tab</tt> - undefined</a><br>undefined<br><br>
+<a href='./contains_tab/'><tt>contains_tab</tt> - Code contains tab</a><br>Checks for usage of tabs (enable to enforce spaces)<br><br>
 <a href='./definitions_top/'><tt>definitions_top</tt> - Place definitions in top of routine</a><br>Checks that definitions are placed at the beginning of methods.<br><br>
 <a href='./description_empty/'><tt>description_empty</tt> - Description in class must exist</a><br>Ensures descriptions in class metadata exist.<br><br>
-<a href='./double_space/'><tt>double_space</tt> - undefined</a><br>undefined<br><br>
+<a href='./double_space/'><tt>double_space</tt> - Double space</a><br>Checks that only a single space follows certain common statements.<br><br>
 <a href='./empty_line_in_statement/'><tt>empty_line_in_statement</tt> - Find empty lines in statements</a><br>Checks that statements do not contain empty lines.<br><br>
 <a href='./empty_statement/'><tt>empty_statement</tt> - Remove emty statement</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Checks for empty statements (an empty statement is a single dot)<br><br>
 <a href='./empty_structure/'><tt>empty_structure</tt> - Find empty blocks</a><br>Checks that the code does not contain empty blocks.<br><br>
@@ -45,60 +45,64 @@ Add "TABLE" keyword or "@" for escaping SQL variables<br><br>
 <a href='./form_tables_obsolete/'><tt>form_tables_obsolete</tt> - TABLES parameters are obsolete</a><br>Checks for TABLES parameters in forms.<br><br>
 <a href='./fully_type_constants/'><tt>fully_type_constants</tt> - Fully type constants</a><br>Checks constants for full typing - no implicit typing allowed.<br><br>
 <a href='./functional_writing/'><tt>functional_writing</tt> - Use functional writing</a><br>Detects usage of call method when functional style calls can be used.<br><br>
-<a href='./global_class/'><tt>global_class</tt> - undefined</a><br>undefined<br><br>
+<a href='./global_class/'><tt>global_class</tt> - Global class checks</a><br>Checks related to names of global classes. For the name pattern, see rule object_naming<br><br>
 <a href='./identical_form_names/'><tt>identical_form_names</tt> - Identical FORM names</a><br>Detects identically named FORMs<br><br>
 <a href='./if_in_if/'><tt>if_in_if</tt> - IF in IF</a><br>Detects nested ifs which can be refactored to a single condition using AND.<br><br>
-<a href='./implement_methods/'><tt>implement_methods</tt> - undefined</a><br>undefined<br><br>
-<a href='./in_statement_indentation/'><tt>in_statement_indentation</tt> - undefined</a><br>undefined<br><br>
-<a href='./indentation/'><tt>indentation</tt> - undefined</a><br>undefined<br><br>
-<a href='./inline_data_old_versions/'><tt>inline_data_old_versions</tt> - undefined</a><br>undefined<br><br>
-<a href='./keep_single_parameter_on_one_line/'><tt>keep_single_parameter_on_one_line</tt> - undefined</a><br>undefined<br><br>
+<a href='./implement_methods/'><tt>implement_methods</tt> - Implement methods</a><br>Chekcs for abstract methods which need implementing.<br><br>
+<a href='./in_statement_indentation/'><tt>in_statement_indentation</tt> - In-statement indentation</a><br>Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.
+Example:
+IF 1 = 1 AND
+   2 = 2.<br><br>
+<a href='./indentation/'><tt>indentation</tt> - Indentation</a><br>Checks indentation<br><br>
+<a href='./inline_data_old_versions/'><tt>inline_data_old_versions</tt> - Inline data, old versions</a><br>Checks for inline data declarations in older releases. Only active for versions less than v740sp02<br><br>
+<a href='./keep_single_parameter_on_one_line/'><tt>keep_single_parameter_on_one_line</tt> - Keep single parameters on one line</a><br>Keep single parameter calls on one line<br><br>
 <a href='./keyword_case/'><tt>keyword_case</tt> - Keyword case</a><br>Checks that keywords have the same case. Non-keywords must be lower case.<br><br>
 <a href='./line_length/'><tt>line_length</tt> - Line length</a><br>Detects lines exceeding the provided maximum length.<br><br>
 <a href='./line_only_punc/'><tt>line_only_punc</tt> - Line containing only punctuation</a><br>Detects lines containing only punctuation.<br><br>
-<a href='./local_class_naming/'><tt>local_class_naming</tt> - undefined</a><br>undefined<br><br>
+<a href='./local_class_naming/'><tt>local_class_naming</tt> - Local class naming conventions</a><br>Allows you to enforce a pattern, such as a prefix, for local class names.<br><br>
 <a href='./local_testclass_location/'><tt>local_testclass_location</tt> - Local testclass location</a><br>Checks that local test classes are placed in the test include.<br><br>
-<a href='./local_variable_names/'><tt>local_variable_names</tt> - undefined</a><br>undefined<br><br>
+<a href='./local_variable_names/'><tt>local_variable_names</tt> - Local variable naming conventions</a><br>Allows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.<br><br>
 <a href='./main_file_contents/'><tt>main_file_contents</tt> - Main file contents</a><br>Checks related to report declarations.<br><br>
 <a href='./max_one_statement/'><tt>max_one_statement</tt> - Max one statement per line</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Checks that each line contains only a single statement.<br><br>
 <a href='./message_exists/'><tt>message_exists</tt> - Check MESSAGE exists</a><br>In message statements, check that the message class + id exist<br><br>
 <a href='./method_length/'><tt>method_length</tt> - Method Length</a><br>Checks relating to method length.<br><br>
-<a href='./method_parameter_names/'><tt>method_parameter_names</tt> - undefined</a><br>undefined<br><br>
+<a href='./method_parameter_names/'><tt>method_parameter_names</tt> - Method parameter naming conventions</a><br>Allows you to enforce a pattern, such as a prefix, for method parameter names<br><br>
 <a href='./mix_returning/'><tt>mix_returning</tt> - Mix of returning and exporting</a><br>Checks that methods don't have a mixture of returning and exporting/changing parameters<br><br>
 <a href='./msag_consistency/'><tt>msag_consistency</tt> - MSAG consistency check</a><br>Checks the validity of messages in message classes<br><br>
-<a href='./nesting/'><tt>nesting</tt> - undefined</a><br>undefined<br><br>
-<a href='./newline_between_methods/'><tt>newline_between_methods</tt> - undefined</a><br>undefined<br><br>
-<a href='./no_public_attributes/'><tt>no_public_attributes</tt> - undefined</a><br>undefined<br><br>
-<a href='./object_naming/'><tt>object_naming</tt> - undefined</a><br>undefined<br><br>
-<a href='./obsolete_statement/'><tt>obsolete_statement</tt> - undefined</a><br>undefined<br><br>
-<a href='./parser_error/'><tt>parser_error</tt> - undefined</a><br>undefined<br><br>
-<a href='./prefer_returning_to_exporting/'><tt>prefer_returning_to_exporting</tt> - undefined</a><br>undefined<br><br>
-<a href='./preferred_compare_operator/'><tt>preferred_compare_operator</tt> - undefined</a><br>undefined<br><br>
-<a href='./prefix_is_current_class/'><tt>prefix_is_current_class</tt> - undefined</a><br>undefined<br><br>
-<a href='./release_idoc/'><tt>release_idoc</tt> - undefined</a><br>undefined<br><br>
-<a href='./remove_descriptions/'><tt>remove_descriptions</tt> - undefined</a><br>undefined<br><br>
-<a href='./rfc_error_handling/'><tt>rfc_error_handling</tt> - undefined</a><br>undefined<br><br>
-<a href='./selection_screen_naming/'><tt>selection_screen_naming</tt> - undefined</a><br>undefined<br><br>
-<a href='./sequential_blank/'><tt>sequential_blank</tt> - undefined</a><br>undefined<br><br>
-<a href='./short_case/'><tt>short_case</tt> - undefined</a><br>undefined<br><br>
-<a href='./sicf_consistency/'><tt>sicf_consistency</tt> - undefined</a><br>undefined<br><br>
-<a href='./space_before_colon/'><tt>space_before_colon</tt> - undefined</a><br>undefined<br><br>
-<a href='./space_before_dot/'><tt>space_before_dot</tt> - undefined</a><br>undefined<br><br>
-<a href='./sql_escape_host_variables/'><tt>sql_escape_host_variables</tt> - undefined</a><br>undefined<br><br>
-<a href='./start_at_tab/'><tt>start_at_tab</tt> - undefined</a><br>undefined<br><br>
-<a href='./superclass_final/'><tt>superclass_final</tt> - undefined</a><br>undefined<br><br>
-<a href='./tabl_enhancement_category/'><tt>tabl_enhancement_category</tt> - undefined</a><br>undefined<br><br>
-<a href='./try_without_catch/'><tt>try_without_catch</tt> - undefined</a><br>undefined<br><br>
-<a href='./type_begin_single_include/'><tt>type_begin_single_include</tt> - undefined</a><br>undefined<br><br>
-<a href='./type_form_parameters/'><tt>type_form_parameters</tt> - undefined</a><br>undefined<br><br>
-<a href='./types_naming/'><tt>types_naming</tt> - undefined</a><br>undefined<br><br>
-<a href='./unknown_types/'><tt>unknown_types</tt> - undefined</a><br>undefined<br><br>
-<a href='./unreachable_code/'><tt>unreachable_code</tt> - undefined</a><br>undefined<br><br>
-<a href='./unused_variables/'><tt>unused_variables</tt> - undefined</a><br>undefined<br><br>
-<a href='./use_new/'><tt>use_new</tt> - undefined</a><br>undefined<br><br>
-<a href='./when_others_last/'><tt>when_others_last</tt> - undefined</a><br>undefined<br><br>
-<a href='./whitespace_end/'><tt>whitespace_end</tt> - undefined</a><br>undefined<br><br>
-<a href='./xml_consistency/'><tt>xml_consistency</tt> - undefined</a><br>undefined<br><br>
+<a href='./nesting/'><tt>nesting</tt> - Check nesting depth</a><br>Checks for methods exceeding a maximum nesting depth<br><br>
+<a href='./newline_between_methods/'><tt>newline_between_methods</tt> - New line between methods</a><br>Checks for newlines between method implementations.<br><br>
+<a href='./no_public_attributes/'><tt>no_public_attributes</tt> - No public attributes</a><br>Checks that classes and interfaces don't contain any public attributes.
+Exceptions are excluded from this rule.<br><br>
+<a href='./object_naming/'><tt>object_naming</tt> - Object naming conventions</a><br>Allows you to enforce a pattern, such as a prefix, for object names<br><br>
+<a href='./obsolete_statement/'><tt>obsolete_statement</tt> - Obsolete statements</a><br>Checks for usages of certain obsolete statements<br><br>
+<a href='./parser_error/'><tt>parser_error</tt> - Parser error</a><br>Checks for syntax unrecognized by abaplint<br><br>
+<a href='./prefer_returning_to_exporting/'><tt>prefer_returning_to_exporting</tt> - Prefer RETURNING to EXPORTING</a><br>Prefer RETURNING to EXPORTING<br><br>
+<a href='./preferred_compare_operator/'><tt>preferred_compare_operator</tt> - Preferred compare operator</a><br>Configure undesired operator variants<br><br>
+<a href='./prefix_is_current_class/'><tt>prefix_is_current_class</tt> - Prefix is current class</a><br>Reports errors if the current class references itself with "current_class=>"<br><br>
+<a href='./release_idoc/'><tt>release_idoc</tt> - Release iDoc</a><br>Checks idoc types and segments are set to status released<br><br>
+<a href='./remove_descriptions/'><tt>remove_descriptions</tt> - Remove descriptions</a><br>Ensures you have no descriptions in metadata of methods, parameters, etc. For class descriptions, see rule description_empty.<br><br>
+<a href='./rfc_error_handling/'><tt>rfc_error_handling</tt> - RFC error handling</a><br>Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls<br><br>
+<a href='./selection_screen_naming/'><tt>selection_screen_naming</tt> - Selection screen naming conventions</a><br>Allows you to enforce a pattern, such as a prefix, for selection-screen variable names.<br><br>
+<a href='./sequential_blank/'><tt>sequential_blank</tt> - Sequential blank lines</a><br>Checks that code does not contain more than the configured number of blank lines in a row.<br><br>
+<a href='./short_case/'><tt>short_case</tt> - Short CASE</a><br>Checks for CASE statements which have fewer than the specified number of branches<br><br>
+<a href='./sicf_consistency/'><tt>sicf_consistency</tt> - SICF consistency</a><br>Checks the validity of ICF services<br><br>
+<a href='./space_before_colon/'><tt>space_before_colon</tt> - Space before colon</a><br>Checks that there are no spaces in front of colons in chained statements.<br><br>
+<a href='./space_before_dot/'><tt>space_before_dot</tt> - Space before dot</a><br>Checks for extra spaces before dots at the ends of statements<br><br>
+<a href='./sql_escape_host_variables/'><tt>sql_escape_host_variables</tt> - Escape SQL host variables</a><br>Escape SQL host variables, from 740sp05 <br><br>
+<a href='./start_at_tab/'><tt>start_at_tab</tt> - Start at tab</a><br>Checks that statements start at tabstops.<br><br>
+<a href='./superclass_final/'><tt>superclass_final</tt> - Super class final</a><br>Checks that classes which are inherited from are not declared as FINAL.<br><br>
+<a href='./tabl_enhancement_category/'><tt>tabl_enhancement_category</tt> - TABL enhancement category must be set</a><br>Checks that tables do not have the enhancement category 'not classified'<br><br>
+<a href='./try_without_catch/'><tt>try_without_catch</tt> - TRY without CATCH</a><br>Checks for TRY blocks without a CATCH block<br><br>
+<a href='./type_begin_single_include/'><tt>type_begin_single_include</tt> - TYPE BEGIN contains single field</a><br>Finds TYPE BEGIN with just one INCLUDE TYPE<br><br>
+<a href='./type_form_parameters/'><tt>type_form_parameters</tt> - Type FORM parameters</a><br>Checks for untyped FORM parameters<br><br>
+<a href='./types_naming/'><tt>types_naming</tt> - TYPES naming conventions</a><br>Allows you to enforce a pattern for TYPES definitions<br><br>
+<a href='./unknown_types/'><tt>unknown_types</tt> - Unknown types</a><br>Enables check for unknown data types, respects errorNamespace<br><br>
+<a href='./unreachable_code/'><tt>unreachable_code</tt> - Unreachable code</a><br>Checks for unreachable code.<br><br>
+<a href='./unused_variables/'><tt>unused_variables</tt> - Unused variables</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg><br>Checks for unused variables<br><br>
+<a href='./use_new/'><tt>use_new</tt> - Use NEW</a><br>Checks for deprecated CREATE OBJECT statements.<br><br>
+<a href='./when_others_last/'><tt>when_others_last</tt> - WHEN OTHERS last</a><br>Checks that WHEN OTHERS is placed the last within a CASE statement.<br><br>
+<a href='./whitespace_end/'><tt>whitespace_end</tt> - Whitespace at end of line</a><br>Checks for redundant whitespace at the end of each line.<br><br>
+<a href='./xml_consistency/'><tt>xml_consistency</tt> - XML consistency</a><br>Checks the consistency of main XML files, eg. naming<br><br>
 </div>
 </body>
 </html>
