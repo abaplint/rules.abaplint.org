@@ -7,8 +7,20 @@
 </head>
 <body>
 <div class="content"><h1>avoid_use - Avoid use of certain statements</h1>
-<a href="https://github.com/abaplint/abaplint/blob/master/packages/core/src/rules/avoid_use.ts"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>edit</title><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></a><br><br><u>Description</u><br>
-Detects usage of certain statements.<br><br><u>Schema</u><br>
-todo<br><br></div>
+&nbsp;<a href="https://github.com/abaplint/abaplint/blob/master/packages/core/src/rules/avoid_use.ts"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>edit</title><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></a><br><br><u>Description</u><br>
+Detects usage of certain statements.<br><br><u>Default Configuration</u><br>
+<pre>{
+  "exclude": [],
+  "reason": "",
+  "define": true,
+  "endselect": true,
+  "execSQL": true,
+  "kernelCall": true,
+  "communication": true,
+  "statics": true,
+  "systemCall": true,
+  "defaultKey": true,
+  "break": true
+}</pre></div>
 </body>
 </html>
