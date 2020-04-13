@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="keywords" content="ABAP,Open Source,abaplint,lint,linter,SAP,static analysis" />
   <title>rules.abaplint.org</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -23,7 +24,7 @@ Add "TABLE" keyword or "@" for escaping SQL variables<br><br>
 <a href='./check_ddic/'><tt>check_ddic</tt> - Check DDIC</a><br>Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in "errorNamespace" <br><br>
 <a href='./check_include/'><tt>check_include</tt> - Check INCLUDEs</a><br>Checks INCLUDE statements<br><br>
 <a href='./check_no_handler_pragma/'><tt>check_no_handler_pragma</tt> - Check if NO_HANDLER can be removed</a><br>Checks NO_HANDLER pragmas that can be removed<br><br>
-<a href='./check_syntax/'><tt>check_syntax</tt> - Check syntax</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg><br>Enables syntax check and variable resolution<br><br>
+<a href='./check_syntax/'><tt>check_syntax</tt> - Check syntax</a>&nbsp;<a href="/experimental.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></a><br>Enables syntax check and variable resolution<br><br>
 <a href='./check_text_elements/'><tt>check_text_elements</tt> - Check text elements</a><br>Check text elements exists or matches code<br><br>
 <a href='./check_transformation_exists/'><tt>check_transformation_exists</tt> - Check transformation exists</a><br>Checks that used XSLT transformations exist.<br><br>
 <a href='./class_attribute_names/'><tt>class_attribute_names</tt> - Class attributes naming</a><br>Allows you to enforce a pattern, such as a prefix, for class variable names.<br><br>
@@ -36,10 +37,10 @@ Add "TABLE" keyword or "@" for escaping SQL variables<br><br>
 <a href='./description_empty/'><tt>description_empty</tt> - Description in class must exist</a><br>Ensures descriptions in class metadata exist.<br><br>
 <a href='./double_space/'><tt>double_space</tt> - Double space</a><br>Checks that only a single space follows certain common statements.<br><br>
 <a href='./empty_line_in_statement/'><tt>empty_line_in_statement</tt> - Find empty lines in statements</a><br>Checks that statements do not contain empty lines.<br><br>
-<a href='./empty_statement/'><tt>empty_statement</tt> - Remove emty statement</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Checks for empty statements (an empty statement is a single dot)<br><br>
+<a href='./empty_statement/'><tt>empty_statement</tt> - Remove emty statement</a>&nbsp;<a href="/quick_fix.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a><br>Checks for empty statements (an empty statement is a single dot)<br><br>
 <a href='./empty_structure/'><tt>empty_structure</tt> - Find empty blocks</a><br>Checks that the code does not contain empty blocks.<br><br>
 <a href='./exit_or_check/'><tt>exit_or_check</tt> - Find EXIT or CHECK outside loops</a><br>Detects usages of EXIT or CHECK statements outside of loops.<br><br>
-<a href='./exporting/'><tt>exporting</tt> - EXPORTING can be omitted</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Detects EXPORTING statements which can be omitted.<br><br>
+<a href='./exporting/'><tt>exporting</tt> - EXPORTING can be omitted</a>&nbsp;<a href="/quick_fix.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a><br>Detects EXPORTING statements which can be omitted.<br><br>
 <a href='./forbidden_identifier/'><tt>forbidden_identifier</tt> - Forbidden Identifier</a><br>Forbid use of specified identifiers, list of regex<br><br>
 <a href='./form_no_dash/'><tt>form_no_dash</tt> - No dashes in FORM names</a><br>Checks for a Dash in form names<br><br>
 <a href='./form_tables_obsolete/'><tt>form_tables_obsolete</tt> - TABLES parameters are obsolete</a><br>Checks for TABLES parameters in forms.<br><br>
@@ -63,7 +64,7 @@ IF 1 = 1 AND
 <a href='./local_testclass_location/'><tt>local_testclass_location</tt> - Local testclass location</a><br>Checks that local test classes are placed in the test include.<br><br>
 <a href='./local_variable_names/'><tt>local_variable_names</tt> - Local variable naming conventions</a><br>Allows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.<br><br>
 <a href='./main_file_contents/'><tt>main_file_contents</tt> - Main file contents</a><br>Checks related to report declarations.<br><br>
-<a href='./max_one_statement/'><tt>max_one_statement</tt> - Max one statement per line</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Checks that each line contains only a single statement.<br><br>
+<a href='./max_one_statement/'><tt>max_one_statement</tt> - Max one statement per line</a>&nbsp;<a href="/quick_fix.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a><br>Checks that each line contains only a single statement.<br><br>
 <a href='./message_exists/'><tt>message_exists</tt> - Check MESSAGE exists</a><br>In message statements, check that the message class + id exist<br><br>
 <a href='./method_length/'><tt>method_length</tt> - Method Length</a><br>Checks relating to method length.<br><br>
 <a href='./method_parameter_names/'><tt>method_parameter_names</tt> - Method parameter naming conventions</a><br>Allows you to enforce a pattern, such as a prefix, for method parameter names<br><br>
@@ -98,7 +99,7 @@ Exceptions are excluded from this rule.<br><br>
 <a href='./types_naming/'><tt>types_naming</tt> - TYPES naming conventions</a><br>Allows you to enforce a pattern for TYPES definitions<br><br>
 <a href='./unknown_types/'><tt>unknown_types</tt> - Unknown types</a><br>Enables check for unknown data types, respects errorNamespace<br><br>
 <a href='./unreachable_code/'><tt>unreachable_code</tt> - Unreachable code</a><br>Checks for unreachable code.<br><br>
-<a href='./unused_variables/'><tt>unused_variables</tt> - Unused variables</a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg><br>Checks for unused variables<br><br>
+<a href='./unused_variables/'><tt>unused_variables</tt> - Unused variables</a>&nbsp;<a href="/experimental.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></a><br>Checks for unused variables<br><br>
 <a href='./use_new/'><tt>use_new</tt> - Use NEW</a><br>Checks for deprecated CREATE OBJECT statements.<br><br>
 <a href='./when_others_last/'><tt>when_others_last</tt> - WHEN OTHERS last</a><br>Checks that WHEN OTHERS is placed the last within a CASE statement.<br><br>
 <a href='./whitespace_end/'><tt>whitespace_end</tt> - Whitespace at end of line</a><br>Checks for redundant whitespace at the end of each line.<br><br>
