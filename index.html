@@ -57,7 +57,10 @@ Add "TABLE" keyword or "@" for escaping SQL variables<br><br>
 <a href='./form_tables_obsolete/'><tt>form_tables_obsolete</tt> - TABLES parameters are obsolete</a><br>Checks for TABLES parameters in forms.<br><br>
 <a href='./fully_type_constants/'><tt>fully_type_constants</tt> - Fully type constants</a><br>Checks constants for full typing - no implicit typing allowed.<br><br>
 <a href='./functional_writing/'><tt>functional_writing</tt> - Use functional writing</a><br>Detects usage of call method when functional style calls can be used.<br><br>
-<a href='./global_class/'><tt>global_class</tt> - Global class checks</a><br>Checks related to names of global classes. For the name pattern, see rule object_naming<br><br>
+<a href='./global_class/'><tt>global_class</tt> - Global class checks</a><br>Checks related to global classes.
+* global classes must be in own files
+* file names must match class name
+* global classes must be global definitions<br><br>
 <a href='./identical_form_names/'><tt>identical_form_names</tt> - Identical FORM names</a><br>Detects identically named FORMs<br><br>
 <a href='./if_in_if/'><tt>if_in_if</tt> - IF in IF</a><br>Detects nested ifs which can be refactored to a single condition using AND.<br><br>
 <a href='./implement_methods/'><tt>implement_methods</tt> - Implement methods</a><br>Chekcs for abstract methods which need implementing.<br><br>
