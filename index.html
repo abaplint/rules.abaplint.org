@@ -101,7 +101,7 @@ Exceptions are excluded from this rule.<br><br>
 <a href='./parser_error/'><tt>parser_error</tt> - Parser error</a><br>Checks for syntax unrecognized by abaplint<br><br>
 <a href='./prefer_returning_to_exporting/'><tt>prefer_returning_to_exporting</tt> - Prefer RETURNING to EXPORTING</a><br>Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.<br><br>
 <a href='./preferred_compare_operator/'><tt>preferred_compare_operator</tt> - Preferred compare operator</a><br>Configure undesired operator variants<br><br>
-<a href='./prefix_is_current_class/'><tt>prefix_is_current_class</tt> - Prefix is current class</a><br>Reports errors if the current class references itself with "current_class=>"<br><br>
+<a href='./prefix_is_current_class/'><tt>prefix_is_current_class</tt> - Prefix is current class</a><br>Reports errors if the current class or interface references itself with "current_class=>"<br><br>
 <a href='./release_idoc/'><tt>release_idoc</tt> - Release iDoc</a><br>Checks idoc types and segments are set to status released<br><br>
 <a href='./remove_descriptions/'><tt>remove_descriptions</tt> - Remove descriptions</a><br>Ensures you have no descriptions in metadata of methods, parameters, etc. For class descriptions, see rule description_empty.<br><br>
 <a href='./rfc_error_handling/'><tt>rfc_error_handling</tt> - RFC error handling</a><br>Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls<br><br>
@@ -115,7 +115,7 @@ Exceptions are excluded from this rule.<br><br>
 <a href='./start_at_tab/'><tt>start_at_tab</tt> - Start at tab</a><br>Checks that statements start at tabstops.<br><br>
 <a href='./superclass_final/'><tt>superclass_final</tt> - Super class final</a><br>Checks that classes which are inherited from are not declared as FINAL.<br><br>
 <a href='./tabl_enhancement_category/'><tt>tabl_enhancement_category</tt> - TABL enhancement category must be set</a><br>Checks that tables do not have the enhancement category 'not classified'<br><br>
-<a href='./try_without_catch/'><tt>try_without_catch</tt> - TRY without CATCH</a><br>Checks for TRY blocks without a CATCH block<br><br>
+<a href='./try_without_catch/'><tt>try_without_catch</tt> - TRY without CATCH</a><br>Checks for TRY blocks without a CATCH and CLEANUP block<br><br>
 <a href='./type_begin_single_include/'><tt>type_begin_single_include</tt> - TYPE BEGIN contains single field</a><br>Finds TYPE BEGIN with just one INCLUDE TYPE<br><br>
 <a href='./type_form_parameters/'><tt>type_form_parameters</tt> - Type FORM parameters</a><br>Checks for untyped FORM parameters<br><br>
 <a href='./types_naming/'><tt>types_naming</tt> - TYPES naming conventions</a><br>Allows you to enforce a pattern for TYPES definitions<br><br>
