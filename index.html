@@ -67,7 +67,7 @@ https://github.com/abaplint/transpiler/blob/bda94b8b56e2b7f2f87be2168f12361aa530
 * global classes must be global definitions<br><br>
 <a href='./identical_form_names/'><tt>identical_form_names</tt> - Identical FORM names</a><br>Detects identically named FORMs<br><br>
 <a href='./if_in_if/'><tt>if_in_if</tt> - IF in IF</a><br>Detects nested ifs which can be refactored to a single condition using AND.<br><br>
-<a href='./implement_methods/'><tt>implement_methods</tt> - Implement methods</a><br>Chekcs for abstract methods which need implementing.<br><br>
+<a href='./implement_methods/'><tt>implement_methods</tt> - Implement methods</a><br>Chekcs for abstract methods and methods from interfaces which need implementing.<br><br>
 <a href='./in_statement_indentation/'><tt>in_statement_indentation</tt> - In-statement indentation</a><br>Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.
 Example:
 IF 1 = 1 AND
@@ -107,7 +107,7 @@ Exceptions are excluded from this rule.<br><br>
 <a href='./sicf_consistency/'><tt>sicf_consistency</tt> - SICF consistency</a><br>Checks the validity of ICF services<br><br>
 <a href='./space_before_colon/'><tt>space_before_colon</tt> - Space before colon</a><br>Checks that there are no spaces in front of colons in chained statements.<br><br>
 <a href='./space_before_dot/'><tt>space_before_dot</tt> - Space before dot</a><br>Checks for extra spaces before dots at the ends of statements<br><br>
-<a href='./sql_escape_host_variables/'><tt>sql_escape_host_variables</tt> - Escape SQL host variables</a><br>Escape SQL host variables, from 740sp05 <br><br>
+<a href='./sql_escape_host_variables/'><tt>sql_escape_host_variables</tt> - Escape SQL host variables</a>&nbsp;<a href="/upport.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg></a><br>Escape SQL host variables, from 740sp05<br><br>
 <a href='./start_at_tab/'><tt>start_at_tab</tt> - Start at tab</a><br>Checks that statements start at tabstops.<br><br>
 <a href='./superclass_final/'><tt>superclass_final</tt> - Super class final</a><br>Checks that classes which are inherited from are not declared as FINAL.<br><br>
 <a href='./tabl_enhancement_category/'><tt>tabl_enhancement_category</tt> - TABL enhancement category must be set</a><br>Checks that tables do not have the enhancement category 'not classified'<br><br>
@@ -118,7 +118,7 @@ Exceptions are excluded from this rule.<br><br>
 <a href='./unknown_types/'><tt>unknown_types</tt> - Unknown types</a>&nbsp;<a href="/experimental.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></a><br>Enables check for unknown data types, respects errorNamespace<br><br>
 <a href='./unreachable_code/'><tt>unreachable_code</tt> - Unreachable code</a><br>Checks for unreachable code.<br><br>
 <a href='./unused_variables/'><tt>unused_variables</tt> - Unused variables</a>&nbsp;<a href="/experimental.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></a><br>Checks for unused variables<br><br>
-<a href='./use_new/'><tt>use_new</tt> - Use NEW</a><br>Checks for deprecated CREATE OBJECT statements.<br><br>
+<a href='./use_new/'><tt>use_new</tt> - Use NEW</a>&nbsp;<a href="/upport.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg></a><br>Checks for deprecated CREATE OBJECT statements.<br><br>
 <a href='./when_others_last/'><tt>when_others_last</tt> - WHEN OTHERS last</a><br>Checks that WHEN OTHERS is placed the last within a CASE statement.<br><br>
 <a href='./whitespace_end/'><tt>whitespace_end</tt> - Whitespace at end of line</a><br>Checks for redundant whitespace at the end of each line.<br><br>
 <a href='./xml_consistency/'><tt>xml_consistency</tt> - XML consistency</a><br>Checks the consistency of main XML files, eg. naming<br><br>
