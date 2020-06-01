@@ -41,6 +41,15 @@ Checks NO_HANDLER pragmas that can be removed<br><br><h2>Default Configuration</
         theme: "vs-dark"
       });
     });
-  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i></div>
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
+Bad example: <pre>TRY.
+    ...
+  CATCH zcx_abapgit_exception ##NO_HANDLER.
+    RETURN. " it has a handler
+ENDTRY.</pre><br>Good example: <pre>TRY.
+    ...
+  CATCH zcx_abapgit_exception.
+    RETURN.
+ENDTRY.</pre><br><br></div>
 </body>
 </html>
