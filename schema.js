@@ -346,6 +346,10 @@ const abaplintSchema = {
           "description": "Ignore global exception classes",
           "type": "boolean"
         },
+        "ignoreInterfaces": {
+          "description": "Ignore interfaces",
+          "type": "boolean"
+        },
         "ignoreLocal": {
           "description": "Ignore local classes",
           "type": "boolean"
@@ -384,6 +388,7 @@ const abaplintSchema = {
       "required": [
         "ignoreExceptions",
         "ignoreLocal",
+        "ignoreInterfaces",
         "statics",
         "instance",
         "constants"
