@@ -17,7 +17,43 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>Rules</h2>
+<h2>92 Rules</h2>
+<div class="chip" title="Experimental">
+    <div class="chip-head">4</div>
+    <div class="chip-content"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></div>
+  </div>
+<div class="chip" title="Upport">
+    <div class="chip-head">2</div>
+    <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg></div>
+  </div>
+<div class="chip" title="Downport">
+    <div class="chip-head">1</div>
+    <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>downport</title><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></div>
+  </div>
+<div class="chip" title="Whitespace">
+    <div class="chip-head">13</div>
+    <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg></div>
+  </div>
+<div class="chip" title="Naming">
+    <div class="chip-head">8</div>
+    <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg></div>
+  </div>
+<div class="chip" title="Quickfix">
+    <div class="chip-head">12</div>
+    <div class="chip-content"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+  </div>
+<div class="chip" title="Syntax">
+    <div class="chip-head">11</div>
+    <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+  </div>
+<div class="chip" title="Styleguide">
+    <div class="chip-head">21</div>
+    <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
+  </div>
+
+<br>
+<br>
+<div id="rules">
 <a href='./7bit_ascii/'><tt>7bit_ascii</tt> - Check for 7bit ascii</a><br>Only allow characters from the 7bit ASCII set.<br><br>
 <a href='./abapdoc/'><tt>abapdoc</tt> - Check abapdoc</a><br>Various checks regarding abapdoc.
 Base rule checks for existence of abapdoc for public class methods and all interface methods.<br><br>
@@ -122,6 +158,6 @@ Exceptions are excluded from this rule.<br><br>
 <a href='./when_others_last/'><tt>when_others_last</tt> - WHEN OTHERS last</a><br>Checks that WHEN OTHERS is placed the last within a CASE statement.<br><br>
 <a href='./whitespace_end/'><tt>whitespace_end</tt> - Whitespace at end of line</a>&nbsp;<a href="/quick_fix.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a>&nbsp;<a href="/whitespace.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg></a><br>Checks for redundant whitespace at the end of each line.<br><br>
 <a href='./xml_consistency/'><tt>xml_consistency</tt> - XML consistency</a><br>Checks the consistency of main XML files, eg. naming<br><br>
-</div>
+</div></div>
 </body>
 </html>
