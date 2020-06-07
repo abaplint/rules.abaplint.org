@@ -64,7 +64,9 @@
     "key": "check_comments",
     "title": "Check Comments",
     "description": "Various checks for comment usage.",
-    "tags": []
+    "tags": [
+      "Styleguide"
+    ]
   },
   {
     "key": "check_ddic",
@@ -299,7 +301,7 @@
   {
     "key": "in_statement_indentation",
     "title": "In-statement indentation",
-    "description": "Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.\nExample:\nIF 1 = 1 AND\n   2 = 2.",
+    "description": "Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.",
     "tags": [
       "Whitespace"
     ]
@@ -479,6 +481,16 @@
     ]
   },
   {
+    "key": "prefer_inline",
+    "title": "Prefer Inline Declarations",
+    "description": "Prefer inline to up-front declarations.\nActivates if language version is v740sp02 or above.\nVariables must be local(METHOD or FORM).\nNo generic or void typed variables.\nFirst position used must be a full/pure write.",
+    "tags": [
+      "Styleguide",
+      "Upport",
+      "Experimental"
+    ]
+  },
+  {
     "key": "prefer_returning_to_exporting",
     "title": "Prefer RETURNING to EXPORTING",
     "description": "Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.",
@@ -642,7 +654,8 @@
     "title": "Unused variables",
     "description": "Checks for unused variables",
     "tags": [
-      "Experimental"
+      "Experimental",
+      "Quickfix"
     ]
   },
   {
