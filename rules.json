@@ -157,7 +157,8 @@
     "title": "Code contains tab",
     "description": "Checks for usage of tabs (enable to enforce spaces)",
     "tags": [
-      "Whitespace"
+      "Whitespace",
+      "Quickfix"
     ]
   },
   {
