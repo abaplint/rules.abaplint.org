@@ -383,7 +383,7 @@
   {
     "key": "local_variable_names",
     "title": "Local variable naming conventions",
-    "description": "Allows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.",
+    "description": "\nAllows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.\nRegexes are case-insensitive.",
     "tags": [
       "Naming"
     ]
