@@ -545,7 +545,8 @@
     "title": "Sequential blank lines",
     "description": "Checks that code does not contain more than the configured number of blank lines in a row.",
     "tags": [
-      "Whitespace"
+      "Whitespace",
+      "Quickfix"
     ]
   },
   {
