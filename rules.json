@@ -363,7 +363,8 @@
     "title": "Line containing only punctuation",
     "description": "Detects lines containing only punctuation.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "Quickfix"
     ]
   },
   {
