@@ -559,7 +559,7 @@
   {
     "key": "sicf_consistency",
     "title": "SICF consistency",
-    "description": "Checks the validity of ICF services",
+    "description": "Checks the validity of ICF services:\n\n* Class defined in handler must exist\n* Class must not have any syntax errors\n* Class must implement interface IF_HTTP_EXTENSION",
     "tags": []
   },
   {
