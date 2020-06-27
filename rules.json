@@ -516,6 +516,12 @@
     ]
   },
   {
+    "key": "reduce_string_templates",
+    "title": "Reduce string templates",
+    "description": "Checks for string templates",
+    "tags": []
+  },
+  {
     "key": "release_idoc",
     "title": "Release iDoc",
     "description": "Checks idoc types and segments are set to status released",

@@ -17,7 +17,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>93 Rules</h2>
+<h2>94 Rules</h2>
 <div class="chip" title="Experimental">
     <div class="chip-head">5</div>
     <div class="chip-content"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></div>
@@ -138,6 +138,7 @@ First position used must be a full/pure write.<br><br>
 <a href='./prefer_returning_to_exporting/'><tt>prefer_returning_to_exporting</tt> - Prefer RETURNING to EXPORTING</a>&nbsp;<a href="/styleguide.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></a><br>Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.<br><br>
 <a href='./preferred_compare_operator/'><tt>preferred_compare_operator</tt> - Preferred compare operator</a><br>Configure undesired operator variants<br><br>
 <a href='./prefix_is_current_class/'><tt>prefix_is_current_class</tt> - Prefix is current class</a>&nbsp;<a href="/quick_fix.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a>&nbsp;<a href="/styleguide.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></a><br>Reports errors if the current class or interface references itself with "current_class=>"<br><br>
+<a href='./reduce_string_templates/'><tt>reduce_string_templates</tt> - Reduce string templates</a><br>Checks for string templates<br><br>
 <a href='./release_idoc/'><tt>release_idoc</tt> - Release iDoc</a><br>Checks idoc types and segments are set to status released<br><br>
 <a href='./remove_descriptions/'><tt>remove_descriptions</tt> - Remove descriptions</a><br>Ensures you have no descriptions in metadata of methods, parameters, etc. For class descriptions, see rule description_empty.<br><br>
 <a href='./rfc_error_handling/'><tt>rfc_error_handling</tt> - RFC error handling</a><br>Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls<br><br>
