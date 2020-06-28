@@ -906,7 +906,7 @@ const abaplintSchema = {
                   "type": "boolean"
                 }
               ],
-              "description": "Enforces basic name length and namespace restrictions\nTags: Naming\nhttps://rules.abaplint.org/allowed_object_naming"
+              "description": "Enforces basic name length and namespace restrictions, see note 104010\nTags: Naming\nhttps://rules.abaplint.org/allowed_object_naming"
             },
             "allowed_object_types": {
               "anyOf": [
