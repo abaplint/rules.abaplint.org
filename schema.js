@@ -10,15 +10,11 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -30,15 +26,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -54,15 +46,11 @@ const abaplintSchema = {
           "type": "array"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -74,15 +62,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -111,7 +95,7 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -124,10 +108,6 @@ const abaplintSchema = {
         "kernelCall": {
           "description": "Detects kernel calls",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         },
         "statics": {
           "description": "Detects statics",
@@ -155,15 +135,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -172,15 +148,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -189,15 +161,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -210,15 +178,11 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -230,15 +194,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -247,15 +207,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -264,15 +220,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -281,15 +233,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -298,15 +246,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -315,15 +259,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -336,7 +276,7 @@ const abaplintSchema = {
           "type": "string"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -376,10 +316,6 @@ const abaplintSchema = {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
         },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
-        },
         "statics": {
           "description": "The pattern for static variable names",
           "type": "string"
@@ -399,15 +335,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -416,15 +348,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -437,15 +365,11 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -457,15 +381,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -474,15 +394,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -491,15 +407,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -508,15 +420,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -533,7 +441,7 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -542,10 +450,6 @@ const abaplintSchema = {
         "keywords": {
           "description": "Check for double space after keywords",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         },
         "startParen": {
           "description": "Check for double space after start parenthesis",
@@ -564,15 +468,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -585,15 +485,11 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -605,15 +501,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -634,7 +526,7 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -647,10 +539,6 @@ const abaplintSchema = {
         "loop": {
           "description": "Checks for empty loop blocks",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         },
         "select": {
           "description": "Checks for empty select blockss",
@@ -676,15 +564,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -693,15 +577,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -717,15 +597,11 @@ const abaplintSchema = {
           "type": "array"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -744,15 +620,11 @@ const abaplintSchema = {
           "type": "array"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -764,15 +636,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -781,15 +649,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -802,15 +666,11 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -822,7 +682,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -831,10 +691,6 @@ const abaplintSchema = {
         "ignoreExceptions": {
           "description": "Ignore functional writing in exception classes, local + global",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -846,15 +702,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2009,15 +1861,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2026,15 +1874,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2043,15 +1887,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2060,7 +1900,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2069,10 +1909,6 @@ const abaplintSchema = {
         "ignoreExceptions": {
           "description": "Ignore global exception classes",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2087,7 +1923,7 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2105,10 +1941,6 @@ const abaplintSchema = {
         },
         "ignoreGlobalInterface": {
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2124,15 +1956,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2141,7 +1969,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2150,10 +1978,6 @@ const abaplintSchema = {
         "length": {
           "description": "Max line length, in characters",
           "type": "number"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2165,7 +1989,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2194,10 +2018,6 @@ const abaplintSchema = {
         "ignoreLowerClassImplmentationStatement": {
           "type": "boolean"
         },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
-        },
         "style": {
           "$ref": "#/definitions/KeywordCaseStyle"
         }
@@ -2224,15 +2044,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2241,7 +2057,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2250,10 +2066,6 @@ const abaplintSchema = {
         "length": {
           "description": "Maximum line length in characters, trailing whitespace ignored",
           "type": "number"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2265,7 +2077,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2274,10 +2086,6 @@ const abaplintSchema = {
         "ignoreExceptions": {
           "description": "Ignore lines with only puncutation in global exception classes",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2293,7 +2101,7 @@ const abaplintSchema = {
           "type": "string"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2321,10 +2129,6 @@ const abaplintSchema = {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
         },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
-        },
         "test": {
           "description": "The pattern for local test class names",
           "type": "string"
@@ -2341,15 +2145,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2358,7 +2158,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2393,10 +2193,6 @@ const abaplintSchema = {
         "patternKind": {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2410,15 +2206,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2427,15 +2219,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2444,15 +2232,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2461,15 +2245,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2482,7 +2262,7 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2491,10 +2271,6 @@ const abaplintSchema = {
         "ignoreTestClasses": {
           "description": "Option to ignore test classes for this check.",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         },
         "statements": {
           "description": "Maximum method length in statements",
@@ -2516,7 +2292,7 @@ const abaplintSchema = {
           "type": "string"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2552,10 +2328,6 @@ const abaplintSchema = {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
         },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
-        },
         "returning": {
           "description": "The pattern for returning parameters",
           "type": "string"
@@ -2574,15 +2346,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2595,15 +2363,11 @@ const abaplintSchema = {
           "type": "number"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2619,7 +2383,7 @@ const abaplintSchema = {
           "type": "number"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2628,10 +2392,6 @@ const abaplintSchema = {
         "logic": {
           "$ref": "#/definitions/NewlineLogic",
           "description": "Exact: the exact number of required newlines between methods is defined by \"newlineAmount\"\n\nLess: the required number of newlines has to be less than \"newlineAmount\""
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2655,15 +2415,11 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2695,7 +2451,7 @@ const abaplintSchema = {
           "type": "string"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2741,10 +2497,6 @@ const abaplintSchema = {
         },
         "prog": {
           "description": "The pattern for program (report) names",
-          "type": "string"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
           "type": "string"
         },
         "shlp": {
@@ -2814,7 +2566,7 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2831,10 +2583,6 @@ const abaplintSchema = {
         "occurs": {
           "description": "Checks for usages of OCCURS",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         },
         "refresh": {
           "description": "Check for REFRESH statement",
@@ -2871,15 +2619,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2895,15 +2639,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2912,15 +2652,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2936,15 +2672,11 @@ const abaplintSchema = {
           "type": "array"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2956,7 +2688,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -2965,10 +2697,6 @@ const abaplintSchema = {
         "omitMeInstanceCalls": {
           "description": "Checks usages of self references with 'me' when calling instance methods",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -2980,15 +2708,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -2997,15 +2721,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3014,15 +2734,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3031,7 +2747,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -3040,10 +2756,6 @@ const abaplintSchema = {
         "ignoreExceptions": {
           "description": "Ignore global exception classes",
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -3055,15 +2767,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3072,15 +2780,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3089,7 +2793,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -3117,10 +2821,6 @@ const abaplintSchema = {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
         },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
-        },
         "selectOption": {
           "description": "The pattern for selection-screen select-options",
           "type": "string"
@@ -3136,7 +2836,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -3145,10 +2845,6 @@ const abaplintSchema = {
         "lines": {
           "description": "An equal or higher number of sequential blank lines will trigger a violation.\nExample: if lines = 3, a maximum of 2 is allowed.",
           "type": "number"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -3160,15 +2856,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3184,7 +2876,7 @@ const abaplintSchema = {
           "type": "array"
         },
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -3193,10 +2885,6 @@ const abaplintSchema = {
         "length": {
           "description": "The smallest number of WHEN branches which will trigger a violation.\nExample: if length = 1, at least 2 branches are required",
           "type": "number"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -3209,15 +2897,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3226,7 +2910,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -3237,10 +2921,6 @@ const abaplintSchema = {
         },
         "ignoreGlobalDefinition": {
           "type": "boolean"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "required": [
@@ -3253,15 +2933,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3270,15 +2946,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3287,15 +2959,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3304,15 +2972,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3321,15 +2985,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3338,15 +2998,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3355,7 +3011,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -3363,10 +3019,6 @@ const abaplintSchema = {
         },
         "pattern": {
           "description": "The pattern for TYPES",
-          "type": "string"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
           "type": "string"
         }
       },
@@ -3379,15 +3031,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3396,15 +3044,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3413,15 +3057,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3430,15 +3070,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3464,15 +3100,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3481,15 +3113,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"
@@ -3498,15 +3126,11 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "exclude": {
-          "description": "List of file regex patterns to exclude",
+          "description": "List of file regex filename patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "reason": {
-          "description": "An explanation for why the rule is enforced, information only",
-          "type": "string"
         }
       },
       "type": "object"

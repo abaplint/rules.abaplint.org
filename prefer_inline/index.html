@@ -15,7 +15,7 @@ Variables must be local(METHOD or FORM).
 No generic or void typed variables.
 First position used must be a full/pure write.<br><br><h2>Extended Information</h2>
 <a href='https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md#prefer-inline-to-up-front-declarations'>https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md#prefer-inline-to-up-front-declarations</a><br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:114px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:95px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -23,8 +23,7 @@ First position used must be a full/pure write.<br><br><h2>Extended Information</
     require(['vs/editor/editor.main'], function() {
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
-  "exclude": [],
-  "reason": ""
+  "exclude": []
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

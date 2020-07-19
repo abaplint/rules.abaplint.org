@@ -14,7 +14,7 @@ Checks the validity of ICF services:
 * Class defined in handler must exist
 * Class must not have any syntax errors
 * Class must implement interface IF_HTTP_EXTENSION<br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:114px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:95px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -22,8 +22,7 @@ Checks the validity of ICF services:
     require(['vs/editor/editor.main'], function() {
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
-  "exclude": [],
-  "reason": ""
+  "exclude": []
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

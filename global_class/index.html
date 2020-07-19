@@ -13,7 +13,7 @@ Checks related to global classes.
 * global classes must be in own files
 * file names must match class name
 * global classes must be global definitions<br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:114px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:95px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -21,8 +21,7 @@ Checks related to global classes.
     require(['vs/editor/editor.main'], function() {
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
-  "exclude": [],
-  "reason": ""
+  "exclude": []
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

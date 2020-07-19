@@ -11,7 +11,7 @@
 &nbsp;<a href="/"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>home</title><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>&nbsp;<a href="/quick_fix.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a>&nbsp;<a href="/experimental.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></a>&nbsp;<a href="/downport.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>downport</title><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></a>&nbsp;<a href="https://github.com/abaplint/abaplint/blob/master/packages/core/src/rules/downport.ts"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>edit</title><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></a><h2>Description</h2>
 Experimental downport functionality<br><br><h2>Extended Information</h2>
 <br>Much like the 'commented_code' rule this rule loops through unknown statements and tries parsing with<br>a higher level language version. If successful, various rules are applied to downport the statement.<br><br>Current rules:<br>* NEW transformed to CREATE OBJECT<br><br>The target version is the overall target version set in the main configuration file as syntax.version<br><br>Only one transformation is applied to a statement at a time, so multiple steps might be required to do the full downport.<br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:114px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:95px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -19,8 +19,7 @@ Experimental downport functionality<br><br><h2>Extended Information</h2>
     require(['vs/editor/editor.main'], function() {
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
-  "exclude": [],
-  "reason": ""
+  "exclude": []
 }`, "json", modelUri);
 
       const schema = abaplintSchema;
