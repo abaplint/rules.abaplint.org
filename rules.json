@@ -244,12 +244,6 @@
     "tags": []
   },
   {
-    "key": "form_no_dash",
-    "title": "No dashes in FORM names",
-    "description": "Checks for a Dash in form names",
-    "tags": []
-  },
-  {
     "key": "form_tables_obsolete",
     "title": "TABLES parameters are obsolete",
     "description": "Checks for TABLES parameters in forms.",
@@ -436,6 +430,12 @@
     "key": "msag_consistency",
     "title": "MSAG consistency check",
     "description": "Checks the validity of messages in message classes",
+    "tags": []
+  },
+  {
+    "key": "names_no_dash",
+    "title": "No dashes in FORM and DATA names",
+    "description": "Checks for a \"-\" in FORM and DATA names",
     "tags": []
   },
   {
