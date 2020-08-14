@@ -49,6 +49,12 @@
     ]
   },
   {
+    "key": "begin_single_include",
+    "title": "BEGIN contains single INCLUDE",
+    "description": "Finds TYPE BEGIN with just one INCLUDE TYPE, and DATA with single INCLUDE STRUCTURE",
+    "tags": []
+  },
+  {
     "key": "chain_mainly_declarations",
     "title": "Chain mainly declarations",
     "description": "Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.",
@@ -630,12 +636,6 @@
     "key": "try_without_catch",
     "title": "TRY without CATCH",
     "description": "Checks for TRY blocks without a CATCH and CLEANUP block",
-    "tags": []
-  },
-  {
-    "key": "type_begin_single_include",
-    "title": "TYPE BEGIN contains single field",
-    "description": "Finds TYPE BEGIN with just one INCLUDE TYPE",
     "tags": []
   },
   {
