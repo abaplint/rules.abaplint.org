@@ -51,7 +51,7 @@
   {
     "key": "chain_mainly_declarations",
     "title": "Chain mainly declarations",
-    "description": "Chain mainly declarations",
+    "description": "Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.",
     "tags": []
   },
   {
@@ -478,7 +478,15 @@
   {
     "key": "parser_error",
     "title": "Parser error",
-    "description": "Checks for syntax unrecognized by abaplint",
+    "description": "Checks for syntax unrecognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "parser_missing_space",
+    "title": "Parser Error, missing space",
+    "description": "In special cases the ABAP language allows for not having spaces before or after string literals.\nThis rule makes sure the spaces are consistently required across the language.",
     "tags": [
       "Syntax"
     ]

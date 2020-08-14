@@ -17,7 +17,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>94 Rules</h2>
+<h2>95 Rules</h2>
 <div class="chip" title="Experimental">
     <div class="chip-head">5</div>
     <div class="chip-content"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></div>
@@ -43,7 +43,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
     <div class="chip-content"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
   </div>
 <div class="chip" title="Syntax">
-    <div class="chip-head">11</div>
+    <div class="chip-head">12</div>
     <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
   </div>
 <div class="chip" title="Styleguide">
@@ -63,7 +63,7 @@ Base rule checks for existence of abapdoc for public class methods and all inter
 Add "TABLE" keyword or "@" for escaping SQL variables<br><br>
 <a href='./avoid_use/'><tt>avoid_use</tt> - Avoid use of certain statements</a>&nbsp;<a href="/styleguide.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></a><br>Detects usage of certain statements.<br><br>
 <a href='./begin_end_names/'><tt>begin_end_names</tt> - Check BEGIN END names</a>&nbsp;<a href="/quick_fix.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a>&nbsp;<a href="/syntax.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></a><br>Check BEGIN OF and END OF names match<br><br>
-<a href='./chain_mainly_declarations/'><tt>chain_mainly_declarations</tt> - Chain mainly declarations</a><br>Chain mainly declarations<br><br>
+<a href='./chain_mainly_declarations/'><tt>chain_mainly_declarations</tt> - Chain mainly declarations</a><br>Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.<br><br>
 <a href='./check_abstract/'><tt>check_abstract</tt> - Check abstract methods and classes</a><br>Checks abstract methods and classes:
 - class defined as abstract and final,
 - non-abstract class contains abstract methods<br><br>
@@ -129,7 +129,11 @@ Regexes are case-insensitive.<br><br>
 Exceptions are excluded from this rule.<br><br>
 <a href='./object_naming/'><tt>object_naming</tt> - Object naming conventions</a>&nbsp;<a href="/naming.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg></a><br>Allows you to enforce a pattern, such as a prefix, for object names<br><br>
 <a href='./obsolete_statement/'><tt>obsolete_statement</tt> - Obsolete statements</a><br>Checks for usages of certain obsolete statements<br><br>
-<a href='./parser_error/'><tt>parser_error</tt> - Parser error</a>&nbsp;<a href="/syntax.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></a><br>Checks for syntax unrecognized by abaplint<br><br>
+<a href='./parser_error/'><tt>parser_error</tt> - Parser error</a>&nbsp;<a href="/syntax.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></a><br>Checks for syntax unrecognized by abaplint.
+
+See recognized syntax at https://syntax.abaplint.org<br><br>
+<a href='./parser_missing_space/'><tt>parser_missing_space</tt> - Parser Error, missing space</a>&nbsp;<a href="/syntax.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></a><br>In special cases the ABAP language allows for not having spaces before or after string literals.
+This rule makes sure the spaces are consistently required across the language.<br><br>
 <a href='./prefer_inline/'><tt>prefer_inline</tt> - Prefer Inline Declarations</a>&nbsp;<a href="/experimental.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></a>&nbsp;<a href="/upport.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg></a>&nbsp;<a href="/styleguide.html"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></a><br>Prefer inline to up-front declarations.
 Activates if language version is v740sp02 or above.
 Variables must be local(METHOD or FORM).
