@@ -295,7 +295,7 @@
   {
     "key": "implement_methods",
     "title": "Implement methods",
-    "description": "Chekcs for abstract methods and methods from interfaces which need implementing.",
+    "description": "Checks for abstract methods and methods from interfaces which need implementing.",
     "tags": [
       "Syntax"
     ]
