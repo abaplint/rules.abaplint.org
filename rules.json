@@ -546,7 +546,7 @@
   {
     "key": "remove_descriptions",
     "title": "Remove descriptions",
-    "description": "Ensures you have no descriptions in metadata of methods, parameters, etc. For class descriptions, see rule description_empty.",
+    "description": "\nEnsures you have no descriptions in metadata of methods, parameters, etc.\n\nClass descriptions are required, see rule description_empty.\n\nConsider using ABAP Doc for documentation.\n",
     "tags": []
   },
   {
