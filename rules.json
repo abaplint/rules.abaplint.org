@@ -415,7 +415,9 @@
     "key": "method_length",
     "title": "Method Length",
     "description": "Checks relating to method length.",
-    "tags": []
+    "tags": [
+      "Styleguide"
+    ]
   },
   {
     "key": "method_parameter_names",
@@ -465,7 +467,9 @@
     "key": "no_public_attributes",
     "title": "No public attributes",
     "description": "Checks that classes and interfaces don't contain any public attributes.\nExceptions are excluded from this rule.",
-    "tags": []
+    "tags": [
+      "Styleguide"
+    ]
   },
   {
     "key": "object_naming",
