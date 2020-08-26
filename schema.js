@@ -2657,6 +2657,10 @@ const abaplintSchema = {
           },
           "type": "array"
         },
+        "fieldSymbolStructure": {
+          "description": "Checks for FIELD-SYMBOL ... STRUCTURE",
+          "type": "boolean"
+        },
         "move": {
           "description": "Check for MOVE statement",
           "type": "boolean"
@@ -2701,7 +2705,8 @@ const abaplintSchema = {
         "requested",
         "occurs",
         "setExtended",
-        "withHeaderLine"
+        "withHeaderLine",
+        "fieldSymbolStructure"
       ],
       "type": "object"
     },
