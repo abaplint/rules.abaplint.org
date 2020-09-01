@@ -245,6 +245,14 @@
     "tags": []
   },
   {
+    "key": "forbidden_pseduo_and_pragma",
+    "title": "Forbidden pseudo comments and pragma",
+    "description": "Checks for unwanted pseudo comments and pragma",
+    "tags": [
+      "Quickfix"
+    ]
+  },
+  {
     "key": "forbidden_void_type",
     "title": "Forbidden Void Type",
     "description": "Forbid use of specified void types.",
@@ -673,9 +681,18 @@
     "tags": []
   },
   {
+    "key": "unused_types",
+    "title": "Unused types",
+    "description": "Checks for unused TYPE definitions",
+    "tags": [
+      "Experimental",
+      "Quickfix"
+    ]
+  },
+  {
     "key": "unused_variables",
     "title": "Unused variables",
-    "description": "Checks for unused variables",
+    "description": "Checks for unused variables and constants",
     "tags": [
       "Experimental",
       "Quickfix"
