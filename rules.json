@@ -360,6 +360,14 @@
     ]
   },
   {
+    "key": "line_break_style",
+    "title": "Makes sure line breaks are consistent in the ABAP code",
+    "description": "Enforces LF as newlines in ABAP files\n\nabapGit does not work with CRLF",
+    "tags": [
+      "Whitespace"
+    ]
+  },
+  {
     "key": "line_length",
     "title": "Line length",
     "description": "Detects lines exceeding the provided maximum length.",
