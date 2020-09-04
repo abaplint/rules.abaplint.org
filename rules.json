@@ -254,8 +254,8 @@
   },
   {
     "key": "forbidden_void_type",
-    "title": "Forbidden Void Type",
-    "description": "Forbid use of specified void types.",
+    "title": "Forbidden Void Types",
+    "description": "Avoid usage of specified void types.",
     "tags": []
   },
   {
