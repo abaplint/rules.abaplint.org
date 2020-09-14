@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="keywords" content="ABAP,Open Source,abaplint,lint,linter,SAP,static analysis" />
   <title>rules.abaplint.org</title>
-  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
 <div class="content"><h1>reduce_string_templates - Reduce string templates</h1>
@@ -40,6 +40,26 @@ Checks for string templates<br><br><h2>Default Configuration</h2>
         theme: "vs-dark"
       });
     });
-  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i></div>
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
+<div id="examplesEditor" style="width:700px;height:152px;border:1px solid grey"></div>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foobar.abap");
+      var model = monaco.editor.createModel(`* Bad example
+WRITE |{ |sdf| }|.
+WRITE |{ 'sdf' }|.
+
+* Good example
+WRITE |sdf|.`, "abap", modelUri);
+
+      var editor = monaco.editor.create(document.getElementById('examplesEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+    });
+  </script><br><br></div>
 </body>
 </html>

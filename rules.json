@@ -2,19 +2,19 @@
   {
     "key": "7bit_ascii",
     "title": "Check for 7bit ascii",
-    "description": "Only allow characters from the 7bit ASCII set.",
+    "shortDescription": "Only allow characters from the 7bit ASCII set.",
     "tags": []
   },
   {
     "key": "abapdoc",
     "title": "Check abapdoc",
-    "description": "Various checks regarding abapdoc.\nBase rule checks for existence of abapdoc for public class methods and all interface methods.",
+    "shortDescription": "Various checks regarding abapdoc.\nBase rule checks for existence of abapdoc for public class methods and all interface methods.",
     "tags": []
   },
   {
     "key": "allowed_object_naming",
     "title": "Allowed object naming",
-    "description": "Enforces basic name length and namespace restrictions, see note SAP 104010",
+    "shortDescription": "Enforces basic name length and namespace restrictions, see note SAP 104010",
     "tags": [
       "Naming"
     ]
@@ -22,19 +22,19 @@
   {
     "key": "allowed_object_types",
     "title": "Check allowed object types",
-    "description": "Restricts the set of allowed object types.",
+    "shortDescription": "Restricts the set of allowed object types.",
     "tags": []
   },
   {
     "key": "ambiguous_statement",
     "title": "Check for ambigious statements",
-    "description": "Checks for ambiguity between deleting or modifying from internal and database table\nAdd \"TABLE\" keyword or \"@\" for escaping SQL variables",
+    "shortDescription": "Checks for ambiguity between deleting or modifying from internal and database table\nAdd \"TABLE\" keyword or \"@\" for escaping SQL variables",
     "tags": []
   },
   {
     "key": "avoid_use",
     "title": "Avoid use of certain statements",
-    "description": "Detects usage of certain statements.",
+    "shortDescription": "Detects usage of certain statements.",
     "tags": [
       "Styleguide"
     ]
@@ -42,7 +42,7 @@
   {
     "key": "begin_end_names",
     "title": "Check BEGIN END names",
-    "description": "Check BEGIN OF and END OF names match",
+    "shortDescription": "Check BEGIN OF and END OF names match",
     "tags": [
       "Syntax",
       "Quickfix"
@@ -51,25 +51,25 @@
   {
     "key": "begin_single_include",
     "title": "BEGIN contains single INCLUDE",
-    "description": "Finds TYPE BEGIN with just one INCLUDE TYPE, and DATA with single INCLUDE STRUCTURE",
+    "shortDescription": "Finds TYPE BEGIN with just one INCLUDE TYPE, and DATA with single INCLUDE STRUCTURE",
     "tags": []
   },
   {
     "key": "chain_mainly_declarations",
     "title": "Chain mainly declarations",
-    "description": "Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.",
+    "shortDescription": "Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.",
     "tags": []
   },
   {
     "key": "check_abstract",
     "title": "Check abstract methods and classes",
-    "description": "Checks abstract methods and classes:\n- class defined as abstract and final,\n- non-abstract class contains abstract methods",
+    "shortDescription": "Checks abstract methods and classes:\n- class defined as abstract and final,\n- non-abstract class contains abstract methods",
     "tags": []
   },
   {
     "key": "check_comments",
     "title": "Check Comments",
-    "description": "Various checks for comment usage.",
+    "shortDescription": "Various checks for comment usage.",
     "tags": [
       "Styleguide"
     ]
@@ -77,7 +77,7 @@
   {
     "key": "check_ddic",
     "title": "Check DDIC",
-    "description": "Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in \"errorNamespace\" ",
+    "shortDescription": "Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in \"errorNamespace\" ",
     "tags": [
       "Syntax"
     ]
@@ -85,7 +85,7 @@
   {
     "key": "check_include",
     "title": "Check INCLUDEs",
-    "description": "Checks INCLUDE statements",
+    "shortDescription": "Checks INCLUDE statements",
     "tags": [
       "Syntax"
     ]
@@ -93,13 +93,13 @@
   {
     "key": "check_no_handler_pragma",
     "title": "Check if NO_HANDLER can be removed",
-    "description": "Checks NO_HANDLER pragmas that can be removed",
+    "shortDescription": "Checks NO_HANDLER pragmas that can be removed",
     "tags": []
   },
   {
     "key": "check_syntax",
     "title": "Check syntax",
-    "description": "Enables syntax check and variable resolution",
+    "shortDescription": "Enables syntax check and variable resolution",
     "tags": [
       "Experimental",
       "Syntax"
@@ -108,13 +108,13 @@
   {
     "key": "check_text_elements",
     "title": "Check text elements",
-    "description": "Check text elements exists or matches code",
+    "shortDescription": "Check text elements exists or matches code",
     "tags": []
   },
   {
     "key": "check_transformation_exists",
     "title": "Check transformation exists",
-    "description": "Checks that used XSLT transformations exist.",
+    "shortDescription": "Checks that used XSLT transformations exist.",
     "tags": [
       "Syntax"
     ]
@@ -122,7 +122,7 @@
   {
     "key": "class_attribute_names",
     "title": "Class attributes naming",
-    "description": "Allows you to enforce a pattern, such as a prefix, for class variable names.",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for class variable names.",
     "tags": [
       "Naming"
     ]
@@ -130,13 +130,13 @@
   {
     "key": "cloud_types",
     "title": "Check cloud types",
-    "description": "Checks that the package does not contain any object types unsupported in cloud ABAP.",
+    "shortDescription": "Checks that the package does not contain any object types unsupported in cloud ABAP.",
     "tags": []
   },
   {
     "key": "colon_missing_space",
     "title": "Colon missing space",
-    "description": "Checks for missing spaces after colons in chained statements.",
+    "shortDescription": "Checks for missing spaces after colons in chained statements.",
     "tags": [
       "Whitespace",
       "Quickfix"
@@ -145,7 +145,7 @@
   {
     "key": "commented_code",
     "title": "Find commented code",
-    "description": "Detects usage of commented out code.",
+    "shortDescription": "Detects usage of commented out code.",
     "tags": [
       "Styleguide",
       "Quickfix"
@@ -154,7 +154,7 @@
   {
     "key": "constructor_visibility_public",
     "title": "Check constructor visibility is public",
-    "description": "Constructor must be placed in the public section, even if the class is not CREATE PUBLIC.",
+    "shortDescription": "Constructor must be placed in the public section, even if the class is not CREATE PUBLIC.",
     "tags": [
       "Styleguide"
     ]
@@ -162,7 +162,7 @@
   {
     "key": "contains_tab",
     "title": "Code contains tab",
-    "description": "Checks for usage of tabs (enable to enforce spaces)",
+    "shortDescription": "Checks for usage of tabs (enable to enforce spaces)",
     "tags": [
       "Whitespace",
       "Quickfix"
@@ -171,19 +171,19 @@
   {
     "key": "definitions_top",
     "title": "Place definitions in top of routine",
-    "description": "Checks that definitions are placed at the beginning of methods.",
+    "shortDescription": "Checks that definitions are placed at the beginning of methods.",
     "tags": []
   },
   {
     "key": "description_empty",
     "title": "Description in class must exist",
-    "description": "Ensures descriptions in class metadata exist.",
+    "shortDescription": "Ensures descriptions in class metadata exist.",
     "tags": []
   },
   {
     "key": "double_space",
     "title": "Double space",
-    "description": "Checks that only a single space follows certain common statements.",
+    "shortDescription": "Checks that only a single space follows certain common statements.",
     "tags": [
       "Whitespace",
       "Quickfix"
@@ -192,7 +192,7 @@
   {
     "key": "downport",
     "title": "Downport statement",
-    "description": "Experimental downport functionality",
+    "shortDescription": "Experimental downport functionality",
     "tags": [
       "Experimental",
       "Downport",
@@ -202,13 +202,13 @@
   {
     "key": "empty_line_in_statement",
     "title": "Find empty lines in statements",
-    "description": "Checks that statements do not contain empty lines.",
+    "shortDescription": "Checks that statements do not contain empty lines.",
     "tags": []
   },
   {
     "key": "empty_statement",
     "title": "Remove emty statement",
-    "description": "Checks for empty statements (an empty statement is a single dot)",
+    "shortDescription": "Checks for empty statements (an empty statement is a single dot)",
     "tags": [
       "Quickfix"
     ]
@@ -216,7 +216,7 @@
   {
     "key": "empty_structure",
     "title": "Find empty blocks",
-    "description": "Checks that the code does not contain empty blocks.",
+    "shortDescription": "Checks that the code does not contain empty blocks.",
     "tags": [
       "Styleguide"
     ]
@@ -224,7 +224,7 @@
   {
     "key": "exit_or_check",
     "title": "Find EXIT or CHECK outside loops",
-    "description": "Detects usages of EXIT or CHECK statements outside of loops.\nUse RETURN to leave procesing blocks instead.",
+    "shortDescription": "Detects usages of EXIT or CHECK statements outside of loops.\nUse RETURN to leave procesing blocks instead.",
     "tags": [
       "Styleguide"
     ]
@@ -232,7 +232,7 @@
   {
     "key": "exporting",
     "title": "EXPORTING can be omitted",
-    "description": "Detects EXPORTING statements which can be omitted.",
+    "shortDescription": "Detects EXPORTING statements which can be omitted.",
     "tags": [
       "Styleguide",
       "Quickfix"
@@ -241,13 +241,13 @@
   {
     "key": "forbidden_identifier",
     "title": "Forbidden Identifier",
-    "description": "Forbid use of specified identifiers, list of regex.",
+    "shortDescription": "Forbid use of specified identifiers, list of regex.",
     "tags": []
   },
   {
     "key": "forbidden_pseudo_and_pragma",
     "title": "Forbidden pseudo comments and pragma",
-    "description": "Checks for unwanted pseudo comments and pragma",
+    "shortDescription": "Checks for unwanted pseudo comments and pragma",
     "tags": [
       "Quickfix"
     ]
@@ -255,25 +255,25 @@
   {
     "key": "forbidden_void_type",
     "title": "Forbidden Void Types",
-    "description": "Avoid usage of specified void types.",
+    "shortDescription": "Avoid usage of specified void types.",
     "tags": []
   },
   {
     "key": "form_tables_obsolete",
     "title": "TABLES parameters are obsolete",
-    "description": "Checks for TABLES parameters in forms.",
+    "shortDescription": "Checks for TABLES parameters in forms.",
     "tags": []
   },
   {
     "key": "fully_type_constants",
     "title": "Fully type constants",
-    "description": "Checks constants for full typing - no implicit typing allowed.",
+    "shortDescription": "Checks constants for full typing - no implicit typing allowed.",
     "tags": []
   },
   {
     "key": "functional_writing",
     "title": "Use functional writing",
-    "description": "Detects usage of call method when functional style calls can be used.",
+    "shortDescription": "Detects usage of call method when functional style calls can be used.",
     "tags": [
       "Styleguide"
     ]
@@ -281,7 +281,7 @@
   {
     "key": "global_class",
     "title": "Global class checks",
-    "description": "Checks related to global classes.\n* global classes must be in own files\n* file names must match class name\n* global classes must be global definitions",
+    "shortDescription": "Checks related to global classes.\n* global classes must be in own files\n* file names must match class name\n* global classes must be global definitions",
     "tags": [
       "Syntax"
     ]
@@ -289,13 +289,13 @@
   {
     "key": "identical_form_names",
     "title": "Identical FORM names",
-    "description": "Detects identically named FORMs",
+    "shortDescription": "Detects identically named FORMs",
     "tags": []
   },
   {
     "key": "if_in_if",
     "title": "IF in IF",
-    "description": "Detects nested ifs which can be refactored to a single condition using AND.",
+    "shortDescription": "Detects nested ifs which can be refactored to a single condition using AND.",
     "tags": [
       "Styleguide"
     ]
@@ -303,7 +303,7 @@
   {
     "key": "implement_methods",
     "title": "Implement methods",
-    "description": "Checks for abstract methods and methods from interfaces which need implementing.",
+    "shortDescription": "Checks for abstract methods and methods from interfaces which need implementing.",
     "tags": [
       "Syntax"
     ]
@@ -311,15 +311,16 @@
   {
     "key": "in_statement_indentation",
     "title": "In-statement indentation",
-    "description": "Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.",
+    "shortDescription": "Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.",
     "tags": [
-      "Whitespace"
+      "Whitespace",
+      "Quickfix"
     ]
   },
   {
     "key": "indentation",
     "title": "Indentation",
-    "description": "Checks indentation",
+    "shortDescription": "Checks indentation",
     "tags": [
       "Whitespace"
     ]
@@ -327,7 +328,7 @@
   {
     "key": "inline_data_old_versions",
     "title": "Inline data, old versions",
-    "description": "Checks for inline data declarations in older releases. Only active for versions less than v740sp02",
+    "shortDescription": "Checks for inline data declarations in older releases. Only active for versions less than v740sp02",
     "tags": [
       "Syntax"
     ]
@@ -335,7 +336,7 @@
   {
     "key": "keep_single_parameter_on_one_line",
     "title": "Keep single parameters on one line",
-    "description": "Keep single parameter calls on one line",
+    "shortDescription": "Keep single parameter calls on one line",
     "tags": [
       "Whitespace",
       "Styleguide"
@@ -344,7 +345,7 @@
   {
     "key": "keyword_case",
     "title": "Keyword case",
-    "description": "Checks that keywords have the same case. Non-keywords must be lower case.",
+    "shortDescription": "Checks that keywords have the same case. Non-keywords must be lower case.",
     "tags": [
       "Styleguide"
     ]
@@ -352,7 +353,7 @@
   {
     "key": "line_break_multiple_parameters",
     "title": "Line break multiple parameters",
-    "description": "Line break multiple parameters",
+    "shortDescription": "Line break multiple parameters",
     "tags": [
       "Whitespace",
       "Styleguide",
@@ -362,7 +363,7 @@
   {
     "key": "line_break_style",
     "title": "Makes sure line breaks are consistent in the ABAP code",
-    "description": "Enforces LF as newlines in ABAP files\n\nabapGit does not work with CRLF",
+    "shortDescription": "Enforces LF as newlines in ABAP files\n\nabapGit does not work with CRLF",
     "tags": [
       "Whitespace"
     ]
@@ -370,7 +371,7 @@
   {
     "key": "line_length",
     "title": "Line length",
-    "description": "Detects lines exceeding the provided maximum length.",
+    "shortDescription": "Detects lines exceeding the provided maximum length.",
     "tags": [
       "Styleguide"
     ]
@@ -378,7 +379,7 @@
   {
     "key": "line_only_punc",
     "title": "Line containing only punctuation",
-    "description": "Detects lines containing only punctuation.",
+    "shortDescription": "Detects lines containing only punctuation.",
     "tags": [
       "Styleguide",
       "Quickfix"
@@ -387,7 +388,7 @@
   {
     "key": "local_class_naming",
     "title": "Local class naming conventions",
-    "description": "Allows you to enforce a pattern, such as a prefix, for local class names.",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for local class names.",
     "tags": [
       "Naming"
     ]
@@ -395,13 +396,13 @@
   {
     "key": "local_testclass_location",
     "title": "Local testclass location",
-    "description": "Checks that local test classes are placed in the test include.",
+    "shortDescription": "Checks that local test classes are placed in the test include.",
     "tags": []
   },
   {
     "key": "local_variable_names",
     "title": "Local variable naming conventions",
-    "description": "\nAllows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.\nRegexes are case-insensitive.",
+    "shortDescription": "\nAllows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.\nRegexes are case-insensitive.",
     "tags": [
       "Naming"
     ]
@@ -409,13 +410,13 @@
   {
     "key": "main_file_contents",
     "title": "Main file contents",
-    "description": "Checks related to report declarations.",
+    "shortDescription": "Checks related to report declarations.",
     "tags": []
   },
   {
     "key": "max_one_statement",
     "title": "Max one statement per line",
-    "description": "Checks that each line contains only a single statement.",
+    "shortDescription": "Checks that each line contains only a single statement.",
     "tags": [
       "Styleguide",
       "Quickfix"
@@ -424,13 +425,13 @@
   {
     "key": "message_exists",
     "title": "Check MESSAGE exists",
-    "description": "In message statements, check that the message class + id exist",
+    "shortDescription": "In message statements, check that the message class + id exist",
     "tags": []
   },
   {
     "key": "method_length",
     "title": "Method Length",
-    "description": "Checks relating to method length.",
+    "shortDescription": "Checks relating to method length.",
     "tags": [
       "Styleguide"
     ]
@@ -438,7 +439,7 @@
   {
     "key": "method_parameter_names",
     "title": "Method parameter naming conventions",
-    "description": "Allows you to enforce a pattern, such as a prefix, for method parameter names",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for method parameter names",
     "tags": [
       "Naming"
     ]
@@ -446,7 +447,7 @@
   {
     "key": "mix_returning",
     "title": "Mix of returning and exporting",
-    "description": "Checks that methods don't have a mixture of returning and exporting/changing parameters",
+    "shortDescription": "Checks that methods don't have a mixture of returning and exporting/changing parameters",
     "tags": [
       "Styleguide"
     ]
@@ -454,19 +455,19 @@
   {
     "key": "msag_consistency",
     "title": "MSAG consistency check",
-    "description": "Checks the validity of messages in message classes",
+    "shortDescription": "Checks the validity of messages in message classes",
     "tags": []
   },
   {
     "key": "names_no_dash",
     "title": "No dashes in FORM and DATA names",
-    "description": "Checks for a \"-\" in FORM and DATA names",
+    "shortDescription": "Checks for a \"-\" in FORM and DATA names",
     "tags": []
   },
   {
     "key": "nesting",
     "title": "Check nesting depth",
-    "description": "Checks for methods exceeding a maximum nesting depth",
+    "shortDescription": "Checks for methods exceeding a maximum nesting depth",
     "tags": [
       "Styleguide"
     ]
@@ -474,7 +475,7 @@
   {
     "key": "newline_between_methods",
     "title": "New line between methods",
-    "description": "Checks for newlines between method implementations.",
+    "shortDescription": "Checks for newlines between method implementations.",
     "tags": [
       "Whitespace"
     ]
@@ -482,7 +483,7 @@
   {
     "key": "no_public_attributes",
     "title": "No public attributes",
-    "description": "Checks that classes and interfaces don't contain any public attributes.\nExceptions are excluded from this rule.",
+    "shortDescription": "Checks that classes and interfaces don't contain any public attributes.\nExceptions are excluded from this rule.",
     "tags": [
       "Styleguide"
     ]
@@ -490,7 +491,7 @@
   {
     "key": "object_naming",
     "title": "Object naming conventions",
-    "description": "Allows you to enforce a pattern, such as a prefix, for object names",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for object names",
     "tags": [
       "Naming"
     ]
@@ -498,13 +499,13 @@
   {
     "key": "obsolete_statement",
     "title": "Obsolete statements",
-    "description": "Checks for usages of certain obsolete statements",
+    "shortDescription": "Checks for usages of certain obsolete statements",
     "tags": []
   },
   {
     "key": "parser_error",
     "title": "Parser error",
-    "description": "Checks for syntax unrecognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
+    "shortDescription": "Checks for syntax unrecognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
     "tags": [
       "Syntax"
     ]
@@ -512,7 +513,7 @@
   {
     "key": "parser_missing_space",
     "title": "Parser Error, missing space",
-    "description": "In special cases the ABAP language allows for not having spaces before or after string literals.\nThis rule makes sure the spaces are consistently required across the language.",
+    "shortDescription": "In special cases the ABAP language allows for not having spaces before or after string literals.\nThis rule makes sure the spaces are consistently required across the language.",
     "tags": [
       "Syntax"
     ]
@@ -520,7 +521,7 @@
   {
     "key": "prefer_inline",
     "title": "Prefer Inline Declarations",
-    "description": "Prefer inline to up-front declarations.\nActivates if language version is v740sp02 or above.\nVariables must be local(METHOD or FORM).\nNo generic or void typed variables.\nFirst position used must be a full/pure write.",
+    "shortDescription": "Prefer inline to up-front declarations.\nActivates if language version is v740sp02 or above.\nVariables must be local(METHOD or FORM).\nNo generic or void typed variables.\nFirst position used must be a full/pure write.",
     "tags": [
       "Styleguide",
       "Upport",
@@ -531,7 +532,7 @@
   {
     "key": "prefer_returning_to_exporting",
     "title": "Prefer RETURNING to EXPORTING",
-    "description": "Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.",
+    "shortDescription": "Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.",
     "tags": [
       "Styleguide"
     ]
@@ -539,13 +540,13 @@
   {
     "key": "preferred_compare_operator",
     "title": "Preferred compare operator",
-    "description": "Configure undesired operator variants",
+    "shortDescription": "Configure undesired operator variants",
     "tags": []
   },
   {
     "key": "prefix_is_current_class",
     "title": "Prefix is current class",
-    "description": "Reports errors if the current class or interface references itself with \"current_class=>\"",
+    "shortDescription": "Reports errors if the current class or interface references itself with \"current_class=>\"",
     "tags": [
       "Styleguide",
       "Quickfix"
@@ -554,31 +555,31 @@
   {
     "key": "reduce_string_templates",
     "title": "Reduce string templates",
-    "description": "Checks for string templates",
+    "shortDescription": "Checks for string templates",
     "tags": []
   },
   {
     "key": "release_idoc",
     "title": "Release iDoc",
-    "description": "Checks idoc types and segments are set to status released",
+    "shortDescription": "Checks idoc types and segments are set to status released",
     "tags": []
   },
   {
     "key": "remove_descriptions",
     "title": "Remove descriptions",
-    "description": "\nEnsures you have no descriptions in metadata of methods, parameters, etc.\n\nClass descriptions are required, see rule description_empty.\n\nConsider using ABAP Doc for documentation.\n",
+    "shortDescription": "\nEnsures you have no descriptions in metadata of methods, parameters, etc.\n\nClass descriptions are required, see rule description_empty.\n\nConsider using ABAP Doc for documentation.\n",
     "tags": []
   },
   {
     "key": "rfc_error_handling",
     "title": "RFC error handling",
-    "description": "Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls",
+    "shortDescription": "Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls",
     "tags": []
   },
   {
     "key": "selection_screen_naming",
     "title": "Selection screen naming conventions",
-    "description": "Allows you to enforce a pattern, such as a prefix, for selection-screen variable names.",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for selection-screen variable names.",
     "tags": [
       "Naming"
     ]
@@ -586,7 +587,7 @@
   {
     "key": "sequential_blank",
     "title": "Sequential blank lines",
-    "description": "Checks that code does not contain more than the configured number of blank lines in a row.",
+    "shortDescription": "Checks that code does not contain more than the configured number of blank lines in a row.",
     "tags": [
       "Whitespace",
       "Quickfix"
@@ -595,19 +596,19 @@
   {
     "key": "short_case",
     "title": "Short CASE",
-    "description": "Checks for CASE statements which have fewer than the specified number of branches",
+    "shortDescription": "Checks for CASE statements which have fewer than the specified number of branches",
     "tags": []
   },
   {
     "key": "sicf_consistency",
     "title": "SICF consistency",
-    "description": "Checks the validity of ICF services:\n\n* Class defined in handler must exist\n* Class must not have any syntax errors\n* Class must implement interface IF_HTTP_EXTENSION",
+    "shortDescription": "Checks the validity of ICF services:\n\n* Class defined in handler must exist\n* Class must not have any syntax errors\n* Class must implement interface IF_HTTP_EXTENSION",
     "tags": []
   },
   {
     "key": "space_before_colon",
     "title": "Space before colon",
-    "description": "Checks that there are no spaces in front of colons in chained statements.",
+    "shortDescription": "Checks that there are no spaces in front of colons in chained statements.",
     "tags": [
       "Whitespace"
     ]
@@ -615,7 +616,7 @@
   {
     "key": "space_before_dot",
     "title": "Space before dot",
-    "description": "Checks for extra spaces before dots at the ends of statements",
+    "shortDescription": "Checks for extra spaces before dots at the ends of statements",
     "tags": [
       "Whitespace",
       "Quickfix"
@@ -624,7 +625,7 @@
   {
     "key": "sql_escape_host_variables",
     "title": "Escape SQL host variables",
-    "description": "Escape SQL host variables, from 740sp05",
+    "shortDescription": "Escape SQL host variables, from 740sp05",
     "tags": [
       "Upport",
       "Styleguide"
@@ -633,7 +634,7 @@
   {
     "key": "start_at_tab",
     "title": "Start at tab",
-    "description": "Checks that statements start at tabstops.",
+    "shortDescription": "Checks that statements start at tabstops.",
     "tags": [
       "Whitespace",
       "Styleguide"
@@ -642,7 +643,7 @@
   {
     "key": "superclass_final",
     "title": "Super class final",
-    "description": "Checks that classes which are inherited from are not declared as FINAL.",
+    "shortDescription": "Checks that classes which are inherited from are not declared as FINAL.",
     "tags": [
       "Syntax"
     ]
@@ -650,25 +651,25 @@
   {
     "key": "tabl_enhancement_category",
     "title": "TABL enhancement category must be set",
-    "description": "Checks that tables do not have the enhancement category 'not classified'",
+    "shortDescription": "Checks that tables do not have the enhancement category 'not classified'",
     "tags": []
   },
   {
     "key": "try_without_catch",
     "title": "TRY without CATCH",
-    "description": "Checks for TRY blocks without a CATCH and CLEANUP block",
+    "shortDescription": "Checks for TRY blocks without a CATCH and CLEANUP block",
     "tags": []
   },
   {
     "key": "type_form_parameters",
     "title": "Type FORM parameters",
-    "description": "Checks for untyped FORM parameters",
+    "shortDescription": "Checks for untyped FORM parameters",
     "tags": []
   },
   {
     "key": "types_naming",
     "title": "TYPES naming conventions",
-    "description": "Allows you to enforce a pattern for TYPES definitions",
+    "shortDescription": "Allows you to enforce a pattern for TYPES definitions",
     "tags": [
       "Naming"
     ]
@@ -676,7 +677,7 @@
   {
     "key": "unknown_types",
     "title": "Unknown types",
-    "description": "Enables check for unknown data types, respects errorNamespace",
+    "shortDescription": "Enables check for unknown data types, respects errorNamespace",
     "tags": [
       "Experimental",
       "Syntax"
@@ -685,13 +686,13 @@
   {
     "key": "unreachable_code",
     "title": "Unreachable code",
-    "description": "Checks for unreachable code.",
+    "shortDescription": "Checks for unreachable code.",
     "tags": []
   },
   {
     "key": "unused_types",
     "title": "Unused types",
-    "description": "Checks for unused TYPE definitions",
+    "shortDescription": "Checks for unused TYPE definitions",
     "tags": [
       "Experimental",
       "Quickfix"
@@ -700,7 +701,7 @@
   {
     "key": "unused_variables",
     "title": "Unused variables",
-    "description": "Checks for unused variables and constants",
+    "shortDescription": "Checks for unused variables and constants",
     "tags": [
       "Experimental",
       "Quickfix"
@@ -709,7 +710,7 @@
   {
     "key": "use_new",
     "title": "Use NEW",
-    "description": "Checks for deprecated CREATE OBJECT statements.",
+    "shortDescription": "Checks for deprecated CREATE OBJECT statements.",
     "tags": [
       "Upport",
       "Styleguide",
@@ -719,13 +720,13 @@
   {
     "key": "when_others_last",
     "title": "WHEN OTHERS last",
-    "description": "Checks that WHEN OTHERS is placed the last within a CASE statement.",
+    "shortDescription": "Checks that WHEN OTHERS is placed the last within a CASE statement.",
     "tags": []
   },
   {
     "key": "whitespace_end",
     "title": "Whitespace at end of line",
-    "description": "Checks for redundant whitespace at the end of each line.",
+    "shortDescription": "Checks for redundant whitespace at the end of each line.",
     "tags": [
       "Whitespace",
       "Quickfix"
@@ -734,7 +735,7 @@
   {
     "key": "xml_consistency",
     "title": "XML consistency",
-    "description": "Checks the consistency of main XML files, eg. naming",
+    "shortDescription": "Checks the consistency of main XML files, eg. naming",
     "tags": []
   }
 ]

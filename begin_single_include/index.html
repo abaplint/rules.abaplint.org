@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="keywords" content="ABAP,Open Source,abaplint,lint,linter,SAP,static analysis" />
   <title>rules.abaplint.org</title>
-  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
 <div class="content"><h1>begin_single_include - BEGIN contains single INCLUDE</h1>
@@ -41,7 +41,12 @@ Finds TYPE BEGIN with just one INCLUDE TYPE, and DATA with single INCLUDE STRUCT
       });
     });
   </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
-Bad example: <pre>
+<div id="examplesEditor" style="width:700px;height:361px;border:1px solid grey"></div>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foobar.abap");
+      var model = monaco.editor.createModel(`* Bad example
 TYPES: BEGIN OF dummy1.
   INCLUDE TYPE dselc.
 TYPES: END OF dummy1.
@@ -53,6 +58,19 @@ DATA END OF foo.
 STATICS BEGIN OF bar.
 INCLUDE STRUCTURE syst.
 STATICS END OF bar.
-</pre><br><br><br></div>
+
+* Good example
+DATA BEGIN OF foo.
+INCLUDE STRUCTURE dselc.
+DATA END OF foo.`, "abap", modelUri);
+
+      var editor = monaco.editor.create(document.getElementById('examplesEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+    });
+  </script><br><br></div>
 </body>
 </html>
