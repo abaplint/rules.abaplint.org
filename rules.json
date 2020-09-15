@@ -700,7 +700,6 @@
     "title": "Unused types",
     "shortDescription": "Checks for unused TYPE definitions",
     "tags": [
-      "Experimental",
       "Quickfix"
     ]
   },
