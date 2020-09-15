@@ -45,6 +45,26 @@ First position used must be a full/pure write.<br><br><h2>Extended Information</
         theme: "vs-dark"
       });
     });
-  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i></div>
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
+<div id="examplesEditor" style="width:700px;height:152px;border:1px solid grey"></div>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foobar.abap");
+      var model = monaco.editor.createModel(`* Bad example
+DATA foo TYPE i.
+foo = 2.
+
+* Good example
+DATA(foo) = 2.`, "abap", modelUri);
+
+      var editor = monaco.editor.create(document.getElementById('examplesEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+    });
+  </script><br><br></div>
 </body>
 </html>

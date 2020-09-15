@@ -287,6 +287,12 @@
     ]
   },
   {
+    "key": "identical_conditions",
+    "title": "Identical conditions",
+    "shortDescription": "Find identical conditions in IF + CASE + WHILE etc",
+    "tags": []
+  },
+  {
     "key": "identical_form_names",
     "title": "Identical FORM names",
     "shortDescription": "Detects identically named FORMs",

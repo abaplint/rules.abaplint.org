@@ -1250,6 +1250,17 @@ const abaplintSchema = {
               ],
               "description": "Checks related to global classes.\n* global classes must be in own files\n* file names must match class name\n* global classes must be global definitions\nTags: Syntax\nhttps://rules.abaplint.org/global_class"
             },
+            "identical_conditions": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/IdenticalConditionsConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ],
+              "description": "Find identical conditions in IF + CASE + WHILE etc\nhttps://rules.abaplint.org/identical_conditions"
+            },
             "identical_form_names": {
               "anyOf": [
                 {
@@ -1999,6 +2010,19 @@ const abaplintSchema = {
         "version",
         "errorNamespace"
       ],
+      "type": "object"
+    },
+    "IdenticalConditionsConf": {
+      "additionalProperties": false,
+      "properties": {
+        "exclude": {
+          "description": "List of file regex filename patterns to exclude, case insensitive",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
       "type": "object"
     },
     "IdenticalFormNamesConf": {
