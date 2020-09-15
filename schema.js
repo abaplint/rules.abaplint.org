@@ -1937,6 +1937,12 @@ const abaplintSchema = {
     "IGlobalConfig": {
       "additionalProperties": false,
       "properties": {
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "files": {
           "description": "input files, glob format",
           "type": "string"
