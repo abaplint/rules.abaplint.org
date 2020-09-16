@@ -171,7 +171,8 @@
     "shortDescription": "Checks for usage of tabs (enable to enforce spaces)",
     "tags": [
       "Whitespace",
-      "Quickfix"
+      "Quickfix",
+      "Styleguide"
     ]
   },
   {
