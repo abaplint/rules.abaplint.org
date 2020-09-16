@@ -17,7 +17,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>99 Rules</h2>
+<h2>101 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">5</div>
@@ -25,7 +25,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Upport">
-  <div class="chip-head">3</div>
+  <div class="chip-head">4</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg></div>
 </div>
 
@@ -55,7 +55,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Styleguide">
-  <div class="chip-head">25</div>
+  <div class="chip-head">26</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
 </div>
 
@@ -94,6 +94,8 @@ Add "TABLE" keyword or "@" for escaping SQL variables<br><br></div>
 <div id="rule-check_include"><a href='./check_include/'><tt>check_include</tt> - Check INCLUDEs</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks INCLUDE statements<br><br></div>
 
 <div id="rule-check_no_handler_pragma"><a href='./check_no_handler_pragma/'><tt>check_no_handler_pragma</tt> - Check if NO_HANDLER can be removed</a><div class="hidden"></div><br>Checks NO_HANDLER pragmas that can be removed<br><br></div>
+
+<div id="rule-check_subrc"><a href='./check_subrc/'><tt>check_subrc</tt> - Check sy-subrc</a><div class="hidden"></div><br>Check sy-subrc<br><br></div>
 
 <div id="rule-check_syntax"><a href='./check_syntax/'><tt>check_syntax</tt> - Check syntax</a><div class="hidden">Experimental,Syntax</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Enables syntax check and variable resolution<br><br></div>
 
@@ -282,6 +284,8 @@ Consider using ABAP Doc for documentation.
 <div id="rule-unused_types"><a href='./unused_types/'><tt>unused_types</tt> - Unused types</a><div class="hidden">Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Checks for unused TYPE definitions<br><br></div>
 
 <div id="rule-unused_variables"><a href='./unused_variables/'><tt>unused_variables</tt> - Unused variables</a><div class="hidden">Experimental,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg><br>Checks for unused variables and constants<br><br></div>
+
+<div id="rule-use_line_exists"><a href='./use_line_exists/'><tt>use_line_exists</tt> - Use line_exists</a><div class="hidden">Upport,Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Use line_exists, from 740sp02 and up<br><br></div>
 
 <div id="rule-use_new"><a href='./use_new/'><tt>use_new</tt> - Use NEW</a><div class="hidden">Upport,Styleguide,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks for deprecated CREATE OBJECT statements.<br><br></div>
 
