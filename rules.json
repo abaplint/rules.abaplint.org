@@ -176,6 +176,12 @@
     ]
   },
   {
+    "key": "cyclomatic_complexity",
+    "title": "Cyclomatic Complexity",
+    "shortDescription": "Cyclomatic complexity, only reported for methods",
+    "tags": []
+  },
+  {
     "key": "definitions_top",
     "title": "Place definitions in top of routine",
     "shortDescription": "Checks that definitions are placed at the beginning of methods.",
@@ -518,7 +524,7 @@
   {
     "key": "parser_error",
     "title": "Parser error",
-    "shortDescription": "Checks for syntax unrecognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
+    "shortDescription": "Checks for syntax not recognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
     "tags": [
       "Syntax"
     ]

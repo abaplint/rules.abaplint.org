@@ -17,7 +17,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>101 Rules</h2>
+<h2>102 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">5</div>
@@ -114,6 +114,8 @@ Add "TABLE" keyword or "@" for escaping SQL variables<br><br></div>
 <div id="rule-constructor_visibility_public"><a href='./constructor_visibility_public/'><tt>constructor_visibility_public</tt> - Check constructor visibility is public</a><div class="hidden">Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Constructor must be placed in the public section, even if the class is not CREATE PUBLIC.<br><br></div>
 
 <div id="rule-contains_tab"><a href='./contains_tab/'><tt>contains_tab</tt> - Code contains tab</a><div class="hidden">Whitespace,Quickfix,Styleguide</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks for usage of tabs (enable to enforce spaces)<br><br></div>
+
+<div id="rule-cyclomatic_complexity"><a href='./cyclomatic_complexity/'><tt>cyclomatic_complexity</tt> - Cyclomatic Complexity</a><div class="hidden"></div><br>Cyclomatic complexity, only reported for methods<br><br></div>
 
 <div id="rule-definitions_top"><a href='./definitions_top/'><tt>definitions_top</tt> - Place definitions in top of routine</a><div class="hidden"></div><br>Checks that definitions are placed at the beginning of methods.<br><br></div>
 
@@ -214,7 +216,7 @@ Exceptions are excluded from this rule.<br><br></div>
 
 <div id="rule-obsolete_statement"><a href='./obsolete_statement/'><tt>obsolete_statement</tt> - Obsolete statements</a><div class="hidden"></div><br>Checks for usages of certain obsolete statements<br><br></div>
 
-<div id="rule-parser_error"><a href='./parser_error/'><tt>parser_error</tt> - Parser error</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks for syntax unrecognized by abaplint.
+<div id="rule-parser_error"><a href='./parser_error/'><tt>parser_error</tt> - Parser error</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks for syntax not recognized by abaplint.
 
 See recognized syntax at https://syntax.abaplint.org<br><br></div>
 
