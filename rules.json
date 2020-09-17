@@ -341,7 +341,8 @@
     "title": "Indentation",
     "shortDescription": "Checks indentation",
     "tags": [
-      "Whitespace"
+      "Whitespace",
+      "Quickfix"
     ]
   },
   {
