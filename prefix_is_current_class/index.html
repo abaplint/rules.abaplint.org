@@ -22,7 +22,7 @@ Reports errors if the current class or interface references itself with "current
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1,
+  "severity": "Error",
   "omitMeInstanceCalls": true
 }`, "json", modelUri);
 

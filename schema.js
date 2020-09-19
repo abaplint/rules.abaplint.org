@@ -3540,9 +3540,9 @@ const abaplintSchema = {
     },
     "Severity": {
       "enum": [
-        "DiagnosticSeverity.Error",
-        "DiagnosticSeverity.Warning",
-        "DiagnosticSeverity.Information"
+        "Error",
+        "Warning",
+        "Info"
       ],
       "type": "string"
     },

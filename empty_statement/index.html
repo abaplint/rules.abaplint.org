@@ -21,7 +21,7 @@ Checks for empty statements (an empty statement is a single dot)<br><br><h2>Defa
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1
+  "severity": "Error"
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

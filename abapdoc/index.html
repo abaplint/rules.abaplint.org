@@ -22,7 +22,7 @@ Base rule checks for existence of abapdoc for public class methods and all inter
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1,
+  "severity": "Error",
   "checkLocal": false
 }`, "json", modelUri);
 

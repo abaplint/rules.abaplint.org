@@ -22,7 +22,7 @@ WARNING: slow<br><br>      Experimental, might give false positives. Skips event
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1,
+  "severity": "Error",
   "skipNames": []
 }`, "json", modelUri);
 

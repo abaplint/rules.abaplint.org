@@ -22,7 +22,7 @@ allowed is a list of 4 character object types, example: ["CLAS", "INTF"]<br><br>
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1,
+  "severity": "Error",
   "allowed": []
 }`, "json", modelUri);
 

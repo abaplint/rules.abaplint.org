@@ -23,7 +23,7 @@ Checks abstract methods and classes:
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1
+  "severity": "Error"
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

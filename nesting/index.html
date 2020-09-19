@@ -22,7 +22,7 @@ Checks for methods exceeding a maximum nesting depth<br><br><h2>Extended Informa
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1,
+  "severity": "Error",
   "depth": 5
 }`, "json", modelUri);
 

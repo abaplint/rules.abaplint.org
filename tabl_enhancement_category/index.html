@@ -21,7 +21,7 @@ Checks that tables do not have the enhancement category 'not classified'<br><br>
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1
+  "severity": "Error"
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

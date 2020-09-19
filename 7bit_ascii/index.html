@@ -22,7 +22,7 @@ Only allow characters from the 7bit ASCII set.<br><br><h2>Extended Information</
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1
+  "severity": "Error"
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

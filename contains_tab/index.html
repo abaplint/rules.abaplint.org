@@ -22,7 +22,7 @@ Checks for usage of tabs (enable to enforce spaces)<br><br><h2>Extended Informat
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1,
+  "severity": "Error",
   "spaces": 1
 }`, "json", modelUri);
 

@@ -22,7 +22,7 @@ Constructor must be placed in the public section, even if the class is not CREAT
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
-  "severity": 1
+  "severity": "Error"
 }`, "json", modelUri);
 
       const schema = abaplintSchema;
