@@ -14,7 +14,7 @@
 Enforces LF as newlines in ABAP files
 
 abapGit does not work with CRLF<br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:95px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:114px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -22,7 +22,8 @@ abapGit does not work with CRLF<br><br><h2>Default Configuration</h2>
     require(['vs/editor/editor.main'], function() {
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
-  "exclude": []
+  "exclude": [],
+  "severity": 1
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

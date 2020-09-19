@@ -14,7 +14,7 @@
 Detects usages of EXIT or CHECK statements outside of loops.
 Use RETURN to leave procesing blocks instead.<br><br><h2>Extended Information</h2>
 <br><a href='https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abenleave_processing_blocks.htm'>https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abenleave_processing_blocks.htm</a><br><a href='https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abapcheck_processing_blocks.htm'>https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abapcheck_processing_blocks.htm</a><br><a href='https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md#check-vs-return'>https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md#check-vs-return</a><br><br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:95px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:114px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -22,7 +22,8 @@ Use RETURN to leave procesing blocks instead.<br><br><h2>Extended Information</h
     require(['vs/editor/editor.main'], function() {
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
-  "exclude": []
+  "exclude": [],
+  "severity": 1
 }`, "json", modelUri);
 
       const schema = abaplintSchema;

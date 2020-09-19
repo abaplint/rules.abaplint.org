@@ -15,6 +15,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -31,6 +35,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -51,6 +59,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -67,6 +79,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -87,7 +103,7 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "define": {
-          "description": "Detects define (macro definitions)\nhttps://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenmacros_guidl.htm",
+          "description": "Detects define (macro definitions) https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenmacros_guidl.htm",
           "type": "boolean"
         },
         "endselect": {
@@ -108,6 +124,10 @@ const abaplintSchema = {
         "kernelCall": {
           "description": "Detects kernel calls",
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         },
         "statics": {
           "description": "Detects statics",
@@ -140,6 +160,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -153,6 +177,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -199,6 +227,10 @@ const abaplintSchema = {
           "description": "Allow REFRESH statements to be chained",
           "type": "boolean"
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "unassign": {
           "description": "Allow UNASSIGN statements to be chained",
           "type": "boolean"
@@ -231,6 +263,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -248,6 +284,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -264,6 +304,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -277,6 +321,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -290,6 +338,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -328,6 +380,10 @@ const abaplintSchema = {
         "selectSingle": {
           "type": "boolean"
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "updateDatabase": {
           "type": "boolean"
         }
@@ -354,6 +410,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -367,6 +427,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -380,6 +444,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -432,6 +500,10 @@ const abaplintSchema = {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "statics": {
           "description": "The pattern for static variable names",
           "type": "string"
@@ -456,6 +528,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -469,6 +545,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -486,6 +566,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -502,6 +586,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -515,6 +603,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         },
         "spaces": {
           "description": "quick fix replace with number of spaces",
@@ -538,6 +630,10 @@ const abaplintSchema = {
         },
         "max": {
           "type": "number"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -554,6 +650,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -567,6 +667,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -593,6 +697,10 @@ const abaplintSchema = {
           "description": "Check for double space after keywords",
           "type": "boolean"
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "startParen": {
           "description": "Check for double space after start parenthesis",
           "type": "boolean"
@@ -615,6 +723,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -632,6 +744,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -648,6 +764,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -686,6 +806,10 @@ const abaplintSchema = {
           "description": "Checks for empty SELECT blockss",
           "type": "boolean"
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "try": {
           "description": "Checks for empty TRY blocks",
           "type": "boolean"
@@ -716,6 +840,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -729,6 +857,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -749,6 +881,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -783,6 +919,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -809,6 +949,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -825,6 +969,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -842,6 +990,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -862,6 +1014,10 @@ const abaplintSchema = {
         "ignoreExceptions": {
           "description": "Ignore functional writing in exception classes, local + global",
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -878,6 +1034,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2132,6 +2292,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2145,6 +2309,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2158,6 +2326,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2171,6 +2343,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2188,6 +2364,10 @@ const abaplintSchema = {
         "ignoreExceptions": {
           "description": "Ignore global exception classes",
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2220,6 +2400,10 @@ const abaplintSchema = {
         },
         "ignoreGlobalInterface": {
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2240,6 +2424,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2257,6 +2445,10 @@ const abaplintSchema = {
         "length": {
           "description": "Max line length, in characters",
           "type": "number"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2300,6 +2492,10 @@ const abaplintSchema = {
         "ignoreLowerClassImplmentationStatement": {
           "type": "boolean"
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "style": {
           "$ref": "#/definitions/KeywordCaseStyle"
         }
@@ -2332,6 +2528,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2345,6 +2545,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2362,6 +2566,10 @@ const abaplintSchema = {
         "length": {
           "description": "Maximum line length in characters, trailing whitespace ignored",
           "type": "number"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2382,6 +2590,10 @@ const abaplintSchema = {
         "ignoreExceptions": {
           "description": "Ignore lines with only puncutation in global exception classes",
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2425,6 +2637,10 @@ const abaplintSchema = {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "test": {
           "description": "The pattern for local test class names",
           "type": "string"
@@ -2446,6 +2662,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2489,6 +2709,10 @@ const abaplintSchema = {
         "patternKind": {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2507,6 +2731,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2520,6 +2748,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2533,6 +2765,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2546,6 +2782,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2567,6 +2807,10 @@ const abaplintSchema = {
         "ignoreTestClasses": {
           "description": "Option to ignore test classes for this check.",
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         },
         "statements": {
           "description": "Maximum method length in statements",
@@ -2627,6 +2871,10 @@ const abaplintSchema = {
         "returning": {
           "description": "The pattern for returning parameters",
           "type": "string"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2647,6 +2895,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2660,6 +2912,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2677,6 +2933,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2701,6 +2961,10 @@ const abaplintSchema = {
         "logic": {
           "$ref": "#/definitions/NewlineLogic",
           "description": "Exact: the exact number of required newlines between methods is defined by \"newlineAmount\"\n\nLess: the required number of newlines has to be less than \"newlineAmount\""
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2729,6 +2993,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -2807,6 +3075,10 @@ const abaplintSchema = {
         "prog": {
           "description": "The pattern for program (report) names",
           "type": "string"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         },
         "shlp": {
           "description": "The pattern for search helps",
@@ -2909,6 +3181,10 @@ const abaplintSchema = {
           "description": "Checks for SET EXTENDED CHECK, https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapset_extended_check.htm",
           "type": "boolean"
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "subtract": {
           "description": "Check for SUBTRACT statement",
           "type": "boolean"
@@ -2943,6 +3219,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2956,6 +3236,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2976,6 +3260,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -2989,6 +3277,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3009,6 +3301,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -3029,6 +3325,10 @@ const abaplintSchema = {
         "omitMeInstanceCalls": {
           "description": "Checks usages of self references with 'me' when calling instance methods",
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -3045,6 +3345,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3058,6 +3362,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3071,6 +3379,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3092,6 +3404,10 @@ const abaplintSchema = {
         "ignoreWorkflow": {
           "description": "Ignore global workflow classes",
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -3109,6 +3425,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3122,6 +3442,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3161,6 +3485,10 @@ const abaplintSchema = {
         "selectOption": {
           "description": "The pattern for selection-screen select-options",
           "type": "string"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -3180,8 +3508,12 @@ const abaplintSchema = {
           "type": "array"
         },
         "lines": {
-          "description": "An equal or higher number of sequential blank lines will trigger a violation.\nExample: if lines = 3, a maximum of 2 is allowed.",
+          "description": "An equal or higher number of sequential blank lines will trigger a violation. Example: if lines = 3, a maximum of 2 is allowed.",
           "type": "number"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -3198,9 +3530,21 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "DiagnosticSeverity.Error",
+        "DiagnosticSeverity.Warning",
+        "DiagnosticSeverity.Information"
+      ],
+      "type": "string"
     },
     "ShortCaseConf": {
       "additionalProperties": false,
@@ -3220,8 +3564,12 @@ const abaplintSchema = {
           "type": "array"
         },
         "length": {
-          "description": "The smallest number of WHEN branches which will trigger a violation.\nExample: if length = 1, at least 2 branches are required",
+          "description": "The smallest number of WHEN branches which will trigger a violation. Example: if length = 1, at least 2 branches are required",
           "type": "number"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -3239,6 +3587,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3258,6 +3610,10 @@ const abaplintSchema = {
         },
         "ignoreGlobalDefinition": {
           "type": "boolean"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -3275,6 +3631,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3288,6 +3648,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3301,6 +3665,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3314,6 +3682,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3327,6 +3699,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3344,6 +3720,10 @@ const abaplintSchema = {
         "pattern": {
           "description": "The pattern for TYPES",
           "type": "string"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "required": [
@@ -3360,6 +3740,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3373,6 +3757,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3386,6 +3774,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         },
         "skipNames": {
           "description": "skip specific names, case insensitive",
@@ -3410,6 +3802,10 @@ const abaplintSchema = {
           },
           "type": "array"
         },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
+        },
         "skipNames": {
           "description": "skip specific names, case insensitive",
           "items": {
@@ -3432,6 +3828,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3445,6 +3845,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3475,6 +3879,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3488,6 +3896,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"
@@ -3501,6 +3913,10 @@ const abaplintSchema = {
             "type": "string"
           },
           "type": "array"
+        },
+        "severity": {
+          "$ref": "#/definitions/Severity",
+          "description": "Problem severity"
         }
       },
       "type": "object"

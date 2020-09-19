@@ -18,7 +18,7 @@ Class descriptions are required, see rule description_empty.
 
 Consider using ABAP Doc for documentation.
 <br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:133px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:152px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -27,6 +27,7 @@ Consider using ABAP Doc for documentation.
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
+  "severity": 1,
   "ignoreExceptions": false,
   "ignoreWorkflow": true
 }`, "json", modelUri);

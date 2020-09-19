@@ -14,7 +14,7 @@
 Checks that classes and interfaces don't contain any public attributes.
 Exceptions are excluded from this rule.<br><br><h2>Extended Information</h2>
 <a href='https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md#members-private-by-default-protected-only-if-needed'>https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md#members-private-by-default-protected-only-if-needed</a><br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:114px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:133px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -23,6 +23,7 @@ Exceptions are excluded from this rule.<br><br><h2>Extended Information</h2>
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
+  "severity": 1,
   "allowReadOnly": false
 }`, "json", modelUri);
 

@@ -14,7 +14,7 @@
 
 Allows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.
 Regexes are case-insensitive.<br><br><h2>Default Configuration</h2>
-<div id="defaultConfigEditor" style="width:700px;height:209px;border:1px solid grey"></div>
+<div id="defaultConfigEditor" style="width:700px;height:228px;border:1px solid grey"></div>
   <script src="/_monaco/vs/loader.js"></script>
   <script src="/schema.js"></script>
   <script>
@@ -23,6 +23,7 @@ Regexes are case-insensitive.<br><br><h2>Default Configuration</h2>
       var modelUri = monaco.Uri.parse("a://b/foo.json");
       var model = monaco.editor.createModel(`{
   "exclude": [],
+  "severity": 1,
   "patternKind": "required",
   "ignoreNames": [],
   "ignorePatterns": [],
