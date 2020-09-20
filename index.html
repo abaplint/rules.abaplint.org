@@ -19,7 +19,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>102 Rules</h2>
+<h2>104 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">5</div>
@@ -27,7 +27,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Upport">
-  <div class="chip-head">4</div>
+  <div class="chip-head">5</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg></div>
 </div>
 
@@ -57,7 +57,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Styleguide">
-  <div class="chip-head">27</div>
+  <div class="chip-head">29</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
 </div>
 
@@ -231,6 +231,8 @@ Variables must be local(METHOD or FORM).
 No generic or void typed variables.
 First position used must be a full/pure write.<br><br></div>
 
+<div id="rule-prefer_is_not"><a href='./prefer_is_not/'><tt>prefer_is_not</tt> - Prefer IS NOT to NOT IS</a><div class="hidden">Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Prefer IS NOT to NOT IS<br><br></div>
+
 <div id="rule-prefer_returning_to_exporting"><a href='./prefer_returning_to_exporting/'><tt>prefer_returning_to_exporting</tt> - Prefer RETURNING to EXPORTING</a><div class="hidden">Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.<br><br></div>
 
 <div id="rule-preferred_compare_operator"><a href='./preferred_compare_operator/'><tt>preferred_compare_operator</tt> - Preferred compare operator</a><div class="hidden"></div><br>Configure undesired operator variants<br><br></div>
@@ -288,6 +290,8 @@ Consider using ABAP Doc for documentation.
 <div id="rule-unused_types"><a href='./unused_types/'><tt>unused_types</tt> - Unused types</a><div class="hidden">Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Checks for unused TYPE definitions<br><br></div>
 
 <div id="rule-unused_variables"><a href='./unused_variables/'><tt>unused_variables</tt> - Unused variables</a><div class="hidden">Experimental,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg><br>Checks for unused variables and constants<br><br></div>
+
+<div id="rule-use_bool_expression"><a href='./use_bool_expression/'><tt>use_bool_expression</tt> - Use boolean expression</a><div class="hidden">Upport,Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Use boolean expression, xsdbool from 740sp08 and up, boolc from 702 and up<br><br></div>
 
 <div id="rule-use_line_exists"><a href='./use_line_exists/'><tt>use_line_exists</tt> - Use line_exists</a><div class="hidden">Upport,Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Use line_exists, from 740sp02 and up<br><br></div>
 

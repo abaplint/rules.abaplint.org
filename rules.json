@@ -550,6 +550,14 @@
     ]
   },
   {
+    "key": "prefer_is_not",
+    "title": "Prefer IS NOT to NOT IS",
+    "shortDescription": "Prefer IS NOT to NOT IS",
+    "tags": [
+      "Styleguide"
+    ]
+  },
+  {
     "key": "prefer_returning_to_exporting",
     "title": "Prefer RETURNING to EXPORTING",
     "shortDescription": "Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.",
@@ -724,6 +732,15 @@
     "tags": [
       "Experimental",
       "Quickfix"
+    ]
+  },
+  {
+    "key": "use_bool_expression",
+    "title": "Use boolean expression",
+    "shortDescription": "Use boolean expression, xsdbool from 740sp08 and up, boolc from 702 and up",
+    "tags": [
+      "Upport",
+      "Styleguide"
     ]
   },
   {
