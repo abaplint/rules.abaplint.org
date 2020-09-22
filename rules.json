@@ -305,7 +305,7 @@
   {
     "key": "identical_conditions",
     "title": "Identical conditions",
-    "shortDescription": "Find identical conditions in IF + CASE + WHILE etc",
+    "shortDescription": "Find identical conditions in IF + CASE + WHILE etc\n\nPrerequsites: code is pretty printed with identical cAsE",
     "tags": []
   },
   {
@@ -434,6 +434,12 @@
     "key": "main_file_contents",
     "title": "Main file contents",
     "shortDescription": "Checks related to report declarations.",
+    "tags": []
+  },
+  {
+    "key": "many_parenthesis",
+    "title": "Too many parenthesis",
+    "shortDescription": "Searches for expressions where extra parenthesis can safely be removed",
     "tags": []
   },
   {
