@@ -325,7 +325,7 @@
   {
     "key": "implement_methods",
     "title": "Implement methods",
-    "shortDescription": "Checks for abstract methods and methods from interfaces which need implementing.",
+    "shortDescription": "Checks for abstract methods and methods from interfaces which need implementing.\n\n      Note: classes are currently skipped if they have super classes",
     "tags": [
       "Syntax"
     ]

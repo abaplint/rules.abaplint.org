@@ -45,6 +45,26 @@ Detects lines containing only punctuation.<br><br><h2>Extended Information</h2>
         theme: "vs-dark"
       });
     });
-  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i></div>
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
+<div id="examplesEditor" style="width:700px;height:152px;border:1px solid grey"></div>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foobar.abap");
+      var model = monaco.editor.createModel(`* Bad example
+zcl_class=>method(
+).
+
+* Good example
+zcl_class=>method( ).`, "abap", modelUri);
+
+      var editor = monaco.editor.create(document.getElementById('examplesEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+    });
+  </script><br><br></div>
 </body>
 </html>
