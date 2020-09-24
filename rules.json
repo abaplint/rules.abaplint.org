@@ -325,7 +325,7 @@
   {
     "key": "implement_methods",
     "title": "Implement methods",
-    "shortDescription": "Checks for abstract methods and methods from interfaces which need implementing.\n\n      Note: classes are currently skipped if they have super classes",
+    "shortDescription": "Checks for abstract methods and methods from interfaces which need implementing.",
     "tags": [
       "Syntax"
     ]
@@ -544,7 +544,8 @@
     "title": "Parser Error, missing space",
     "shortDescription": "In special cases the ABAP language allows for not having spaces before or after string literals.\nThis rule makes sure the spaces are consistently required across the language.",
     "tags": [
-      "Syntax"
+      "Syntax",
+      "Whitespace"
     ]
   },
   {
@@ -656,7 +657,8 @@
     "shortDescription": "Checks for extra spaces before dots at the ends of statements",
     "tags": [
       "Whitespace",
-      "Quickfix"
+      "Quickfix",
+      "Styleguide"
     ]
   },
   {
