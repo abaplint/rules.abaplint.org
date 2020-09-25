@@ -19,7 +19,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>105 Rules</h2>
+<h2>106 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">5</div>
@@ -27,7 +27,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Upport">
-  <div class="chip-head">5</div>
+  <div class="chip-head">6</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg></div>
 </div>
 
@@ -47,7 +47,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Quickfix">
-  <div class="chip-head">24</div>
+  <div class="chip-head">25</div>
   <div class="chip-content"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
 </div>
 
@@ -57,7 +57,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Styleguide">
-  <div class="chip-head">30</div>
+  <div class="chip-head">31</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
 </div>
 
@@ -238,6 +238,8 @@ First position used must be a full/pure write.<br><br></div>
 <div id="rule-prefer_is_not"><a href='./prefer_is_not/'><tt>prefer_is_not</tt> - Prefer IS NOT to NOT IS</a><div class="hidden">Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Prefer IS NOT to NOT IS<br><br></div>
 
 <div id="rule-prefer_returning_to_exporting"><a href='./prefer_returning_to_exporting/'><tt>prefer_returning_to_exporting</tt> - Prefer RETURNING to EXPORTING</a><div class="hidden">Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.<br><br></div>
+
+<div id="rule-prefer_xsdbool"><a href='./prefer_xsdbool/'><tt>prefer_xsdbool</tt> - Prefer xsdbool over boolc</a><div class="hidden">Styleguide,Upport,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Prefer xsdbool over boolc<br><br></div>
 
 <div id="rule-preferred_compare_operator"><a href='./preferred_compare_operator/'><tt>preferred_compare_operator</tt> - Preferred compare operator</a><div class="hidden"></div><br>Configure undesired operator variants<br><br></div>
 

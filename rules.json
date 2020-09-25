@@ -576,6 +576,16 @@
     ]
   },
   {
+    "key": "prefer_xsdbool",
+    "title": "Prefer xsdbool over boolc",
+    "shortDescription": "Prefer xsdbool over boolc",
+    "tags": [
+      "Styleguide",
+      "Upport",
+      "Quickfix"
+    ]
+  },
+  {
     "key": "preferred_compare_operator",
     "title": "Preferred compare operator",
     "shortDescription": "Configure undesired operator variants",
