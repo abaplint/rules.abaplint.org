@@ -45,7 +45,7 @@ Checks alignment within block statement declarations which span multiple lines, 
       });
     });
   </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
-<div id="examplesEditor" style="width:700px;height:171px;border:1px solid grey"></div>
+<div id="examplesEditor" style="width:700px;height:247px;border:1px solid grey"></div>
   <script>
     require.config({ paths: { 'vs': '/_monaco/vs' }});
     require(['vs/editor/editor.main'], function() {
@@ -53,10 +53,14 @@ Checks alignment within block statement declarations which span multiple lines, 
       var model = monaco.editor.createModel(`* Bad example
 IF 1 = 1
   AND 2 = 2.
+  WRITE 'hello'.
+ENDIF.
 
 * Good example
 IF 1 = 1
-    AND 2 = 2.`, "abap", modelUri);
+    AND 2 = 2.
+  WRITE 'hello'.
+ENDIF.`, "abap", modelUri);
 
       var editor = monaco.editor.create(document.getElementById('examplesEditor'), {
         model: model,

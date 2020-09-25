@@ -309,6 +309,12 @@
     "tags": []
   },
   {
+    "key": "identical_contents",
+    "title": "Identical contents",
+    "shortDescription": "Find identical contents in IFs\n\nPrerequsites: code is pretty printed with identical cAsE",
+    "tags": []
+  },
+  {
     "key": "identical_form_names",
     "title": "Identical FORM names",
     "shortDescription": "Detects identically named FORMs",

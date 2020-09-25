@@ -19,7 +19,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>106 Rules</h2>
+<h2>107 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">5</div>
@@ -156,6 +156,10 @@ Use RETURN to leave procesing blocks instead.<br><br></div>
 * global classes must be global definitions<br><br></div>
 
 <div id="rule-identical_conditions"><a href='./identical_conditions/'><tt>identical_conditions</tt> - Identical conditions</a><div class="hidden"></div><br>Find identical conditions in IF + CASE + WHILE etc
+
+Prerequsites: code is pretty printed with identical cAsE<br><br></div>
+
+<div id="rule-identical_contents"><a href='./identical_contents/'><tt>identical_contents</tt> - Identical contents</a><div class="hidden"></div><br>Find identical contents in IFs
 
 Prerequsites: code is pretty printed with identical cAsE<br><br></div>
 
