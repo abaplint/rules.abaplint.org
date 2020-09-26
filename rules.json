@@ -55,6 +55,14 @@
     "tags": []
   },
   {
+    "key": "call_transaction_authority_check",
+    "title": "Call Transaction Authority-Check",
+    "shortDescription": "Checks that usages of CALL TRANSACTION contain an authority-check.",
+    "tags": [
+      "Styleguide"
+    ]
+  },
+  {
     "key": "chain_mainly_declarations",
     "title": "Chain mainly declarations",
     "shortDescription": "Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.",
