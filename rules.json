@@ -753,6 +753,14 @@
     "tags": []
   },
   {
+    "key": "unused_methods",
+    "title": "Unused methods",
+    "shortDescription": "Checks for unused methods",
+    "tags": [
+      "Experimental"
+    ]
+  },
+  {
     "key": "unused_types",
     "title": "Unused types",
     "shortDescription": "Checks for unused TYPE definitions",
