@@ -299,7 +299,8 @@
     "title": "Use functional writing",
     "shortDescription": "Detects usage of call method when functional style calls can be used.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "Quickfix"
     ]
   },
   {
