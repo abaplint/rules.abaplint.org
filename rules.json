@@ -481,6 +481,14 @@
     ]
   },
   {
+    "key": "method_overwrites_builtin",
+    "title": "Method name overwrites builtin function",
+    "shortDescription": "Checks Method names that overwrite builtin SAP functions",
+    "tags": [
+      "Naming"
+    ]
+  },
+  {
     "key": "method_parameter_names",
     "title": "Method parameter naming conventions",
     "shortDescription": "Allows you to enforce a pattern, such as a prefix, for method parameter names",

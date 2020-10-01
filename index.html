@@ -19,7 +19,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>109 Rules</h2>
+<h2>110 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">6</div>
@@ -42,7 +42,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Naming">
-  <div class="chip-head">8</div>
+  <div class="chip-head">9</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg></div>
 </div>
 
@@ -208,6 +208,8 @@ Regexes are case-insensitive.<br><br></div>
 <div id="rule-message_exists"><a href='./message_exists/'><tt>message_exists</tt> - Check MESSAGE exists</a><div class="hidden"></div><br>In message statements, check that the message class + id exist<br><br></div>
 
 <div id="rule-method_length"><a href='./method_length/'><tt>method_length</tt> - Method Length</a><div class="hidden">Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks relating to method length.<br><br></div>
+
+<div id="rule-method_overwrites_builtin"><a href='./method_overwrites_builtin/'><tt>method_overwrites_builtin</tt> - Method name overwrites builtin function</a><div class="hidden">Naming</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><br>Checks Method names that overwrite builtin SAP functions<br><br></div>
 
 <div id="rule-method_parameter_names"><a href='./method_parameter_names/'><tt>method_parameter_names</tt> - Method parameter naming conventions</a><div class="hidden">Naming</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><br>Allows you to enforce a pattern, such as a prefix, for method parameter names<br><br></div>
 
