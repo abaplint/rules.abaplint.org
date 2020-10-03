@@ -555,6 +555,14 @@
     "tags": []
   },
   {
+    "key": "omit_parameter_name",
+    "title": "Omit parameter name",
+    "shortDescription": "Omit the parameter name in single parameter calls",
+    "tags": [
+      "Styleguide"
+    ]
+  },
+  {
     "key": "parser_error",
     "title": "Parser error",
     "shortDescription": "Checks for syntax not recognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
