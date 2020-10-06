@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ABAP,Open Source,abaplint,lint,linter,SAP,static analysis" />
+  <title>rules.abaplint.org</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+<div class="content"><h1>function_module_recommendations - Function Module Recommendations</h1>
+&nbsp;<a href="/"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>home</title><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>&nbsp;<a href="https://github.com/abaplint/abaplint/blob/master/packages/core/src/rules/function_module_recommendations.ts"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>edit</title><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></a><h2>Description</h2>
+Function Module Recommendations<br><br><h2>Extended Information</h2>
+<a href='https://docs.abapopenchecks.org/checks/53/'>https://docs.abapopenchecks.org/checks/53/</a><br><br><h2>Default Configuration</h2>
+<div id="defaultConfigEditor" style="width:700px;height:1672px;border:1px solid grey"></div>
+  <script src="/_monaco/vs/loader.js"></script>
+  <script src="/schema.js"></script>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foo.json");
+      var model = monaco.editor.createModel(`{
+  "exclude": [],
+  "severity": "Error",
+  "recommendations": [
+    {
+      "name": "SUBST_GET_FILE_LIST",
+      "replace": "see note 1686357"
+    },
+    {
+      "name": "ROUND",
+      "replace": "use built in function: round()"
+    },
+    {
+      "name": "SO_NEW_DOCUMENT_ATT_SEND_API1",
+      "replace": "use CL_BCS"
+    },
+    {
+      "name": "ECATT_CONV_XSTRING_TO_STRING",
+      "replace": "use CL_BINARY_CONVERT"
+    },
+    {
+      "name": "SCMS_STRING_TO_XSTRING",
+      "replace": "use CL_BINARY_CONVERT"
+    },
+    {
+      "name": "JOB_CREATE",
+      "replace": "use CL_BP_ABAP_JOB"
+    },
+    {
+      "name": "JOB_SUBMIT",
+      "replace": "use CL_BP_ABAP_JOB"
+    },
+    {
+      "name": "GUI_DOWNLOAD",
+      "replace": "use CL_GUI_FRONTEND_SERVICES"
+    },
+    {
+      "name": "GUI_UPLOAD",
+      "replace": "use CL_GUI_FRONTEND_SERVICES"
+    },
+    {
+      "name": "WS_FILENAME_GET",
+      "replace": "use CL_GUI_FRONTEND_SERVICES"
+    },
+    {
+      "name": "F4_FILENAME",
+      "replace": "use CL_GUI_FRONTEND_SERVICES"
+    },
+    {
+      "name": "SAPGUI_PROGRESS_INDICATOR",
+      "replace": "use CL_PROGRESS_INDICATOR"
+    },
+    {
+      "name": "GUID_CREATE",
+      "replace": "use CL_SYSTEM_UUID"
+    },
+    {
+      "name": "SSFC_BASE64_DECODE",
+      "replace": "use class CL_HTTP_UTILITY methods"
+    },
+    {
+      "name": "SSFC_BASE64_ENCODE",
+      "replace": "use class CL_HTTP_UTILITY methods"
+    },
+    {
+      "name": "SCMS_BASE64_DECODE_STR",
+      "replace": "use class CL_HTTP_UTILITY methods"
+    },
+    {
+      "name": "POPUP_TO_DECIDE",
+      "replace": "use POPUP_TO_CONFIRM"
+    },
+    {
+      "name": "REUSE_ALV_GRID_DISPLAY",
+      "replace": "use CL_SALV_TABLE=>FACTORY or CL_GUI_ALV_GRID"
+    },
+    {
+      "name": "CALCULATE_HASH_FOR_RAW",
+      "replace": "use CL_ABAP_HMAC"
+    },
+    {
+      "name": "FUNCTION_EXISTS",
+      "replace": "surround with try-catch CX_SY_DYN_ILLEGAL_METHOD instead"
+    }
+  ]
+}`, "json", modelUri);
+
+      const schema = abaplintSchema;
+      schema["$ref"] = "#/definitions/FunctionModuleRecommendationsConf",
+
+      monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+        validate: true,
+        schemas: [{
+          uri: "https://schema.abaplint.org/dummy.json",
+          fileMatch: [modelUri.toString()],
+          schema,
+        }],
+      });
+
+      var editor = monaco.editor.create(document.getElementById('defaultConfigEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+    });
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i></div>
+</body>
+</html>

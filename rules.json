@@ -295,6 +295,12 @@
     "tags": []
   },
   {
+    "key": "function_module_recommendations",
+    "title": "Function Module Recommendations",
+    "shortDescription": "Function Module Recommendations",
+    "tags": []
+  },
+  {
     "key": "functional_writing",
     "title": "Use functional writing",
     "shortDescription": "Detects usage of call method when functional style calls can be used.",
