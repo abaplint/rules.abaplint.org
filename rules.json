@@ -3,40 +3,50 @@
     "key": "7bit_ascii",
     "title": "Check for 7bit ascii",
     "shortDescription": "Only allow characters from the 7bit ASCII set.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "abapdoc",
     "title": "Check abapdoc",
     "shortDescription": "Various checks regarding abapdoc.\nBase rule checks for existence of abapdoc for public class methods and all interface methods.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "allowed_object_naming",
     "title": "Allowed object naming",
     "shortDescription": "Enforces basic name length and namespace restrictions, see note SAP 104010",
     "tags": [
-      "Naming"
+      "Naming",
+      "SingleFile"
     ]
   },
   {
     "key": "allowed_object_types",
     "title": "Check allowed object types",
     "shortDescription": "Restricts the set of allowed object types.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "ambiguous_statement",
     "title": "Check for ambigious statements",
     "shortDescription": "Checks for ambiguity between deleting or modifying from internal and database table\nAdd \"TABLE\" keyword or \"@\" for escaping SQL variables",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "avoid_use",
     "title": "Avoid use of certain statements",
     "shortDescription": "Detects usage of certain statements.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -45,41 +55,50 @@
     "shortDescription": "Check BEGIN OF and END OF names match",
     "tags": [
       "Syntax",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
     "key": "begin_single_include",
     "title": "BEGIN contains single INCLUDE",
     "shortDescription": "Finds TYPE BEGIN with just one INCLUDE TYPE, and DATA with single INCLUDE STRUCTURE",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "call_transaction_authority_check",
     "title": "Call Transaction Authority-Check",
     "shortDescription": "Checks that usages of CALL TRANSACTION contain an authority-check.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
     "key": "chain_mainly_declarations",
     "title": "Chain mainly declarations",
     "shortDescription": "Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "check_abstract",
     "title": "Check abstract methods and classes",
     "shortDescription": "Checks abstract methods and classes:\n- class defined as abstract and final,\n- non-abstract class contains abstract methods",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "check_comments",
     "title": "Check Comments",
     "shortDescription": "Various checks for comment usage.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -102,13 +121,17 @@
     "key": "check_no_handler_pragma",
     "title": "Check if NO_HANDLER can be removed",
     "shortDescription": "Checks NO_HANDLER pragmas that can be removed",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "check_subrc",
     "title": "Check sy-subrc",
     "shortDescription": "Check sy-subrc",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "check_syntax",
@@ -138,14 +161,17 @@
     "title": "Class attributes naming",
     "shortDescription": "Allows you to enforce a pattern, such as a prefix, for class variable names.",
     "tags": [
-      "Naming"
+      "Naming",
+      "SingleFile"
     ]
   },
   {
     "key": "cloud_types",
     "title": "Check cloud types",
     "shortDescription": "Checks that the package does not contain any object types unsupported in cloud ABAP.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "colon_missing_space",
@@ -153,7 +179,8 @@
     "shortDescription": "Checks for missing spaces after colons in chained statements.",
     "tags": [
       "Whitespace",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -162,7 +189,8 @@
     "shortDescription": "Detects usage of commented out code.",
     "tags": [
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -170,7 +198,8 @@
     "title": "Check constructor visibility is public",
     "shortDescription": "Constructor must be placed in the public section, even if the class is not CREATE PUBLIC.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -180,20 +209,25 @@
     "tags": [
       "Whitespace",
       "Quickfix",
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
     "key": "cyclomatic_complexity",
     "title": "Cyclomatic Complexity",
     "shortDescription": "Cyclomatic complexity, only reported for methods",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "definitions_top",
     "title": "Place definitions in top of routine",
     "shortDescription": "Checks that definitions are placed at the beginning of methods.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "description_empty",
@@ -207,7 +241,8 @@
     "shortDescription": "Checks that only a single space follows certain common statements.",
     "tags": [
       "Whitespace",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -226,7 +261,8 @@
     "shortDescription": "Checks that statements do not contain empty lines.",
     "tags": [
       "Quickfix",
-      "Whitespace"
+      "Whitespace",
+      "SingleFile"
     ]
   },
   {
@@ -234,7 +270,8 @@
     "title": "Remove emty statement",
     "shortDescription": "Checks for empty statements (an empty statement is a single dot)",
     "tags": [
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -242,7 +279,8 @@
     "title": "Find empty blocks",
     "shortDescription": "Checks that the code does not contain empty blocks.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -250,7 +288,8 @@
     "title": "Find EXIT or CHECK outside loops",
     "shortDescription": "Detects usages of EXIT or CHECK statements outside of loops.\nUse RETURN to leave procesing blocks instead.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -259,21 +298,25 @@
     "shortDescription": "Detects EXPORTING statements which can be omitted.",
     "tags": [
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
     "key": "forbidden_identifier",
     "title": "Forbidden Identifier",
     "shortDescription": "Forbid use of specified identifiers, list of regex.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "forbidden_pseudo_and_pragma",
     "title": "Forbidden pseudo comments and pragma",
     "shortDescription": "Checks for unwanted pseudo comments and pragma",
     "tags": [
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -286,19 +329,25 @@
     "key": "form_tables_obsolete",
     "title": "TABLES parameters are obsolete",
     "shortDescription": "Checks for TABLES parameters in forms.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "fully_type_constants",
     "title": "Fully type constants",
     "shortDescription": "Checks constants for full typing - no implicit typing allowed.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "function_module_recommendations",
     "title": "Function Module Recommendations",
     "shortDescription": "Function Module Recommendations",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "functional_writing",
@@ -306,7 +355,8 @@
     "shortDescription": "Detects usage of call method when functional style calls can be used.",
     "tags": [
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -321,13 +371,17 @@
     "key": "identical_conditions",
     "title": "Identical conditions",
     "shortDescription": "Find identical conditions in IF + CASE + WHILE etc\n\nPrerequsites: code is pretty printed with identical cAsE",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "identical_contents",
     "title": "Identical contents",
     "shortDescription": "Find identical contents in IFs\n\nPrerequsites: code is pretty printed with identical cAsE",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "identical_form_names",
@@ -340,7 +394,8 @@
     "title": "IF in IF",
     "shortDescription": "Detects nested ifs which can be refactored to a single condition using AND.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -357,7 +412,8 @@
     "shortDescription": "Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.",
     "tags": [
       "Whitespace",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -366,7 +422,8 @@
     "shortDescription": "Checks indentation",
     "tags": [
       "Whitespace",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -374,7 +431,8 @@
     "title": "Inline data, old versions",
     "shortDescription": "Checks for inline data declarations in older releases. Only active for versions less than v740sp02",
     "tags": [
-      "Syntax"
+      "Syntax",
+      "SingleFile"
     ]
   },
   {
@@ -383,7 +441,8 @@
     "shortDescription": "Keep single parameter calls on one line",
     "tags": [
       "Whitespace",
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -391,7 +450,8 @@
     "title": "Keyword case",
     "shortDescription": "Checks that keywords have the same case. Non-keywords must be lower case.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -401,7 +461,8 @@
     "tags": [
       "Whitespace",
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -409,7 +470,8 @@
     "title": "Makes sure line breaks are consistent in the ABAP code",
     "shortDescription": "Enforces LF as newlines in ABAP files\n\nabapGit does not work with CRLF",
     "tags": [
-      "Whitespace"
+      "Whitespace",
+      "SingleFile"
     ]
   },
   {
@@ -417,7 +479,8 @@
     "title": "Line length",
     "shortDescription": "Detects lines exceeding the provided maximum length.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -426,7 +489,8 @@
     "shortDescription": "Detects lines containing only punctuation.",
     "tags": [
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -434,21 +498,25 @@
     "title": "Local class naming conventions",
     "shortDescription": "Allows you to enforce a pattern, such as a prefix, for local class names.",
     "tags": [
-      "Naming"
+      "Naming",
+      "SingleFile"
     ]
   },
   {
     "key": "local_testclass_location",
     "title": "Local testclass location",
     "shortDescription": "Checks that local test classes are placed in the test include.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "local_variable_names",
     "title": "Local variable naming conventions",
     "shortDescription": "\nAllows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.\nRegexes are case-insensitive.",
     "tags": [
-      "Naming"
+      "Naming",
+      "SingleFile"
     ]
   },
   {
@@ -461,7 +529,9 @@
     "key": "many_parenthesis",
     "title": "Too many parenthesis",
     "shortDescription": "Searches for expressions where extra parenthesis can safely be removed",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "max_one_statement",
@@ -469,7 +539,8 @@
     "shortDescription": "Checks that each line contains only a single statement.",
     "tags": [
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -483,7 +554,8 @@
     "title": "Method Length",
     "shortDescription": "Checks relating to method length.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -491,7 +563,8 @@
     "title": "Method name overwrites builtin function",
     "shortDescription": "Checks Method names that overwrite builtin SAP functions",
     "tags": [
-      "Naming"
+      "Naming",
+      "SingleFile"
     ]
   },
   {
@@ -499,7 +572,8 @@
     "title": "Method parameter naming conventions",
     "shortDescription": "Allows you to enforce a pattern, such as a prefix, for method parameter names",
     "tags": [
-      "Naming"
+      "Naming",
+      "SingleFile"
     ]
   },
   {
@@ -507,7 +581,8 @@
     "title": "Mix of returning and exporting",
     "shortDescription": "Checks that methods don't have a mixture of returning and exporting/changing parameters",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -520,14 +595,17 @@
     "key": "names_no_dash",
     "title": "No dashes in FORM and DATA names",
     "shortDescription": "Checks for a \"-\" in FORM and DATA names",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "nesting",
     "title": "Check nesting depth",
     "shortDescription": "Checks for methods exceeding a maximum nesting depth",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -535,7 +613,8 @@
     "title": "New line between methods",
     "shortDescription": "Checks for newlines between method implementations.",
     "tags": [
-      "Whitespace"
+      "Whitespace",
+      "SingleFile"
     ]
   },
   {
@@ -543,7 +622,8 @@
     "title": "No public attributes",
     "shortDescription": "Checks that classes and interfaces don't contain any public attributes.\nExceptions are excluded from this rule.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -558,7 +638,9 @@
     "key": "obsolete_statement",
     "title": "Obsolete statements",
     "shortDescription": "Checks for usages of certain obsolete statements",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "omit_parameter_name",
@@ -569,11 +651,21 @@
     ]
   },
   {
+    "key": "omit_receiving",
+    "title": "Omit RECEIVING",
+    "shortDescription": "Omit RECEIVING",
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
     "key": "parser_error",
     "title": "Parser error",
     "shortDescription": "Checks for syntax not recognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
     "tags": [
-      "Syntax"
+      "Syntax",
+      "SingleFile"
     ]
   },
   {
@@ -582,7 +674,8 @@
     "shortDescription": "In special cases the ABAP language allows for not having spaces before or after string literals.\nThis rule makes sure the spaces are consistently required across the language.",
     "tags": [
       "Syntax",
-      "Whitespace"
+      "Whitespace",
+      "SingleFile"
     ]
   },
   {
@@ -601,7 +694,8 @@
     "title": "Prefer IS NOT to NOT IS",
     "shortDescription": "Prefer IS NOT to NOT IS",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -609,7 +703,8 @@
     "title": "Prefer RETURNING to EXPORTING",
     "shortDescription": "Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -619,14 +714,17 @@
     "tags": [
       "Styleguide",
       "Upport",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
     "key": "preferred_compare_operator",
     "title": "Preferred compare operator",
     "shortDescription": "Configure undesired operator variants",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "prefix_is_current_class",
@@ -634,14 +732,17 @@
     "shortDescription": "Reports errors if the current class or interface references itself with \"current_class=>\"",
     "tags": [
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
     "key": "reduce_string_templates",
     "title": "Reduce string templates",
     "shortDescription": "Checks for string templates",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "release_idoc",
@@ -659,14 +760,17 @@
     "key": "rfc_error_handling",
     "title": "RFC error handling",
     "shortDescription": "Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "selection_screen_naming",
     "title": "Selection screen naming conventions",
     "shortDescription": "Allows you to enforce a pattern, such as a prefix, for selection-screen variable names.",
     "tags": [
-      "Naming"
+      "Naming",
+      "SingleFile"
     ]
   },
   {
@@ -675,14 +779,17 @@
     "shortDescription": "Checks that code does not contain more than the configured number of blank lines in a row.",
     "tags": [
       "Whitespace",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
     "key": "short_case",
     "title": "Short CASE",
     "shortDescription": "Checks for CASE statements which have fewer than the specified number of branches",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "sicf_consistency",
@@ -695,7 +802,8 @@
     "title": "Space before colon",
     "shortDescription": "Checks that there are no spaces in front of colons in chained statements.",
     "tags": [
-      "Whitespace"
+      "Whitespace",
+      "SingleFile"
     ]
   },
   {
@@ -705,7 +813,8 @@
     "tags": [
       "Whitespace",
       "Quickfix",
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -723,7 +832,8 @@
     "shortDescription": "Checks that statements start at tabstops.",
     "tags": [
       "Whitespace",
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -744,20 +854,25 @@
     "key": "try_without_catch",
     "title": "TRY without CATCH",
     "shortDescription": "Checks for TRY blocks without a CATCH and CLEANUP block",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "type_form_parameters",
     "title": "Type FORM parameters",
     "shortDescription": "Checks for untyped FORM parameters",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "types_naming",
     "title": "TYPES naming conventions",
     "shortDescription": "Allows you to enforce a pattern for TYPES definitions",
     "tags": [
-      "Naming"
+      "Naming",
+      "SingleFile"
     ]
   },
   {
@@ -773,7 +888,9 @@
     "key": "unreachable_code",
     "title": "Unreachable code",
     "shortDescription": "Checks for unreachable code.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "unused_methods",
@@ -807,7 +924,8 @@
     "tags": [
       "Upport",
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
@@ -816,7 +934,8 @@
     "shortDescription": "Use line_exists, from 740sp02 and up",
     "tags": [
       "Upport",
-      "Styleguide"
+      "Styleguide",
+      "SingleFile"
     ]
   },
   {
@@ -826,14 +945,17 @@
     "tags": [
       "Upport",
       "Styleguide",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
     "key": "when_others_last",
     "title": "WHEN OTHERS last",
     "shortDescription": "Checks that WHEN OTHERS is placed the last within a CASE statement.",
-    "tags": []
+    "tags": [
+      "SingleFile"
+    ]
   },
   {
     "key": "whitespace_end",
@@ -841,7 +963,8 @@
     "shortDescription": "Checks for redundant whitespace at the end of each line.",
     "tags": [
       "Whitespace",
-      "Quickfix"
+      "Quickfix",
+      "SingleFile"
     ]
   },
   {
