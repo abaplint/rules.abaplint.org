@@ -45,15 +45,17 @@ Escape SQL host variables, from 740sp05<br><br><h2>Extended Information</h2>
       });
     });
   </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
-<div id="examplesEditor" style="width:700px;height:133px;border:1px solid grey"></div>
+<div id="examplesEditor" style="width:700px;height:171px;border:1px solid grey"></div>
   <script>
     require.config({ paths: { 'vs': '/_monaco/vs' }});
     require(['vs/editor/editor.main'], function() {
       var modelUri = monaco.Uri.parse("a://b/foobar.abap");
       var model = monaco.editor.createModel(`* Bad example
+
 SELECT * FROM tab INTO TABLE res WHERE field = val.
 
 * Good example
+
 SELECT * FROM tab INTO TABLE @res WHERE field = @val.`, "abap", modelUri);
 
       var editor = monaco.editor.create(document.getElementById('examplesEditor'), {

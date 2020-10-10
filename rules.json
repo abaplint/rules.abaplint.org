@@ -845,6 +845,14 @@
     ]
   },
   {
+    "key": "sy_modification",
+    "title": "Modification of SY fields",
+    "shortDescription": "Finds modification of sy fields",
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
     "key": "tabl_enhancement_category",
     "title": "TABL enhancement category must be set",
     "shortDescription": "Checks that tables do not have the enhancement category 'not classified'",

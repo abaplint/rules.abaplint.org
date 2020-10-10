@@ -44,6 +44,38 @@ Omit RECEIVING<br><br><h2>Extended Information</h2>
         theme: "vs-dark"
       });
     });
-  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i></div>
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
+<div id="examplesEditor" style="width:700px;height:380px;border:1px solid grey"></div>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foobar.abap");
+      var model = monaco.editor.createModel(`* Bad example
+
+      upload_pack(
+        EXPORTING
+          io_client       = lo_client
+          iv_url          = iv_url
+          iv_deepen_level = iv_deepen_level
+          it_hashes       = lt_hashes
+        RECEIVING
+          rt_objects      = et_objects ).
+
+* Good example
+
+      et_objects = upload_pack(
+        io_client       = lo_client
+        iv_url          = iv_url
+        iv_deepen_level = iv_deepen_level
+        it_hashes       = lt_hashes ).`, "abap", modelUri);
+
+      var editor = monaco.editor.create(document.getElementById('examplesEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+    });
+  </script><br><br></div>
 </body>
 </html>
