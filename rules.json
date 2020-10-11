@@ -378,7 +378,7 @@
   {
     "key": "identical_contents",
     "title": "Identical contents",
-    "shortDescription": "Find identical contents in IFs\n\nPrerequsites: code is pretty printed with identical cAsE",
+    "shortDescription": "Find identical contents in IFs\n\nPrerequsites: code is pretty printed with identical cAsE\n\nChained statments are ignored",
     "tags": [
       "SingleFile"
     ]
