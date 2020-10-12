@@ -978,7 +978,10 @@
   {
     "key": "xml_consistency",
     "title": "XML consistency",
-    "shortDescription": "Checks the consistency of main XML files, eg. naming",
-    "tags": []
+    "shortDescription": "Checks the consistency of main XML files, eg. naming for CLAS and INTF objects",
+    "tags": [
+      "Naming",
+      "Syntax"
+    ]
   }
 ]
