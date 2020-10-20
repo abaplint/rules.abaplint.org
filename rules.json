@@ -95,7 +95,7 @@
   {
     "key": "check_comments",
     "title": "Check Comments",
-    "shortDescription": "Various checks for comment usage.",
+    "shortDescription": "\nVarious checks for comment usage.\n\n* End of line comments. Comments starting with \"#EC\" or \"##\" are ignored",
     "tags": [
       "Styleguide",
       "SingleFile"
