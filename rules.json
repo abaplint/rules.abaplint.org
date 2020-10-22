@@ -451,7 +451,8 @@
     "shortDescription": "Checks that keywords have the same case. Non-keywords must be lower case.",
     "tags": [
       "Styleguide",
-      "SingleFile"
+      "SingleFile",
+      "Quickfix"
     ]
   },
   {
