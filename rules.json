@@ -226,7 +226,8 @@
     "title": "Place definitions in top of routine",
     "shortDescription": "Checks that definitions are placed at the beginning of methods.",
     "tags": [
-      "SingleFile"
+      "SingleFile",
+      "Quickfix"
     ]
   },
   {
