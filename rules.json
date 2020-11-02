@@ -662,6 +662,15 @@
     ]
   },
   {
+    "key": "parser_702_chaining",
+    "title": "Parser Error, bad chanining on 702",
+    "shortDescription": "ABAP on 702 does not allow for method chaining with IMPORTING/EXPORTING/CHANGING keywords,\nthis rule finds these and reports errors.\nOnly active on target version 702 and below.",
+    "tags": [
+      "Syntax",
+      "SingleFile"
+    ]
+  },
+  {
     "key": "parser_error",
     "title": "Parser error",
     "shortDescription": "Checks for syntax not recognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
