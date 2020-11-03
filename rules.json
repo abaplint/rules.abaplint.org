@@ -915,9 +915,7 @@
     "key": "unused_methods",
     "title": "Unused methods",
     "shortDescription": "Checks for unused methods",
-    "tags": [
-      "Experimental"
-    ]
+    "tags": []
   },
   {
     "key": "unused_types",
