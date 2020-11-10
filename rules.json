@@ -437,6 +437,12 @@
     ]
   },
   {
+    "key": "intf_referencing_clas",
+    "title": "INTF referencing CLAS",
+    "shortDescription": "Interface contains references to class",
+    "tags": []
+  },
+  {
     "key": "keep_single_parameter_on_one_line",
     "title": "Keep single parameters on one line",
     "shortDescription": "Keep single parameter calls on one line",
