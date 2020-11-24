@@ -558,6 +558,15 @@
     "tags": []
   },
   {
+    "key": "method_implemented_twice",
+    "title": "Method implemented twice",
+    "shortDescription": "Reports an error if a method is implemented or defined twice",
+    "tags": [
+      "SingleFile",
+      "Syntax"
+    ]
+  },
+  {
     "key": "method_length",
     "title": "Method Length",
     "shortDescription": "Checks relating to method length.",
