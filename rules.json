@@ -910,6 +910,14 @@
     ]
   },
   {
+    "key": "uncaught_exception",
+    "title": "Uncaught Exception",
+    "shortDescription": "Uncaught Exception\n\n      Does not report any issues if the code contains syntax errors",
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
     "key": "unknown_types",
     "title": "Unknown types",
     "shortDescription": "Enables check for unknown data types, respects errorNamespace",
