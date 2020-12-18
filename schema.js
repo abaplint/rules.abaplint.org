@@ -2558,7 +2558,6 @@ const abaplintSchema = {
         }
       },
       "required": [
-        "version",
         "errorNamespace"
       ],
       "type": "object"
