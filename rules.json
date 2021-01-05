@@ -749,7 +749,8 @@
     "title": "Preferred compare operator",
     "shortDescription": "Configure undesired operator variants",
     "tags": [
-      "SingleFile"
+      "SingleFile",
+      "Quickfix"
     ]
   },
   {
