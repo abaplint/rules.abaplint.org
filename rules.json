@@ -970,6 +970,15 @@
     ]
   },
   {
+    "key": "use_class_based_exceptions",
+    "title": "Use class based exceptions",
+    "shortDescription": "Use class based exceptions, checks interface and class definitions",
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
     "key": "use_line_exists",
     "title": "Use line_exists",
     "shortDescription": "Use line_exists, from 740sp02 and up",
