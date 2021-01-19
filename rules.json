@@ -726,6 +726,15 @@
     ]
   },
   {
+    "key": "prefer_raise_exception_new",
+    "title": "Prefer RAISE EXCEPTION NEW to RAISE EXCEPTION TYPE",
+    "shortDescription": "Prefer RAISE EXCEPTION NEW to RAISE EXCEPTION TYPE",
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
     "key": "prefer_returning_to_exporting",
     "title": "Prefer RETURNING to EXPORTING",
     "shortDescription": "Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.",
