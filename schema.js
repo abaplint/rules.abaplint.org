@@ -2697,6 +2697,7 @@ const abaplintSchema = {
       "additionalProperties": false,
       "properties": {
         "alignTryCatch": {
+          "description": "Align TRY CATCH, TRY and CATCH should have the same indentation",
           "type": "boolean"
         },
         "exclude": {
