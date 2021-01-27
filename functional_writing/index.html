@@ -46,16 +46,32 @@ Detects usage of call method when functional style calls can be used.<br><br><h2
       });
     });
   </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
-<div id="examplesEditor" style="width:700px;height:133px;border:1px solid grey"></div>
+<div id="examplesEditor" style="width:700px;height:437px;border:1px solid grey"></div>
   <script>
     require.config({ paths: { 'vs': '/_monaco/vs' }});
     require(['vs/editor/editor.main'], function() {
       var modelUri = monaco.Uri.parse("a://b/foobar.abap");
       var model = monaco.editor.createModel(`* Bad example
 CALL METHOD zcl_class=>method( ).
+CALL METHOD cl_abap_typedescr=>describe_by_name
+  EXPORTING
+    p_name         = 'NAME'
+  RECEIVING
+    p_descr_ref    = lr_typedescr
+  EXCEPTIONS
+    type_not_found = 1
+    OTHERS         = 2.
 
 * Good example
-zcl_class=>method( ).`, "abap", modelUri);
+zcl_class=>method( ).
+cl_abap_typedescr=>describe_by_name(
+  EXPORTING
+    p_name         = 'NAME'
+  RECEIVING
+    p_descr_ref    = lr_typedescr
+  EXCEPTIONS
+    type_not_found = 1
+    OTHERS         = 2 ).`, "abap", modelUri);
 
       var editor = monaco.editor.create(document.getElementById('examplesEditor'), {
         model: model,
