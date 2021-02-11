@@ -46,13 +46,14 @@
     "shortDescription": "Detects usage of certain statements.",
     "tags": [
       "Styleguide",
-      "SingleFile"
+      "SingleFile",
+      "Security"
     ]
   },
   {
     "key": "begin_end_names",
     "title": "Check BEGIN END names",
-    "shortDescription": "Check BEGIN OF and END OF names match",
+    "shortDescription": "Check BEGIN OF and END OF names match, plus there must be statements between BEGIN and END",
     "tags": [
       "Syntax",
       "Quickfix",
@@ -73,7 +74,8 @@
     "shortDescription": "Checks that usages of CALL TRANSACTION contain an authority-check.",
     "tags": [
       "Styleguide",
-      "SingleFile"
+      "SingleFile",
+      "Security"
     ]
   },
   {
@@ -664,7 +666,8 @@
     "title": "Omit parameter name",
     "shortDescription": "Omit the parameter name in single parameter calls",
     "tags": [
-      "Styleguide"
+      "Styleguide",
+      "Quickfix"
     ]
   },
   {

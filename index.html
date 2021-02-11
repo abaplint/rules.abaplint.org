@@ -23,7 +23,10 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 
 <div class="chip" title="Experimental">
   <div class="chip-head">5</div>
-  <div class="chip-content"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></div>
+  <div class="chip-content"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>experimental</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+</svg></div>
 </div>
 
 <div class="chip" title="Upport">
@@ -47,13 +50,25 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Quickfix">
-  <div class="chip-head">30</div>
+  <div class="chip-head">31</div>
   <div class="chip-content"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
 </div>
 
 <div class="chip" title="Syntax">
   <div class="chip-head">16</div>
-  <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+  <div class="chip-content"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg></div>
+</div>
+
+<div class="chip" title="Security">
+  <div class="chip-head">2</div>
+  <div class="chip-content"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>security</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+</svg></div>
 </div>
 
 <div class="chip" title="Styleguide">
@@ -77,13 +92,24 @@ Base rule checks for existence of abapdoc for public class methods and all inter
 <div id="rule-ambiguous_statement"><a href='./ambiguous_statement/'><tt>ambiguous_statement</tt> - Check for ambigious statements</a><div class="hidden">SingleFile</div><br>Checks for ambiguity between deleting or modifying from internal and database table
 Add "TABLE" keyword or "@" for escaping SQL variables<br><br></div>
 
-<div id="rule-avoid_use"><a href='./avoid_use/'><tt>avoid_use</tt> - Avoid use of certain statements</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Detects usage of certain statements.<br><br></div>
+<div id="rule-avoid_use"><a href='./avoid_use/'><tt>avoid_use</tt> - Avoid use of certain statements</a><div class="hidden">Styleguide,SingleFile,Security</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>security</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+</svg><br>Detects usage of certain statements.<br><br></div>
 
-<div id="rule-begin_end_names"><a href='./begin_end_names/'><tt>begin_end_names</tt> - Check BEGIN END names</a><div class="hidden">Syntax,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Check BEGIN OF and END OF names match<br><br></div>
+<div id="rule-begin_end_names"><a href='./begin_end_names/'><tt>begin_end_names</tt> - Check BEGIN END names</a><div class="hidden">Syntax,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Check BEGIN OF and END OF names match, plus there must be statements between BEGIN and END<br><br></div>
 
 <div id="rule-begin_single_include"><a href='./begin_single_include/'><tt>begin_single_include</tt> - BEGIN contains single INCLUDE</a><div class="hidden">SingleFile</div><br>Finds TYPE BEGIN with just one INCLUDE TYPE, and DATA with single INCLUDE STRUCTURE<br><br></div>
 
-<div id="rule-call_transaction_authority_check"><a href='./call_transaction_authority_check/'><tt>call_transaction_authority_check</tt> - Call Transaction Authority-Check</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks that usages of CALL TRANSACTION contain an authority-check.<br><br></div>
+<div id="rule-call_transaction_authority_check"><a href='./call_transaction_authority_check/'><tt>call_transaction_authority_check</tt> - Call Transaction Authority-Check</a><div class="hidden">Styleguide,SingleFile,Security</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>security</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+</svg><br>Checks that usages of CALL TRANSACTION contain an authority-check.<br><br></div>
 
 <div id="rule-chain_mainly_declarations"><a href='./chain_mainly_declarations/'><tt>chain_mainly_declarations</tt> - Chain mainly declarations</a><div class="hidden">SingleFile</div><br>Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.<br><br></div>
 
@@ -96,19 +122,34 @@ Various checks for comment usage.
 
 * End of line comments. Comments starting with "#EC" or "##" are ignored<br><br></div>
 
-<div id="rule-check_ddic"><a href='./check_ddic/'><tt>check_ddic</tt> - Check DDIC</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in "errorNamespace" <br><br></div>
+<div id="rule-check_ddic"><a href='./check_ddic/'><tt>check_ddic</tt> - Check DDIC</a><div class="hidden">Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in "errorNamespace" <br><br></div>
 
-<div id="rule-check_include"><a href='./check_include/'><tt>check_include</tt> - Check INCLUDEs</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks INCLUDE statements<br><br></div>
+<div id="rule-check_include"><a href='./check_include/'><tt>check_include</tt> - Check INCLUDEs</a><div class="hidden">Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks INCLUDE statements<br><br></div>
 
 <div id="rule-check_no_handler_pragma"><a href='./check_no_handler_pragma/'><tt>check_no_handler_pragma</tt> - Check if NO_HANDLER can be removed</a><div class="hidden">SingleFile</div><br>Checks NO_HANDLER pragmas that can be removed<br><br></div>
 
 <div id="rule-check_subrc"><a href='./check_subrc/'><tt>check_subrc</tt> - Check sy-subrc</a><div class="hidden">SingleFile</div><br>Check sy-subrc<br><br></div>
 
-<div id="rule-check_syntax"><a href='./check_syntax/'><tt>check_syntax</tt> - Check syntax</a><div class="hidden">Experimental,Syntax</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Enables syntax check and variable resolution<br><br></div>
+<div id="rule-check_syntax"><a href='./check_syntax/'><tt>check_syntax</tt> - Check syntax</a><div class="hidden">Experimental,Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>experimental</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+</svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Enables syntax check and variable resolution<br><br></div>
 
 <div id="rule-check_text_elements"><a href='./check_text_elements/'><tt>check_text_elements</tt> - Check text elements</a><div class="hidden"></div><br>Check text elements exists or matches code<br><br></div>
 
-<div id="rule-check_transformation_exists"><a href='./check_transformation_exists/'><tt>check_transformation_exists</tt> - Check transformation exists</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks that used XSLT transformations exist.<br><br></div>
+<div id="rule-check_transformation_exists"><a href='./check_transformation_exists/'><tt>check_transformation_exists</tt> - Check transformation exists</a><div class="hidden">Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks that used XSLT transformations exist.<br><br></div>
 
 <div id="rule-class_attribute_names"><a href='./class_attribute_names/'><tt>class_attribute_names</tt> - Class attributes naming</a><div class="hidden">Naming,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><br>Allows you to enforce a pattern, such as a prefix, for class variable names.<br><br></div>
 
@@ -130,7 +171,10 @@ Various checks for comment usage.
 
 <div id="rule-double_space"><a href='./double_space/'><tt>double_space</tt> - Double space</a><div class="hidden">Whitespace,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg><br>Checks that only a single space follows certain common statements.<br><br></div>
 
-<div id="rule-downport"><a href='./downport/'><tt>downport</tt> - Downport statement</a><div class="hidden">Experimental,Downport,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>downport</title><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg><br>Experimental downport functionality<br><br></div>
+<div id="rule-downport"><a href='./downport/'><tt>downport</tt> - Downport statement</a><div class="hidden">Experimental,Downport,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>experimental</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+</svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>downport</title><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg><br>Experimental downport functionality<br><br></div>
 
 <div id="rule-empty_line_in_statement"><a href='./empty_line_in_statement/'><tt>empty_line_in_statement</tt> - Find empty lines in statements</a><div class="hidden">Quickfix,Whitespace,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg><br>Checks that statements do not contain empty lines.<br><br></div>
 
@@ -157,7 +201,10 @@ Use RETURN to leave procesing blocks instead.<br><br></div>
 
 <div id="rule-functional_writing"><a href='./functional_writing/'><tt>functional_writing</tt> - Use functional writing</a><div class="hidden">Styleguide,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Detects usage of call method when functional style calls can be used.<br><br></div>
 
-<div id="rule-global_class"><a href='./global_class/'><tt>global_class</tt> - Global class checks</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks related to global classes.
+<div id="rule-global_class"><a href='./global_class/'><tt>global_class</tt> - Global class checks</a><div class="hidden">Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks related to global classes.
 * global classes must be in own files
 * file names must match class name
 * global classes must be global definitions<br><br></div>
@@ -176,13 +223,19 @@ Chained statments are ignored<br><br></div>
 
 <div id="rule-if_in_if"><a href='./if_in_if/'><tt>if_in_if</tt> - IF in IF</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Detects nested ifs which can be refactored to a single condition using AND.<br><br></div>
 
-<div id="rule-implement_methods"><a href='./implement_methods/'><tt>implement_methods</tt> - Implement methods</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks for abstract methods and methods from interfaces which need implementing.<br><br></div>
+<div id="rule-implement_methods"><a href='./implement_methods/'><tt>implement_methods</tt> - Implement methods</a><div class="hidden">Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks for abstract methods and methods from interfaces which need implementing.<br><br></div>
 
 <div id="rule-in_statement_indentation"><a href='./in_statement_indentation/'><tt>in_statement_indentation</tt> - In-statement indentation</a><div class="hidden">Whitespace,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg><br>Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.<br><br></div>
 
 <div id="rule-indentation"><a href='./indentation/'><tt>indentation</tt> - Indentation</a><div class="hidden">Whitespace,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg><br>Checks indentation<br><br></div>
 
-<div id="rule-inline_data_old_versions"><a href='./inline_data_old_versions/'><tt>inline_data_old_versions</tt> - Inline data, old versions</a><div class="hidden">Syntax,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks for inline data declarations in older releases. Only active for versions less than v740sp02<br><br></div>
+<div id="rule-inline_data_old_versions"><a href='./inline_data_old_versions/'><tt>inline_data_old_versions</tt> - Inline data, old versions</a><div class="hidden">Syntax,SingleFile</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks for inline data declarations in older releases. Only active for versions less than v740sp02<br><br></div>
 
 <div id="rule-intf_referencing_clas"><a href='./intf_referencing_clas/'><tt>intf_referencing_clas</tt> - INTF referencing CLAS</a><div class="hidden"></div><br>Interface contains references to class<br><br></div>
 
@@ -216,7 +269,10 @@ Regexes are case-insensitive.<br><br></div>
 
 <div id="rule-message_exists"><a href='./message_exists/'><tt>message_exists</tt> - Check MESSAGE exists</a><div class="hidden"></div><br>In message statements, check that the message class + id exist<br><br></div>
 
-<div id="rule-method_implemented_twice"><a href='./method_implemented_twice/'><tt>method_implemented_twice</tt> - Method implemented twice</a><div class="hidden">SingleFile,Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Reports an error if a method is implemented or defined twice<br><br></div>
+<div id="rule-method_implemented_twice"><a href='./method_implemented_twice/'><tt>method_implemented_twice</tt> - Method implemented twice</a><div class="hidden">SingleFile,Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Reports an error if a method is implemented or defined twice<br><br></div>
 
 <div id="rule-method_length"><a href='./method_length/'><tt>method_length</tt> - Method Length</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks relating to method length.<br><br></div>
 
@@ -241,22 +297,34 @@ Exceptions are excluded from this rule.<br><br></div>
 
 <div id="rule-obsolete_statement"><a href='./obsolete_statement/'><tt>obsolete_statement</tt> - Obsolete statements</a><div class="hidden">SingleFile</div><br>Checks for usages of certain obsolete statements<br><br></div>
 
-<div id="rule-omit_parameter_name"><a href='./omit_parameter_name/'><tt>omit_parameter_name</tt> - Omit parameter name</a><div class="hidden">Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Omit the parameter name in single parameter calls<br><br></div>
+<div id="rule-omit_parameter_name"><a href='./omit_parameter_name/'><tt>omit_parameter_name</tt> - Omit parameter name</a><div class="hidden">Styleguide,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Omit the parameter name in single parameter calls<br><br></div>
 
 <div id="rule-omit_receiving"><a href='./omit_receiving/'><tt>omit_receiving</tt> - Omit RECEIVING</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Omit RECEIVING<br><br></div>
 
-<div id="rule-parser_702_chaining"><a href='./parser_702_chaining/'><tt>parser_702_chaining</tt> - Parser Error, bad chanining on 702</a><div class="hidden">Syntax,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>ABAP on 702 does not allow for method chaining with IMPORTING/EXPORTING/CHANGING keywords,
+<div id="rule-parser_702_chaining"><a href='./parser_702_chaining/'><tt>parser_702_chaining</tt> - Parser Error, bad chanining on 702</a><div class="hidden">Syntax,SingleFile</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>ABAP on 702 does not allow for method chaining with IMPORTING/EXPORTING/CHANGING keywords,
 this rule finds these and reports errors.
 Only active on target version 702 and below.<br><br></div>
 
-<div id="rule-parser_error"><a href='./parser_error/'><tt>parser_error</tt> - Parser error</a><div class="hidden">Syntax,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks for syntax not recognized by abaplint.
+<div id="rule-parser_error"><a href='./parser_error/'><tt>parser_error</tt> - Parser error</a><div class="hidden">Syntax,SingleFile</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks for syntax not recognized by abaplint.
 
 See recognized syntax at https://syntax.abaplint.org<br><br></div>
 
-<div id="rule-parser_missing_space"><a href='./parser_missing_space/'><tt>parser_missing_space</tt> - Parser Error, missing space</a><div class="hidden">Syntax,Whitespace,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>In special cases the ABAP language allows for not having spaces before or after string literals.
+<div id="rule-parser_missing_space"><a href='./parser_missing_space/'><tt>parser_missing_space</tt> - Parser Error, missing space</a><div class="hidden">Syntax,Whitespace,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>In special cases the ABAP language allows for not having spaces before or after string literals.
 This rule makes sure the spaces are consistently required across the language.<br><br></div>
 
-<div id="rule-prefer_inline"><a href='./prefer_inline/'><tt>prefer_inline</tt> - Prefer Inline Declarations</a><div class="hidden">Styleguide,Upport,Experimental,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Prefer inline to up-front declarations.<br><br></div>
+<div id="rule-prefer_inline"><a href='./prefer_inline/'><tt>prefer_inline</tt> - Prefer Inline Declarations</a><div class="hidden">Styleguide,Upport,Experimental,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>experimental</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+</svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Prefer inline to up-front declarations.<br><br></div>
 
 <div id="rule-prefer_is_not"><a href='./prefer_is_not/'><tt>prefer_is_not</tt> - Prefer IS NOT to NOT IS</a><div class="hidden">Styleguide,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Prefer IS NOT to NOT IS<br><br></div>
 
@@ -304,7 +372,10 @@ Consider using ABAP Doc for documentation.
 
 <div id="rule-start_at_tab"><a href='./start_at_tab/'><tt>start_at_tab</tt> - Start at tab</a><div class="hidden">Whitespace,Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks that statements start at tabstops.<br><br></div>
 
-<div id="rule-superclass_final"><a href='./superclass_final/'><tt>superclass_final</tt> - Super class final</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks that classes which are inherited from are not declared as FINAL.<br><br></div>
+<div id="rule-superclass_final"><a href='./superclass_final/'><tt>superclass_final</tt> - Super class final</a><div class="hidden">Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks that classes which are inherited from are not declared as FINAL.<br><br></div>
 
 <div id="rule-sy_modification"><a href='./sy_modification/'><tt>sy_modification</tt> - Modification of SY fields</a><div class="hidden">SingleFile</div><br>Finds modification of sy fields<br><br></div>
 
@@ -316,11 +387,20 @@ Consider using ABAP Doc for documentation.
 
 <div id="rule-types_naming"><a href='./types_naming/'><tt>types_naming</tt> - TYPES naming conventions</a><div class="hidden">Naming,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><br>Allows you to enforce a pattern for TYPES definitions<br><br></div>
 
-<div id="rule-uncaught_exception"><a href='./uncaught_exception/'><tt>uncaught_exception</tt> - Uncaught Exception</a><div class="hidden">Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Uncaught Exception
+<div id="rule-uncaught_exception"><a href='./uncaught_exception/'><tt>uncaught_exception</tt> - Uncaught Exception</a><div class="hidden">Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Uncaught Exception
 
       Does not report any issues if the code contains syntax errors<br><br></div>
 
-<div id="rule-unknown_types"><a href='./unknown_types/'><tt>unknown_types</tt> - Unknown types</a><div class="hidden">Experimental,Syntax</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Enables check for unknown data types, respects errorNamespace<br><br></div>
+<div id="rule-unknown_types"><a href='./unknown_types/'><tt>unknown_types</tt> - Unknown types</a><div class="hidden">Experimental,Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>experimental</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+</svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Enables check for unknown data types, respects errorNamespace<br><br></div>
 
 <div id="rule-unreachable_code"><a href='./unreachable_code/'><tt>unreachable_code</tt> - Unreachable code</a><div class="hidden">SingleFile</div><br>Checks for unreachable code.<br><br></div>
 
@@ -328,7 +408,10 @@ Consider using ABAP Doc for documentation.
 
 <div id="rule-unused_types"><a href='./unused_types/'><tt>unused_types</tt> - Unused types</a><div class="hidden">Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Checks for unused TYPE definitions<br><br></div>
 
-<div id="rule-unused_variables"><a href='./unused_variables/'><tt>unused_variables</tt> - Unused variables</a><div class="hidden">Experimental,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>experimental</title><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg><br>Checks for unused variables and constants<br><br></div>
+<div id="rule-unused_variables"><a href='./unused_variables/'><tt>unused_variables</tt> - Unused variables</a><div class="hidden">Experimental,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>experimental</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+</svg><br>Checks for unused variables and constants<br><br></div>
 
 <div id="rule-use_bool_expression"><a href='./use_bool_expression/'><tt>use_bool_expression</tt> - Use boolean expression</a><div class="hidden">Upport,Styleguide,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>upport</title><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Use boolean expression, xsdbool from 740sp08 and up, boolc from 702 and up<br><br></div>
 
@@ -342,7 +425,10 @@ Consider using ABAP Doc for documentation.
 
 <div id="rule-whitespace_end"><a href='./whitespace_end/'><tt>whitespace_end</tt> - Whitespace at end of line</a><div class="hidden">Whitespace,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg><br>Checks for redundant whitespace at the end of each line.<br><br></div>
 
-<div id="rule-xml_consistency"><a href='./xml_consistency/'><tt>xml_consistency</tt> - XML consistency</a><div class="hidden">Naming,Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>syntax</title><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><br>Checks the consistency of main XML files, eg. naming for CLAS and INTF objects<br><br></div>
+<div id="rule-xml_consistency"><a href='./xml_consistency/'><tt>xml_consistency</tt> - XML consistency</a><div class="hidden">Naming,Syntax</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Checks the consistency of main XML files, eg. naming for CLAS and INTF objects<br><br></div>
 </div>
 <script src="/index.js"></script></div>
 </body>
