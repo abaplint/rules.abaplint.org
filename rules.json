@@ -140,7 +140,6 @@
     "title": "Check syntax",
     "shortDescription": "Enables syntax check and variable resolution",
     "tags": [
-      "Experimental",
       "Syntax"
     ]
   },
@@ -936,7 +935,6 @@
     "title": "Unknown types",
     "shortDescription": "Enables check for unknown data types, respects errorNamespace",
     "tags": [
-      "Experimental",
       "Syntax"
     ]
   },
