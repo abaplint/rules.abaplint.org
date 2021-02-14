@@ -45,7 +45,7 @@ Use boolean expression, xsdbool from 740sp08 and up, boolc from 702 and up<br><b
       });
     });
   </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
-<div id="examplesEditor" style="width:700px;height:209px;border:1px solid grey"></div>
+<div id="examplesEditor" style="width:700px;height:285px;border:1px solid grey"></div>
   <script>
     require.config({ paths: { 'vs': '/_monaco/vs' }});
     require(['vs/editor/editor.main'], function() {
@@ -57,8 +57,12 @@ ELSE.
   has_entries = abap_true.
 ENDIF.
 
+DATA(fsdf) = COND #( WHEN foo <> bar THEN abap_true ELSE abap_false ).
+
 * Good example
-DATA(has_entries) = xsdbool( line IS NOT INITIAL ).`, "abap", modelUri);
+DATA(has_entries) = xsdbool( line IS NOT INITIAL ).
+
+DATA(fsdf) = xsdbool( foo <> bar ).`, "abap", modelUri);
 
       var editor = monaco.editor.create(document.getElementById('examplesEditor'), {
         model: model,

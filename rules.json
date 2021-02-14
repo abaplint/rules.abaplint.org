@@ -389,7 +389,9 @@
     "key": "identical_form_names",
     "title": "Identical FORM names",
     "shortDescription": "Detects identically named FORMs",
-    "tags": []
+    "tags": [
+      "Syntax"
+    ]
   },
   {
     "key": "if_in_if",
@@ -543,6 +545,15 @@
     ]
   },
   {
+    "key": "max_one_method_parameter_per_line",
+    "title": "Max one method parameter definition per line",
+    "shortDescription": "Keep max one method parameter description per line",
+    "tags": [
+      "SingleFile",
+      "Whitespace"
+    ]
+  },
+  {
     "key": "max_one_statement",
     "title": "Max one statement per line",
     "shortDescription": "Checks that each line contains only a single statement.",
@@ -657,7 +668,8 @@
     "title": "Obsolete statements",
     "shortDescription": "Checks for usages of certain obsolete statements",
     "tags": [
-      "SingleFile"
+      "SingleFile",
+      "Styleguide"
     ]
   },
   {

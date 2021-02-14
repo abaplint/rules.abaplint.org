@@ -19,7 +19,7 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
 
-<h2>120 Rules</h2>
+<h2>121 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">3</div>
@@ -40,7 +40,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Whitespace">
-  <div class="chip-head">16</div>
+  <div class="chip-head">17</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg></div>
 </div>
 
@@ -55,7 +55,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Syntax">
-  <div class="chip-head">16</div>
+  <div class="chip-head">17</div>
   <div class="chip-content"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
   <title>syntax</title>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -72,7 +72,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Styleguide">
-  <div class="chip-head">36</div>
+  <div class="chip-head">37</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
 </div>
 
@@ -216,7 +216,10 @@ Prerequsites: code is pretty printed with identical cAsE
 
 Chained statments are ignored<br><br></div>
 
-<div id="rule-identical_form_names"><a href='./identical_form_names/'><tt>identical_form_names</tt> - Identical FORM names</a><div class="hidden"></div><br>Detects identically named FORMs<br><br></div>
+<div id="rule-identical_form_names"><a href='./identical_form_names/'><tt>identical_form_names</tt> - Identical FORM names</a><div class="hidden">Syntax</div>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+  <title>syntax</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+</svg><br>Detects identically named FORMs<br><br></div>
 
 <div id="rule-if_in_if"><a href='./if_in_if/'><tt>if_in_if</tt> - IF in IF</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Detects nested ifs which can be refactored to a single condition using AND.<br><br></div>
 
@@ -262,6 +265,8 @@ Regexes are case-insensitive.<br><br></div>
 
 <div id="rule-many_parenthesis"><a href='./many_parenthesis/'><tt>many_parenthesis</tt> - Too many parenthesis</a><div class="hidden">SingleFile</div><br>Searches for expressions where extra parenthesis can safely be removed<br><br></div>
 
+<div id="rule-max_one_method_parameter_per_line"><a href='./max_one_method_parameter_per_line/'><tt>max_one_method_parameter_per_line</tt> - Max one method parameter definition per line</a><div class="hidden">SingleFile,Whitespace</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>whitespace</title><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1"></path></svg><br>Keep max one method parameter description per line<br><br></div>
+
 <div id="rule-max_one_statement"><a href='./max_one_statement/'><tt>max_one_statement</tt> - Max one statement per line</a><div class="hidden">Styleguide,Quickfix,SingleFile</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks that each line contains only a single statement.<br><br></div>
 
 <div id="rule-message_exists"><a href='./message_exists/'><tt>message_exists</tt> - Check MESSAGE exists</a><div class="hidden"></div><br>In message statements, check that the message class + id exist<br><br></div>
@@ -292,7 +297,7 @@ Exceptions are excluded from this rule.<br><br></div>
 
 <div id="rule-object_naming"><a href='./object_naming/'><tt>object_naming</tt> - Object naming conventions</a><div class="hidden">Naming</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><br>Allows you to enforce a pattern, such as a prefix, for object names<br><br></div>
 
-<div id="rule-obsolete_statement"><a href='./obsolete_statement/'><tt>obsolete_statement</tt> - Obsolete statements</a><div class="hidden">SingleFile</div><br>Checks for usages of certain obsolete statements<br><br></div>
+<div id="rule-obsolete_statement"><a href='./obsolete_statement/'><tt>obsolete_statement</tt> - Obsolete statements</a><div class="hidden">SingleFile,Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks for usages of certain obsolete statements<br><br></div>
 
 <div id="rule-omit_parameter_name"><a href='./omit_parameter_name/'><tt>omit_parameter_name</tt> - Omit parameter name</a><div class="hidden">Styleguide,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Omit the parameter name in single parameter calls<br><br></div>
 
