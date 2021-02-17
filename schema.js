@@ -3592,6 +3592,10 @@ const abaplintSchema = {
           "description": "Checks for PARAMETER",
           "type": "boolean"
         },
+        "ranges": {
+          "description": "Checks for RANGES",
+          "type": "boolean"
+        },
         "refresh": {
           "description": "Check for REFRESH statement",
           "type": "boolean"
@@ -3636,7 +3640,8 @@ const abaplintSchema = {
         "fieldSymbolStructure",
         "typePools",
         "load",
-        "parameter"
+        "parameter",
+        "ranges"
       ],
       "type": "object"
     },
