@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 </head>
 <body>
 <div class="content"><h1>abaplint rules documentation</h1>
@@ -18,6 +19,13 @@ Get default configuration by running <tt>abaplint -d > abaplint.json</tt>
 <a href="https://github.com/FreHu/abaplint-clean-code">abaplint-clean-code</a> contains rule
 documentation as well as abaplint.json definitions which attempt to align abaplint with the official
 <a href="https://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md">Clean ABAP styleguide</a>.
+
+<br><br>
+<div id="searchBox">
+<form role="search">
+  <input type="search" placeholder="Search..." id="input" />
+</form>
+</div>
 
 <h2>121 Rules</h2>
 
@@ -430,6 +438,13 @@ You may use standard report RS_DDIC_CLASSIFICATION_FINAL for adjustment.<br><br>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
 </svg><br>Checks the consistency of main XML files, eg. naming for CLAS and INTF objects<br><br></div>
 </div>
-<script src="/index.js"></script></div>
+<script src="/index.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+apiKey: 'ceddaf16317926533c691e2ccb17bbe1',
+indexName: 'abaplint',
+inputSelector: '#input',
+debug: false
+});
+</script></div>
 </body>
 </html>
