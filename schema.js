@@ -107,7 +107,7 @@ const abaplintSchema = {
           "type": "boolean"
         },
         "describeLines": {
-          "description": "Detects DESRIBE TABLE LINES, use lines() instead",
+          "description": "Detects DESCRIBE TABLE LINES, use lines() instead",
           "type": "boolean"
         },
         "endselect": {
