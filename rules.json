@@ -46,8 +46,7 @@
     "shortDescription": "Detects usage of certain statements.",
     "tags": [
       "Styleguide",
-      "SingleFile",
-      "Security"
+      "SingleFile"
     ]
   },
   {
@@ -220,6 +219,15 @@
     "shortDescription": "Cyclomatic complexity, only reported for methods",
     "tags": [
       "SingleFile"
+    ]
+  },
+  {
+    "key": "dangerous_statement",
+    "title": "Dangerous statement",
+    "shortDescription": "Detects potentially dangerous statements",
+    "tags": [
+      "SingleFile",
+      "Security"
     ]
   },
   {
