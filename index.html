@@ -53,7 +53,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </div>
 
 <div class="chip" title="Naming">
-  <div class="chip-head">10</div>
+  <div class="chip-head">11</div>
   <div class="chip-content"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg></div>
 </div>
 
@@ -220,7 +220,7 @@ Use RETURN to leave procesing blocks instead.<br><br></div>
 
 Prerequsites: code is pretty printed with identical cAsE<br><br></div>
 
-<div id="rule-identical_contents"><a href='./identical_contents/'><tt>identical_contents</tt> - Identical contents</a><div class="hidden">SingleFile</div><br>Find identical contents in IFs
+<div id="rule-identical_contents"><a href='./identical_contents/'><tt>identical_contents</tt> - Identical contents</a><div class="hidden">SingleFile</div><br>Find identical contents in blocks inside IFs, both in the beginning and in the end.
 
 Prerequsites: code is pretty printed with identical cAsE
 
@@ -296,7 +296,7 @@ Regexes are case-insensitive.<br><br></div>
 
 <div id="rule-msag_consistency"><a href='./msag_consistency/'><tt>msag_consistency</tt> - MSAG consistency check</a><div class="hidden"></div><br>Checks the validity of messages in message classes<br><br></div>
 
-<div id="rule-names_no_dash"><a href='./names_no_dash/'><tt>names_no_dash</tt> - No dashes in FORM and DATA names</a><div class="hidden">SingleFile</div><br>Checks for a "-" in FORM and DATA names<br><br></div>
+<div id="rule-names_no_dash"><a href='./names_no_dash/'><tt>names_no_dash</tt> - No dashes in FORM and DATA names</a><div class="hidden">SingleFile,Naming</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><br>Checks for a "-" in FORM, DATA, PARAMETER and SELECT-OPTION names<br><br></div>
 
 <div id="rule-nesting"><a href='./nesting/'><tt>nesting</tt> - Check nesting depth</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks for methods exceeding a maximum nesting depth<br><br></div>
 
