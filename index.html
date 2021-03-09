@@ -27,7 +27,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </form>
 </div>
 
-<h2>122 Rules</h2>
+<h2>124 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">3</div>
@@ -171,6 +171,8 @@ Various checks for comment usage.
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
 </svg><br>Detects potentially dangerous statements<br><br></div>
+
+<div id="rule-db_operation_in_loop"><a href='./db_operation_in_loop/'><tt>db_operation_in_loop</tt> - Database operation in loop</a><div class="hidden">SingleFile,Performance</div><br>Database operation in LOOP/DO/WHILE<br><br></div>
 
 <div id="rule-definitions_top"><a href='./definitions_top/'><tt>definitions_top</tt> - Place definitions in top of routine</a><div class="hidden">SingleFile,Quickfix</div>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><br>Checks that definitions are placed at the beginning of METHODs and FORMs.<br><br></div>
 
@@ -363,6 +365,10 @@ Consider using ABAP Doc for documentation.
 <br><br></div>
 
 <div id="rule-rfc_error_handling"><a href='./rfc_error_handling/'><tt>rfc_error_handling</tt> - RFC error handling</a><div class="hidden">SingleFile</div><br>Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls<br><br></div>
+
+<div id="rule-select_performance"><a href='./select_performance/'><tt>select_performance</tt> - SELECT performance</a><div class="hidden">SingleFile,Performance</div><br>Various checks regarding SELECT performance.
+
+ENDSELECT: not reported when the corresponding SELECT has PACKAGE SIZE<br><br></div>
 
 <div id="rule-selection_screen_naming"><a href='./selection_screen_naming/'><tt>selection_screen_naming</tt> - Selection screen naming conventions</a><div class="hidden">Naming,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><br>Allows you to enforce a pattern, such as a prefix, for selection-screen variable names.<br><br></div>
 

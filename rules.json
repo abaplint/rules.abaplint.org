@@ -231,6 +231,15 @@
     ]
   },
   {
+    "key": "db_operation_in_loop",
+    "title": "Database operation in loop",
+    "shortDescription": "Database operation in LOOP/DO/WHILE",
+    "tags": [
+      "SingleFile",
+      "Performance"
+    ]
+  },
+  {
     "key": "definitions_top",
     "title": "Place definitions in top of routine",
     "shortDescription": "Checks that definitions are placed at the beginning of METHODs and FORMs.",
@@ -822,6 +831,15 @@
     "shortDescription": "Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls",
     "tags": [
       "SingleFile"
+    ]
+  },
+  {
+    "key": "select_performance",
+    "title": "SELECT performance",
+    "shortDescription": "Various checks regarding SELECT performance.\n\nENDSELECT: not reported when the corresponding SELECT has PACKAGE SIZE",
+    "tags": [
+      "SingleFile",
+      "Performance"
     ]
   },
   {
