@@ -836,7 +836,7 @@
   {
     "key": "select_performance",
     "title": "SELECT performance",
-    "shortDescription": "Various checks regarding SELECT performance.\n\nENDSELECT: not reported when the corresponding SELECT has PACKAGE SIZE",
+    "shortDescription": "Various checks regarding SELECT performance.\n\nENDSELECT: not reported when the corresponding SELECT has PACKAGE SIZE\n\nSELECT *: not reported if using INTO CORRESPONDING FIELDS OF",
     "tags": [
       "SingleFile",
       "Performance"
