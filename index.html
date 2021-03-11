@@ -27,7 +27,7 @@ documentation as well as abaplint.json definitions which attempt to align abapli
 </form>
 </div>
 
-<h2>124 Rules</h2>
+<h2>126 Rules</h2>
 
 <div class="chip" title="Experimental">
   <div class="chip-head">3</div>
@@ -307,6 +307,8 @@ Regexes are case-insensitive.<br><br></div>
 <div id="rule-no_public_attributes"><a href='./no_public_attributes/'><tt>no_public_attributes</tt> - No public attributes</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks that classes and interfaces don't contain any public attributes.
 Exceptions are excluded from this rule.<br><br></div>
 
+<div id="rule-no_yoda_conditions"><a href='./no_yoda_conditions/'><tt>no_yoda_conditions</tt> - No Yoda conditions</a><div class="hidden">SingleFile</div><br>Finds Yoda conditions and reports issues<br><br></div>
+
 <div id="rule-object_naming"><a href='./object_naming/'><tt>object_naming</tt> - Object naming conventions</a><div class="hidden">Naming</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>naming</title><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><br>Allows you to enforce a pattern, such as a prefix, for object names<br><br></div>
 
 <div id="rule-obsolete_statement"><a href='./obsolete_statement/'><tt>obsolete_statement</tt> - Obsolete statements</a><div class="hidden">SingleFile,Styleguide</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Checks for usages of certain obsolete statements<br><br></div>
@@ -365,6 +367,12 @@ Consider using ABAP Doc for documentation.
 <br><br></div>
 
 <div id="rule-rfc_error_handling"><a href='./rfc_error_handling/'><tt>rfc_error_handling</tt> - RFC error handling</a><div class="hidden">SingleFile</div><br>Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls<br><br></div>
+
+<div id="rule-select_always_order_by"><a href='./select_always_order_by/'><tt>select_always_order_by</tt> - SELECT always ORDER BY</a><div class="hidden">SingleFile</div><br>SELECTs should always have a ORDER BY clause
+
+This will make sure that the SELECT statement returns results in the same sequence on different databases
+
+add ORDER BY PRIMARY KEY if in doubt<br><br></div>
 
 <div id="rule-select_performance"><a href='./select_performance/'><tt>select_performance</tt> - SELECT performance</a><div class="hidden">SingleFile,Performance</div><br>Various checks regarding SELECT performance.
 
