@@ -35,7 +35,7 @@
   {
     "key": "ambiguous_statement",
     "title": "Check for ambigious statements",
-    "shortDescription": "Checks for ambiguity between deleting or modifying from internal and database table\nAdd \"TABLE\" keyword or \"@\" for escaping SQL variables",
+    "shortDescription": "Checks for ambiguity between deleting or modifying from internal and database table\nAdd \"TABLE\" keyword or \"@\" for escaping SQL variables\n\nOnly works if the target version is 740sp05 or above",
     "tags": [
       "SingleFile"
     ]

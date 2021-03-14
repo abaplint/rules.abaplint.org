@@ -98,7 +98,9 @@ Base rule checks for existence of abapdoc for public class methods and all inter
 <div id="rule-allowed_object_types"><a href='./allowed_object_types/'><tt>allowed_object_types</tt> - Check allowed object types</a><div class="hidden">SingleFile</div><br>Restricts the set of allowed object types.<br><br></div>
 
 <div id="rule-ambiguous_statement"><a href='./ambiguous_statement/'><tt>ambiguous_statement</tt> - Check for ambigious statements</a><div class="hidden">SingleFile</div><br>Checks for ambiguity between deleting or modifying from internal and database table
-Add "TABLE" keyword or "@" for escaping SQL variables<br><br></div>
+Add "TABLE" keyword or "@" for escaping SQL variables
+
+Only works if the target version is 740sp05 or above<br><br></div>
 
 <div id="rule-avoid_use"><a href='./avoid_use/'><tt>avoid_use</tt> - Avoid use of certain statements</a><div class="hidden">Styleguide,SingleFile</div>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>styleguide</title><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><br>Detects usage of certain statements.<br><br></div>
 

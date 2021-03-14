@@ -53,8 +53,8 @@
       var modelUri = monaco.Uri.parse("a://b/foobar.abap");
       var model = monaco.editor.createModel(`* Bad example
 RAISE EXCEPTION TYPE cx_generation_error
-      EXPORTING
-        previous = exception.
+  EXPORTING
+    previous = exception.
 
 * Good example
 RAISE EXCEPTION NEW cx_generation_error( previous = exception ).`, "abap", modelUri);
