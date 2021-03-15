@@ -3727,6 +3727,10 @@ const abaplintSchema = {
           "description": "Checks for usages of OCCURS",
           "type": "boolean"
         },
+        "pack": {
+          "description": "Checks for PACK",
+          "type": "boolean"
+        },
         "parameter": {
           "description": "Checks for PARAMETER",
           "type": "boolean"
@@ -3781,7 +3785,8 @@ const abaplintSchema = {
         "load",
         "parameter",
         "ranges",
-        "communication"
+        "communication",
+        "pack"
       ],
       "type": "object"
     },
