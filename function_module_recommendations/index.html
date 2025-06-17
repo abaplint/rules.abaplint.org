@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ABAP,Open Source,abaplint,lint,linter,SAP,static analysis" />
+  <title>rules.abaplint.org</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+<div class="content"><h1>Function Module Recommendations</h1>
+&nbsp;<a href="/"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>home</title><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+<title>single file</title>
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>&nbsp;<a href="https://github.com/abaplint/abaplint/blob/main/packages/core/src/rules/function_module_recommendations.ts"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>edit</title><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></a>
+<p><tt>function_module_recommendations</tt><br>
+</p>
+<h2>Description</h2>
+<p>Suggests replacements for various function modules</p><h2>Extended Information</h2>
+<p><a href='https://docs.abapopenchecks.org/checks/53/'>https://docs.abapopenchecks.org/checks/53/</a></p><h2>Default Configuration</h2>
+<div id="defaultConfigEditor" style="width:700px;height:2356px;border:1px solid grey"></div>
+  <script src="/_monaco/vs/loader.js"></script>
+  <script src="/schema.js"></script>
+  <script src="/pack.bundle.js"></script>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foo.json");
+      var model = monaco.editor.createModel(`{
+  "exclude": [],
+  "severity": "Error",
+  "recommendations": [
+    {
+      "name": "CALCULATE_HASH_FOR_RAW",
+      "replace": "use CL_ABAP_HMAC or CL_ABAP_MESSAGE_DIGEST"
+    },
+    {
+      "name": "CCU_TIMESTAMP_DIFFERENCE",
+      "replace": "use CL_ABAP_TSTMP"
+    },
+    {
+      "name": "CONVERT_DATE_TO_EXTERNAL",
+      "replace": "use CL_ABAP_DATFM"
+    },
+    {
+      "name": "CONVERT_TIME_INPUT",
+      "replace": "use CL_ABAP_TIMEFM"
+    },
+    {
+      "name": "ECATT_CONV_XSTRING_TO_STRING",
+      "replace": "use CL_BINARY_CONVERT"
+    },
+    {
+      "name": "F4_FILENAME",
+      "replace": "use CL_GUI_FRONTEND_SERVICES"
+    },
+    {
+      "name": "FUNCTION_EXISTS",
+      "replace": "surround with try-catch CX_SY_DYN_CALL_ILLEGAL_METHOD instead"
+    },
+    {
+      "name": "GUI_DOWNLOAD",
+      "replace": "use CL_GUI_FRONTEND_SERVICES"
+    },
+    {
+      "name": "GUI_UPLOAD",
+      "replace": "use CL_GUI_FRONTEND_SERVICES"
+    },
+    {
+      "name": "GUID_CREATE",
+      "replace": "use CL_SYSTEM_UUID"
+    },
+    {
+      "name": "IGN_TIMESTAMP_DIFFERENCE",
+      "replace": "use CL_ABAP_TSTMP"
+    },
+    {
+      "name": "IGN_TIMESTAMP_PLUSMINUS",
+      "replace": "use CL_ABAP_TSTMP"
+    },
+    {
+      "name": "ISM_SD_GET_PRICING_CONDITIONS",
+      "replace": "use CL_PRC_RESULT_FACTORY as per note 2220005"
+    },
+    {
+      "name": "JOB_CREATE",
+      "replace": "use CL_BP_ABAP_JOB"
+    },
+    {
+      "name": "JOB_SUBMIT",
+      "replace": "use CL_BP_ABAP_JOB"
+    },
+    {
+      "name": "POPUP_TO_CONFIRM_STEP",
+      "replace": "use POPUP_TO_CONFIRM"
+    },
+    {
+      "name": "POPUP_TO_DECIDE",
+      "replace": "use POPUP_TO_CONFIRM"
+    },
+    {
+      "name": "POPUP_TO_GET_VALUE",
+      "replace": "use POPUP_GET_VALUES"
+    },
+    {
+      "name": "QF05_RANDOM_INTEGER",
+      "replace": "use CL_ABAP_RANDOM_INT"
+    },
+    {
+      "name": "REUSE_ALV_GRID_DISPLAY",
+      "replace": "use CL_SALV_TABLE=>FACTORY or CL_GUI_ALV_GRID"
+    },
+    {
+      "name": "ROUND",
+      "replace": "use built in function: round()"
+    },
+    {
+      "name": "SAPGUI_PROGRESS_INDICATOR",
+      "replace": "use CL_PROGRESS_INDICATOR"
+    },
+    {
+      "name": "SCMS_BASE64_DECODE_STR",
+      "replace": "use class CL_HTTP_UTILITY methods"
+    },
+    {
+      "name": "SCMS_STRING_TO_XSTRING",
+      "replace": "use CL_BINARY_CONVERT"
+    },
+    {
+      "name": "SO_NEW_DOCUMENT_ATT_SEND_API1",
+      "replace": "use CL_BCS"
+    },
+    {
+      "name": "SSFC_BASE64_DECODE",
+      "replace": "use class CL_HTTP_UTILITY methods"
+    },
+    {
+      "name": "SSFC_BASE64_ENCODE",
+      "replace": "use class CL_HTTP_UTILITY methods"
+    },
+    {
+      "name": "SUBST_GET_FILE_LIST",
+      "replace": "see note 1686357"
+    },
+    {
+      "name": "WS_FILENAME_GET",
+      "replace": "use CL_GUI_FRONTEND_SERVICES"
+    }
+  ]
+}`, "json", modelUri);
+
+      const schema = abaplintSchema;
+      schema["$ref"] = "#/definitions/FunctionModuleRecommendationsConf",
+
+      monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+        validate: true,
+        schemas: [{
+          uri: "https://schema.abaplint.org/dummy.json",
+          fileMatch: [modelUri.toString()],
+          schema,
+        }],
+      });
+
+      var editor = monaco.editor.create(document.getElementById('defaultConfigEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+
+      editor.onDidChangeModelContent(() => configChanged(editor, "function_module_recommendations"));
+    });
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i></div>
+</body>
+</html>
