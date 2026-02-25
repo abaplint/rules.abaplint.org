@@ -1,0 +1,1884 @@
+[
+  {
+    "key": "7bit_ascii",
+    "title": "Check for 7bit ascii",
+    "shortDescription": "Only allow characters from the 7bit ASCII set.",
+    "extendedInformation": "https://docs.abapopenchecks.org/checks/05/\n\nhttps://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abencharacter_set_guidl.htm\n\nCheckes files with extensions \".abap\" and \".asddls\"",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "abapdoc",
+    "title": "Check abapdoc",
+    "shortDescription": "Various checks regarding abapdoc.",
+    "extendedInformation": "Base rule checks for existence of abapdoc for public class methods and all interface methods.\n\nPlus class and interface definitions.\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#abap-doc-only-for-public-apis",
+    "hasExample": false,
+    "tags": [
+      "SingleFile",
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "add_test_attributes",
+    "title": "Add test attributes for tests classes with test methods",
+    "shortDescription": "Add test attributes DURATION and RISK LEVEL for tests classes with test methods",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "align_parameters",
+    "title": "Align Parameters",
+    "shortDescription": "Checks for vertially aligned parameters",
+    "extendedInformation": "Checks:\n* function module calls\n* method calls\n* VALUE constructors\n* NEW constructors\n* RAISE EXCEPTION statements\n* CREATE OBJECT statements\n* RAISE EVENT statements\n\nhttps://github.com/SAP/styleguides/blob/master/clean-abap/CleanABAP.md#align-parameters\n\nDoes not take effect on non functional method calls, use https://rules.abaplint.org/functional_writing/\n\nIf parameters are on the same row, no issues are reported, see\nhttps://rules.abaplint.org/max_one_method_parameter_per_line/ for splitting parameters to lines",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Whitespace",
+      "Styleguide",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "align_pseudo_comments",
+    "title": "Align pseudo comments",
+    "shortDescription": "Align code inspector pseudo comments in statements",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Whitespace",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "align_type_expressions",
+    "title": "Align TYPE expressions",
+    "shortDescription": "Align TYPE expressions in statements",
+    "extendedInformation": "\nCurrently works for METHODS + BEGIN OF\n\nIf BEGIN OF has an INCLUDE TYPE its ignored\n\nAlso note that clean ABAP does not recommend aligning TYPE clauses:\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#dont-align-type-clauses",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Whitespace",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "allowed_object_naming",
+    "title": "Allowed object naming",
+    "shortDescription": "Enforces basic name length and namespace restrictions, see note SAP 104010",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Naming",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "allowed_object_types",
+    "title": "Check allowed object types",
+    "shortDescription": "Restricts the set of allowed object types.",
+    "extendedInformation": "\"allowed\" is a list of 4 character R3TR object types, example: [\"CLAS\", \"INTF\"]",
+    "hasExample": false,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "ambiguous_statement",
+    "title": "Check for ambigious statements",
+    "shortDescription": "Checks for ambiguity between deleting or modifying from internal and database table\nAdd \"TABLE\" keyword or \"@\" for escaping SQL variables\n\nOnly works if the target version is 740sp05 or above",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "avoid_use",
+    "title": "Avoid use of certain statements",
+    "shortDescription": "Detects usage of certain statements.",
+    "extendedInformation": "DEFAULT KEY: https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#avoid-default-key\n\nMacros: https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenmacros_guidl.htm\n\nSTATICS: use CLASS-DATA instead\n\nDESCRIBE TABLE LINES: use lines() instead (quickfix exists)\n\nTEST-SEAMS: https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#use-test-seams-as-temporary-workaround\n\nBREAK points",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "begin_end_names",
+    "title": "Check BEGIN END names",
+    "shortDescription": "Check BEGIN OF and END OF names match, plus there must be statements between BEGIN and END",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Syntax",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "begin_single_include",
+    "title": "BEGIN contains single INCLUDE",
+    "shortDescription": "Finds TYPE BEGIN with just one INCLUDE TYPE, and DATA with single INCLUDE STRUCTURE",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "call_transaction_authority_check",
+    "title": "Call Transaction Authority-Check",
+    "shortDescription": "Checks that usages of CALL TRANSACTION contain an authority-check.",
+    "extendedInformation": "https://docs.abapopenchecks.org/checks/54/",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile",
+      "Security"
+    ]
+  },
+  {
+    "key": "cds_comment_style",
+    "title": "CDS Comment Style",
+    "shortDescription": "Check for obsolete comment style",
+    "extendedInformation": "Check for obsolete comment style\n\nComments starting with \"--\" are considered obsolete\n\nhttps://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-us/abencds_general_syntax_rules.htm",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "cds_legacy_view",
+    "title": "CDS Legacy View",
+    "shortDescription": "Identify CDS Legacy Views",
+    "extendedInformation": "Use DEFINE VIEW ENTITY instead of DEFINE VIEW\n\nhttps://blogs.sap.com/2021/10/16/a-new-generation-of-cds-views-how-to-migrate-your-cds-views-to-cds-view-entities/\n\nv755 and up",
+    "hasExample": false,
+    "tags": [
+      "SingleFile",
+      "Upport"
+    ]
+  },
+  {
+    "key": "cds_parser_error",
+    "title": "CDS Parser Error",
+    "shortDescription": "CDS parsing",
+    "extendedInformation": "Parses CDS and issues parser errors",
+    "hasExample": false,
+    "tags": [
+      "Syntax",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "chain_mainly_declarations",
+    "title": "Chain mainly declarations",
+    "shortDescription": "Chain mainly declarations, allows chaining for the configured statements, reports errors for other statements.",
+    "extendedInformation": "\nhttps://docs.abapopenchecks.org/checks/23/\n\nhttps://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abenchained_statements_guidl.htm\n",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "change_if_to_case",
+    "title": "Change IF to CASE",
+    "shortDescription": "Finds IF constructs that can be changed to CASE",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-case-to-else-if-for-multiple-alternative-conditions\n\nIf the first comparison is a boolean compare, no issue is reported.",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "check_abstract",
+    "title": "Check abstract methods and classes",
+    "shortDescription": "Checks abstract methods and classes:\n- class defined as abstract and final,\n- non-abstract class contains abstract methods",
+    "extendedInformation": "If a class defines only constants, use an interface instead",
+    "hasExample": false,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "check_comments",
+    "title": "Check Comments",
+    "shortDescription": "\nVarious checks for comment usage.",
+    "extendedInformation": "\nDetects end of line comments. Comments starting with \"#EC\" or \"##\" are ignored\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#put-comments-before-the-statement-they-relate-to",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "check_ddic",
+    "title": "Check DDIC",
+    "shortDescription": "Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in \"errorNamespace\" ",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "check_include",
+    "title": "Check INCLUDEs",
+    "shortDescription": "Checks INCLUDE statements",
+    "extendedInformation": "\n* Reports unused includes\n* Errors if the includes are not found\n* Error if including a main program\n* Skips ZX* includes",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "check_subrc",
+    "title": "Check sy-subrc",
+    "shortDescription": "Check sy-subrc",
+    "extendedInformation": "Pseudo comment \"#EC CI_SUBRC can be added to suppress findings\n\nIf sy-dbcnt is checked after database statements, it is considered okay.\n\n\"SELECT SINGLE @abap_true FROM \" is considered as an existence check, also \"SELECT COUNT( * )\" is considered okay\n\nIf IS ASSIGNED is checked after assigning, it is considered okay.\n\nFIND statement with MATCH COUNT is considered okay if subrc is not checked",
+    "hasExample": false,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "check_syntax",
+    "title": "Check syntax",
+    "shortDescription": "Enables syntax check and variable resolution",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "check_text_elements",
+    "title": "Check text elements",
+    "shortDescription": "Check text elements exists or matches code",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "check_transformation_exists",
+    "title": "Check transformation exists",
+    "shortDescription": "Checks that used XSLT transformations exist.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "class_attribute_names",
+    "title": "Class attributes naming",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for class variable names.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Naming",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "classic_exceptions_overlap",
+    "title": "Classic exceptions overlap when catching",
+    "shortDescription": "Find overlapping classic exceptions",
+    "extendedInformation": "When debugging its typically good to know exactly which exception is caught",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "cloud_types",
+    "title": "Check cloud types",
+    "shortDescription": "Checks that the package does not contain any object types unsupported in cloud ABAP.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "SingleFile",
+      "Syntax"
+    ]
+  },
+  {
+    "key": "colon_missing_space",
+    "title": "Colon missing space",
+    "shortDescription": "Checks for missing spaces after colons in chained statements.",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "commented_code",
+    "title": "Find commented code",
+    "shortDescription": "Detects usage of commented out code.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#delete-code-instead-of-commenting-it\nhttps://docs.abapopenchecks.org/checks/14/",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "constant_classes",
+    "title": "Validate constant classes",
+    "shortDescription": "Checks that a class contains exactly the constants corresponding to a domain's fixed values.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-enumeration-classes-to-constants-interfaces",
+    "hasExample": false,
+    "tags": [
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "constructor_visibility_public",
+    "title": "Check constructor visibility is public",
+    "shortDescription": "Constructor must be placed in the public section, even if the class is not CREATE PUBLIC.",
+    "extendedInformation": "\nThis only applies to global classes.\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#if-your-global-class-is-create-private-leave-the-constructor-public\nhttps://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abeninstance_constructor_guidl.htm",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "contains_tab",
+    "title": "Code contains tab",
+    "shortDescription": "Checks for usage of tabs (enable to enforce spaces)",
+    "extendedInformation": "\nhttps://docs.abapopenchecks.org/checks/09/\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#indent-and-snap-to-tab",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Quickfix",
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "cyclic_oo",
+    "title": "Cyclic OO",
+    "shortDescription": "Finds cyclic/circular OO references",
+    "extendedInformation": "Runs for global INTF + CLAS objects\n\nObjects must be without syntax errors for this rule to take effect\n\nReferences in testclass includes are ignored",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "cyclomatic_complexity",
+    "title": "Cyclomatic Complexity",
+    "shortDescription": "Cyclomatic complexity, only reported for methods",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "dangerous_statement",
+    "title": "Dangerous statement",
+    "shortDescription": "Detects potentially dangerous statements",
+    "extendedInformation": "Dynamic SQL: Typically ABAP logic does not need dynamic SQL,\ndynamic SQL can potentially create SQL injection problems",
+    "hasExample": false,
+    "tags": [
+      "SingleFile",
+      "Security"
+    ]
+  },
+  {
+    "key": "db_operation_in_loop",
+    "title": "Database operation in loop",
+    "shortDescription": "Database operation in LOOP/DO/WHILE",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "SingleFile",
+      "Performance"
+    ]
+  },
+  {
+    "key": "definitions_top",
+    "title": "Place definitions in top of routine",
+    "shortDescription": "Checks that definitions are placed at the beginning of METHODs, FORMs and FUNCTIONs.",
+    "extendedInformation": "https://docs.abapopenchecks.org/checks/17/",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "description_empty",
+    "title": "Description in class must exist",
+    "shortDescription": "Ensures descriptions in class metadata exist.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "double_space",
+    "title": "Double space",
+    "shortDescription": "Checks that only a single space follows certain common statements.",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "downport",
+    "title": "Downport statement",
+    "shortDescription": "Downport functionality",
+    "extendedInformation": "Much like the 'commented_code' rule this rule loops through unknown statements and tries parsing with\na higher level language version. If successful, various rules are applied to downport the statement.\nTarget downport version is always v702, thus rule is only enabled if target version is v702.\n\nCurrent rules:\n* NEW transformed to CREATE OBJECT, opposite of https://rules.abaplint.org/use_new/\n* DATA() definitions are outlined, opposite of https://rules.abaplint.org/prefer_inline/\n* FIELD-SYMBOL() definitions are outlined\n* CONV is outlined\n* COND is outlined\n* REDUCE is outlined\n* SWITCH is outlined\n* FILTER is outlined\n* APPEND expression is outlined\n* INSERT expression is outlined\n* EMPTY KEY is changed to DEFAULT KEY, opposite of DEFAULT KEY in https://rules.abaplint.org/avoid_use/\n* CAST changed to ?=\n* LOOP AT method_call( ) is outlined\n* VALUE # with structure fields\n* VALUE # with internal table lines\n* Table Expressions are outlined\n* SELECT INTO @DATA definitions are outlined\n* Some occurrences of string template formatting option ALPHA changed to function module call\n* SELECT/INSERT/MODIFY/DELETE/UPDATE \",\" in field list removed, \"@\" in source/targets removed\n* PARTIALLY IMPLEMENTED removed, it can be quick fixed via rule implement_methods\n* RAISE EXCEPTION ... MESSAGE\n* Moving with +=, -=, /=, *=, &&= is expanded\n* line_exists and line_index is downported to READ TABLE\n* ENUMs, but does not nessesarily give the correct type and value\n* MESSAGE with non simple source\n\nOnly one transformation is applied to a statement at a time, so multiple steps might be required to do the full downport.\n\nMake sure to test the downported code, it might not always be completely correct.",
+    "hasExample": false,
+    "tags": [
+      "Downport",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "dynpro_checks",
+    "title": "Dynpro Checks",
+    "shortDescription": "Various Dynpro checks",
+    "extendedInformation": "* Check length of PUSH elements less than 132",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "easy_to_find_messages",
+    "title": "Easy to find messages",
+    "shortDescription": "Make messages easy to find",
+    "extendedInformation": "All messages must be statically referenced exactly once\n\nOnly MESSAGE and RAISE statments are counted as static references\n\nAlso see rule \"message_exists\"\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#make-messages-easy-to-find",
+    "hasExample": false,
+    "tags": [
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "empty_event",
+    "title": "Empty selection screen or list processing event block",
+    "shortDescription": "Empty selection screen or list processing event block",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "empty_line_in_statement",
+    "title": "Find empty lines in statements",
+    "shortDescription": "Checks that statements do not contain empty lines.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#dont-obsess-with-separating-blank-lines\n\nhttps://docs.abapopenchecks.org/checks/41/",
+    "hasExample": true,
+    "tags": [
+      "Quickfix",
+      "Whitespace",
+      "SingleFile",
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "empty_statement",
+    "title": "Remove empty statement",
+    "shortDescription": "Checks for empty statements (an empty statement is a single dot)",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "empty_structure",
+    "title": "Find empty blocks",
+    "shortDescription": "Checks that the code does not contain empty blocks.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#no-empty-if-branches",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "exit_or_check",
+    "title": "Find EXIT or CHECK outside loops",
+    "shortDescription": "Detects usages of EXIT or CHECK statements outside of loops.\nUse RETURN to leave procesing blocks instead.",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abenleave_processing_blocks.htm\nhttps://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abapcheck_processing_blocks.htm\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#check-vs-return",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "expand_macros",
+    "title": "Expand Macros",
+    "shortDescription": "Allows expanding macro calls with quick fixes",
+    "extendedInformation": "Macros: https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenmacros_guidl.htm\n\nNote that macros/DEFINE cannot be used in the ABAP Cloud programming model",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Quickfix",
+      "Upport"
+    ]
+  },
+  {
+    "key": "exporting",
+    "title": "EXPORTING can be omitted",
+    "shortDescription": "Detects EXPORTING statements which can be omitted.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#omit-the-optional-keyword-exporting\nhttps://docs.abapopenchecks.org/checks/30/",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "fm_global_parameters_obsolete",
+    "title": "FM Global Parameters Obsolete",
+    "shortDescription": "Check for function modules with global parameteers",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abenglobal_parameters_obsolete.htm",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "forbidden_identifier",
+    "title": "Forbidden Identifier",
+    "shortDescription": "Forbid use of specified identifiers, list of regex.",
+    "extendedInformation": "Used in the transpiler to find javascript keywords in ABAP identifiers,\nhttps://github.com/abaplint/transpiler/blob/bda94b8b56e2b7f2f87be2168f12361aa530220e/packages/transpiler/src/validation.ts#L44",
+    "hasExample": false,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "forbidden_pseudo_and_pragma",
+    "title": "Forbidden pseudo comments and pragma",
+    "shortDescription": "Checks for unwanted pseudo comments and pragma",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "forbidden_void_type",
+    "title": "Forbidden Void Types",
+    "shortDescription": "Avoid usage of specified void types.",
+    "extendedInformation": "Inspiration:\nBOOLEAN, BOOLE_D, CHAR01, CHAR1, CHAR10, CHAR12, CHAR128, CHAR2, CHAR20, CHAR4, CHAR70,\nDATS, TIMS, DATUM, FLAG, INT4, NUMC3, NUMC4, SAP_BOOL, TEXT25, TEXT80, X255, XFELD",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "form_tables_obsolete",
+    "title": "TABLES parameters are obsolete",
+    "shortDescription": "Checks for TABLES parameters in forms.",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abapform_tables.htm",
+    "hasExample": false,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "fully_type_constants",
+    "title": "Fully type constants",
+    "shortDescription": "Checks constants for full typing - no implicit typing allowed.",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "fully_type_itabs",
+    "title": "Fully type internal tables",
+    "shortDescription": "No implict table types or table keys",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#use-the-right-table-type\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#avoid-default-key",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "function_module_recommendations",
+    "title": "Function Module Recommendations",
+    "shortDescription": "Suggests replacements for various function modules",
+    "extendedInformation": "https://docs.abapopenchecks.org/checks/53/",
+    "hasExample": false,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "functional_writing",
+    "title": "Use functional writing",
+    "shortDescription": "Detects usage of call method when functional style calls can be used.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-functional-to-procedural-calls\nhttps://docs.abapopenchecks.org/checks/07/",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "global_class",
+    "title": "Global class checks",
+    "shortDescription": "Checks related to global classes",
+    "extendedInformation": "* global classes must be in own files\n\n* file names must match class name\n\n* file names must match interface name\n\n* global classes must be global definitions\n\n* global interfaces must be global definitions\n\n* global FOR TESTING, must have CATEGORY = 05 in the XML",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "identical_conditions",
+    "title": "Identical conditions",
+    "shortDescription": "Find identical conditions in IF + CASE + WHILE etc\n\nPrerequsites: code is pretty printed with identical cAsE",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "identical_contents",
+    "title": "Identical contents",
+    "shortDescription": "Find identical contents in blocks inside IFs, both in the beginning and in the end.",
+    "extendedInformation": "\nPrerequsites: code is pretty printed with identical cAsE\n\nChained statments are ignored",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "identical_descriptions",
+    "title": "Identical descriptions",
+    "shortDescription": "Searches for objects with the same type and same description",
+    "extendedInformation": "Case insensitive\n\nOnly checks the master language descriptions\n\nDependencies are skipped\n\nWorks for: INTF, CLAS, DOMA, DTEL, FUNC in same FUGR",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "identical_form_names",
+    "title": "Identical FORM names",
+    "shortDescription": "Detects identically named FORMs",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "identical_move",
+    "title": "Identical move",
+    "shortDescription": "Moving the same value from left to right or right to left is redundant.",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "if_in_if",
+    "title": "IF in IF",
+    "shortDescription": "Detects nested ifs which can be refactored.",
+    "extendedInformation": "\nDirectly nested IFs without ELSE can be refactored to a single condition using AND.\n\nELSE condtions with directly nested IF refactored to ELSEIF, quickfixes are suggested for this case.\n\nhttps://docs.abapopenchecks.org/checks/01/\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#keep-the-nesting-depth-low",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "implement_methods",
+    "title": "Implement methods",
+    "shortDescription": "Checks for abstract methods and methods from interfaces which need implementing.",
+    "extendedInformation": "INCLUDE programs are only checked in connection with their main programs.",
+    "hasExample": false,
+    "tags": [
+      "Syntax",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "implicit_start_of_selection",
+    "title": "Implicit START-OF-SELECTION",
+    "shortDescription": "Add explicit selection screen event handling",
+    "extendedInformation": "Only runs for executable programs\n\nhttps://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapstart-of-selection.htm",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "in_statement_indentation",
+    "title": "In-statement indentation",
+    "shortDescription": "Checks alignment within statements which span multiple lines.",
+    "extendedInformation": "Lines following the first line should be indented once (2 spaces).\n\nFor block declaration statements, lines after the first should be indented an additional time (default: +2 spaces)\nto distinguish them better from code within the block.",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "indentation",
+    "title": "Indentation",
+    "shortDescription": "Checks indentation",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "index_completely_contained",
+    "title": "Check if database table indexes are completely contained",
+    "shortDescription": "If indexes are completely contained in other indexes, they can be removed to improve performance.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Performance",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "inline_data_old_versions",
+    "title": "Inline data, old versions",
+    "shortDescription": "Checks for inline data declarations in older releases. Only active for versions less than v740sp02",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "intf_referencing_clas",
+    "title": "INTF referencing CLAS",
+    "shortDescription": "Interface contains references to class",
+    "extendedInformation": "Only global interfaces are checked.\n      Only first level references are checked.\n      Exception class references are ignored.\n      Void references are ignored.",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "invalid_table_index",
+    "title": "Invalid Table Index",
+    "shortDescription": "Issues error for constant table index zero, as ABAP starts from 1",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "keep_single_parameter_on_one_line",
+    "title": "Keep single parameters on one line",
+    "shortDescription": "Keep single parameter calls on one line",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#keep-single-parameter-calls-on-one-line",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "keyword_case",
+    "title": "Keyword case",
+    "shortDescription": "Checks that keywords have the same case. Non-keywords must be lower case.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#use-your-pretty-printer-team-settings",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "line_break_multiple_parameters",
+    "title": "Line break multiple parameters",
+    "shortDescription": "Line break multiple parameters",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#line-break-multiple-parameters",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "line_break_style",
+    "title": "Makes sure line breaks are consistent in the ABAP code",
+    "shortDescription": "Enforces LF as newlines in ABAP files\n\nabapGit does not work with CRLF",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Whitespace",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "line_length",
+    "title": "Line length",
+    "shortDescription": "Detects lines exceeding the provided maximum length.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#stick-to-a-reasonable-line-length\nhttps://docs.abapopenchecks.org/checks/04/",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "line_only_punc",
+    "title": "Line containing only punctuation",
+    "shortDescription": "Detects lines containing only punctuation.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#close-brackets-at-line-end\nhttps://docs.abapopenchecks.org/checks/16/",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "local_class_naming",
+    "title": "Local class naming conventions",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for local class names.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Naming",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "local_testclass_consistency",
+    "title": "Local testclass consistency",
+    "shortDescription": "Checks that local test classes are placed in the test include, and class unit test flag is set",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "local_variable_names",
+    "title": "Local variable naming conventions",
+    "shortDescription": "\nAllows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.\nRegexes are case-insensitive.",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Naming",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "macro_naming",
+    "title": "Macro naming conventions",
+    "shortDescription": "Allows you to enforce a pattern for macro definitions",
+    "extendedInformation": "Use rule \"avoid_use\" to avoid macros altogether.",
+    "hasExample": true,
+    "tags": [
+      "Naming",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "main_file_contents",
+    "title": "Main file contents",
+    "shortDescription": "Checks related to report declarations.",
+    "extendedInformation": "Does not run if the target version is Cloud\n\n* PROGs must begin with \"REPORT <name>.\" or \"PROGRAM <name>.\n* TYPEs must begin with \"TYPE-POOL <name>.\"\n",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "many_parentheses",
+    "title": "Too many parentheses",
+    "shortDescription": "Searches for expressions where extra parentheses can safely be removed",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "max_one_method_parameter_per_line",
+    "title": "Max one method parameter definition per line",
+    "shortDescription": "Keep max one method parameter description per line",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Whitespace"
+    ]
+  },
+  {
+    "key": "max_one_statement",
+    "title": "Max one statement per line",
+    "shortDescription": "Checks that each line contains only a single statement.",
+    "extendedInformation": "Does not report empty statements, use rule empty_statement for detecting empty statements.\n\nDoes not report anything for chained statements.\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#no-more-than-one-statement-per-line\nhttps://docs.abapopenchecks.org/checks/11/",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "message_exists",
+    "title": "Check MESSAGE exists",
+    "shortDescription": "In message statements, check that the message class + id exist",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "method_implemented_twice",
+    "title": "Method implemented twice",
+    "shortDescription": "Reports an error if a method is implemented or defined twice",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "SingleFile",
+      "Syntax"
+    ]
+  },
+  {
+    "key": "method_length",
+    "title": "Method/Form Length",
+    "shortDescription": "Checks relating to method/form length.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#keep-methods-small\n\nAbstract methods without statements are considered okay.",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "method_overwrites_builtin",
+    "title": "Method name overwrites builtin function",
+    "shortDescription": "Checks Method names that overwrite builtin SAP functions",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-us/abenbuilt_in_functions_overview.htm\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#avoid-obscuring-built-in-functions\n\nInterface method names are ignored",
+    "hasExample": true,
+    "tags": [
+      "Naming",
+      "SingleFile",
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "method_parameter_names",
+    "title": "Method parameter naming conventions",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for method parameter names",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Naming",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "mix_returning",
+    "title": "Mix of returning and exporting",
+    "shortDescription": "Checks that methods don't have a mixture of returning and exporting/changing parameters",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#use-either-returning-or-exporting-or-changing-but-not-a-combination\n\nThis syntax is not allowed on versions earlier than 740sp02, https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-us/abennews-740-abap_objects.htm#!ABAP_MODIFICATION_1@1@",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile",
+      "Syntax"
+    ]
+  },
+  {
+    "key": "modify_only_own_db_tables",
+    "title": "Modify only own DB tables",
+    "shortDescription": "Modify only own DB tables",
+    "extendedInformation": "https://docs.abapopenchecks.org/checks/26/",
+    "hasExample": false,
+    "tags": [
+      "Security"
+    ]
+  },
+  {
+    "key": "msag_consistency",
+    "title": "MSAG consistency check",
+    "shortDescription": "Checks the validity of messages in message classes",
+    "extendedInformation": "Message numbers must be 3 digits, message text must not be empty, no message number duplicates",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "names_no_dash",
+    "title": "No dashes in FORM and DATA names",
+    "shortDescription": "Checks for a \"-\" in FORM, DATA, PARAMETER and SELECT-OPTION names",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Naming"
+    ]
+  },
+  {
+    "key": "nesting",
+    "title": "Check nesting depth",
+    "shortDescription": "Checks for methods exceeding a maximum nesting depth",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#keep-the-nesting-depth-low\nhttps://docs.abapopenchecks.org/checks/74/",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "newline_between_methods",
+    "title": "New line between methods",
+    "shortDescription": "Checks for newlines between method implementations.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Whitespace",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "no_aliases",
+    "title": "No ALIASES",
+    "shortDescription": "Detects use of the ALIAS statement",
+    "extendedInformation": "Only one issue is reported for chained statements",
+    "hasExample": false,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "no_chained_assignment",
+    "title": "No chained assignment",
+    "shortDescription": "Find chained assingments and reports issues",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#dont-chain-assignments",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Styleguide",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "no_comments_between_methods",
+    "title": "No comments between methods in global classes",
+    "shortDescription": "Its not possible to have comments between methods in global classes.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "SingleFile",
+      "Syntax"
+    ]
+  },
+  {
+    "key": "no_external_form_calls",
+    "title": "No external FORM calls",
+    "shortDescription": "Detect external form calls",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "no_inline_in_optional_branches",
+    "title": "Don't declare inline in optional branches",
+    "shortDescription": "Don't declare inline in optional branches",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#dont-declare-inline-in-optional-branches\n\nConsidered optional branches:\n* inside IF/ELSEIF/ELSE\n* inside LOOP\n* inside WHILE\n* inside CASE/WHEN, CASE TYPE OF\n* inside DO\n* inside SELECT loops\n\nNot considered optional branches:\n* TRY/CATCH/CLEANUP",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "no_prefixes",
+    "title": "No Prefixes",
+    "shortDescription": "Dont use hungarian notation",
+    "extendedInformation": "\nNote: not prefixing TYPES will require changing the errorNamespace in the abaplint configuration,\nallowing all types to become voided, abaplint will then provide less precise syntax errors.\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#avoid-encodings-esp-hungarian-notation-and-prefixes\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/sub-sections/AvoidEncodings.md",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "no_public_attributes",
+    "title": "No public attributes",
+    "shortDescription": "Checks that classes and interfaces don't contain any public attributes.\nExceptions are excluded from this rule.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#members-private-by-default-protected-only-if-needed",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "no_yoda_conditions",
+    "title": "No Yoda conditions",
+    "shortDescription": "Finds Yoda conditions and reports issues",
+    "extendedInformation": "https://en.wikipedia.org/wiki/Yoda_conditions\n\nConditions with operators CP, NP, CS, NS, CA, NA, CO, CN are ignored",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "nrob_consistency",
+    "title": "Number range consistency",
+    "shortDescription": "Consistency checks for number ranges",
+    "extendedInformation": "Issue reported if percentage warning is over 50%\n\nIssue reported if the referenced domain is not found(taking error namespace into account)",
+    "hasExample": false,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "object_naming",
+    "title": "Object naming conventions",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for object names",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Naming"
+    ]
+  },
+  {
+    "key": "obsolete_statement",
+    "title": "Obsolete statements",
+    "shortDescription": "Checks for usages of certain obsolete statements",
+    "extendedInformation": "\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-functional-to-procedural-language-constructs\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#avoid-obsolete-language-elements\n\nSET EXTENDED CHECK: https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapset_extended_check.htm\n\nIS REQUESTED: https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abenlogexp_requested.htm\n\nWITH HEADER LINE: https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abapdata_header_line.htm\n\nFIELD-SYMBOLS STRUCTURE: https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapfield-symbols_obsolete_typing.htm\n\nTYPE-POOLS: from 702, https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abennews-71-program_load.htm\n\nLOAD addition: from 702, https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abennews-71-program_load.htm\n\nCOMMUICATION: https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapcommunication.htm\n\nOCCURS: https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapdata_occurs.htm\n\nPARAMETER: https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abapparameter.htm\n\nRANGES: https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapranges.htm\n\nPACK: https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abappack.htm\n\nMOVE: https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abapmove_obs.htm\n\nSELECT without INTO: https://help.sap.com/doc/abapdocu_731_index_htm/7.31/en-US/abapselect_obsolete.htm\nSELECT COUNT(*) is considered okay\n\nFREE MEMORY: https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-us/abapfree_mem_id_obsolete.htm\n\nSORT BY FS: https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapsort_itab_obsolete.htm\n\nCALL TRANSFORMATION OBJECTS: https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapcall_transformation_objects.htm\n\nPOSIX REGEX: https://help.sap.com/doc/abapdocu_755_index_htm/7.55/en-US/index.htm\n\nOCCURENCES: check for OCCURENCES vs OCCURRENCES\n\nCLIENT SPECIFIED, from 754: https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapselect_client_obsolete.htm",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Styleguide",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "omit_parameter_name",
+    "title": "Omit parameter name",
+    "shortDescription": "Omit the parameter name in single parameter calls",
+    "extendedInformation": "\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#omit-the-parameter-name-in-single-parameter-calls\n\nEXPORTING must already be omitted for this rule to take effect, https://rules.abaplint.org/exporting/",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "omit_preceding_zeros",
+    "title": "Omit preceding zeros",
+    "shortDescription": "Omit preceding zeros from integer constants",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "omit_receiving",
+    "title": "Omit RECEIVING",
+    "shortDescription": "Omit RECEIVING",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#omit-receiving",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "parser_702_chaining",
+    "title": "Parser Error, bad chaining on 702",
+    "shortDescription": "ABAP on 702 does not allow for method chaining with IMPORTING/EXPORTING/CHANGING keywords,\nthis rule finds these and reports errors.\nOnly active on target version 702 and below.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "parser_bad_exceptions",
+    "title": "Parser Error, bad EXCEPTIONS in CALL FUNCTION",
+    "shortDescription": "Checks for syntax not recognized by abaplint, related to EXCEPTIONS in CALL FUNCTION.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "parser_error",
+    "title": "Parser error",
+    "shortDescription": "Checks for syntax not recognized by abaplint.\n\nSee recognized syntax at https://syntax.abaplint.org",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "parser_missing_space",
+    "title": "Parser Error, missing space",
+    "shortDescription": "In special cases the ABAP language allows for not having spaces before or after string literals.\nThis rule makes sure the spaces are consistently required across the language.",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Syntax",
+      "Whitespace",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "pragma_style",
+    "title": "Pragma Style",
+    "shortDescription": "Check pragmas placement and case",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/abenpragma.htm",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "prefer_corresponding",
+    "title": "Prefer corresponding( ) to MOVE-CORRESPONDING",
+    "shortDescription": "Prefer corresponding( ) to MOVE-CORRESPONDING, from v740sp05 and up",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-functional-to-procedural-language-constructs",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Upport",
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "prefer_inline",
+    "title": "Prefer Inline Declarations",
+    "shortDescription": "Prefer inline to up-front declarations.",
+    "extendedInformation": "EXPERIMENTAL\n\nActivates if language version is v740sp02 or above.\n\nVariables must be local(METHOD or FORM).\n\nNo generic or void typed variables. No syntax errors.\n\nFirst position used must be a full/pure write.\n\nMove statment is not a cast(?=)\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-inline-to-up-front-declarations",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Upport",
+      "Experimental",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "prefer_is_not",
+    "title": "Prefer IS NOT to NOT IS",
+    "shortDescription": "Prefer IS NOT to NOT IS",
+    "extendedInformation": "\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-is-not-to-not-is\n\n\"if not is_valid( ).\" examples are skipped",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "prefer_pragmas",
+    "title": "prefer pragmas over pseudo comments ",
+    "shortDescription": "prefer pragmas over pseudo comments ",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-pragmas-to-pseudo-comments",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "prefer_raise_exception_new",
+    "title": "Prefer RAISE EXCEPTION NEW to RAISE EXCEPTION TYPE",
+    "shortDescription": "Prefer RAISE EXCEPTION NEW to RAISE EXCEPTION TYPE",
+    "extendedInformation": "\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-raise-exception-new-to-raise-exception-type\n\nFrom 752 and up",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile",
+      "Quickfix",
+      "Upport"
+    ]
+  },
+  {
+    "key": "prefer_returning_to_exporting",
+    "title": "Prefer RETURNING to EXPORTING",
+    "shortDescription": "Prefer RETURNING to EXPORTING. Generic types cannot be RETURNING.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-returning-to-exporting\nhttps://docs.abapopenchecks.org/checks/44/",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "prefer_xsdbool",
+    "title": "Prefer xsdbool over boolc",
+    "shortDescription": "Prefer xsdbool over boolc",
+    "extendedInformation": "Activates if language version is v740sp08 or above.\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#use-xsdbool-to-set-boolean-variables",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "Upport",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "preferred_compare_operator",
+    "title": "Preferred compare operator",
+    "shortDescription": "Configure undesired operator variants",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "prefix_is_current_class",
+    "title": "Prefix is current class",
+    "shortDescription": "Reports errors if the current class or interface references itself with \"current_class=>\"",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#omit-the-self-reference-me-when-calling-an-instance-attribute-or-method",
+    "hasExample": false,
+    "tags": [
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "reduce_procedural_code",
+    "title": "Reduce procedural code",
+    "shortDescription": "Checks FORM and FUNCTION-MODULE have few statements",
+    "extendedInformation": "Delegate logic to a class method instead of using FORM or FUNCTION-MODULE.\n\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-object-orientation-to-procedural-programming\n\nComments are not counted as statements.",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "reduce_string_templates",
+    "title": "Reduce string templates",
+    "shortDescription": "Checks for string templates",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "release_idoc",
+    "title": "Release iDoc",
+    "shortDescription": "Checks idoc types and segments are set to status released",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "remove_descriptions",
+    "title": "Remove descriptions",
+    "shortDescription": "Ensures you have no descriptions in metadata of methods, parameters, etc.\n\nClass descriptions are required, see rule description_empty.\n\nConsider using ABAP Doc for documentation.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "rfc_error_handling",
+    "title": "RFC error handling",
+    "shortDescription": "Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abenrfc_exception.htm",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "select_add_order_by",
+    "title": "SELECT add ORDER BY",
+    "shortDescription": "SELECTs add ORDER BY clause",
+    "extendedInformation": "\nThis will make sure that the SELECT statement returns results in the same sequence on different databases\n\nadd ORDER BY PRIMARY KEY if in doubt\n\nIf the target is a sorted/hashed table, no issue is reported",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "select_performance",
+    "title": "SELECT performance",
+    "shortDescription": "Various checks regarding SELECT performance.",
+    "extendedInformation": "ENDSELECT: not reported when the corresponding SELECT has PACKAGE SIZE\n\nSELECT *: not reported if using INTO/APPENDING CORRESPONDING FIELDS OF",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Performance"
+    ]
+  },
+  {
+    "key": "select_single_full_key",
+    "title": "Detect SELECT SINGLE which are possibily not unique",
+    "shortDescription": "Detect SELECT SINGLE which are possibily not unique",
+    "extendedInformation": "Table definitions must be known, ie. inside the errorNamespace\n\nIf the statement contains a JOIN it is not checked",
+    "hasExample": false,
+    "tags": [
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "selection_screen_naming",
+    "title": "Selection screen naming conventions",
+    "shortDescription": "Allows you to enforce a pattern, such as a prefix, for selection-screen variable names.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Naming",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "sequential_blank",
+    "title": "Sequential blank lines",
+    "shortDescription": "Checks that code does not contain more than the configured number of blank lines in a row.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Whitespace",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "short_case",
+    "title": "Short CASE",
+    "shortDescription": "Checks for CASE statements which have fewer than the specified number of branches",
+    "extendedInformation": "Short CASE constructs can be changed to IF",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "sicf_consistency",
+    "title": "SICF consistency",
+    "shortDescription": "Checks the validity of ICF services",
+    "extendedInformation": "* Class defined in handler must exist\n* Class must not have any syntax errors\n* Class must implement interface IF_HTTP_EXTENSION",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "slow_parameter_passing",
+    "title": "Slow Parameter Passing",
+    "shortDescription": "Detects slow pass by value passing for methods where parameter is not changed",
+    "extendedInformation": "Method parameters defined in interfaces is not checked",
+    "hasExample": true,
+    "tags": [
+      "Performance"
+    ]
+  },
+  {
+    "key": "smim_consistency",
+    "title": "SMIM consistency check",
+    "shortDescription": "SMIM consistency check",
+    "extendedInformation": "Check folders exists",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "space_before_colon",
+    "title": "Space before colon",
+    "shortDescription": "Checks that there are no spaces in front of colons in chained statements.",
+    "extendedInformation": "https://docs.abapopenchecks.org/checks/80/",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "space_before_dot",
+    "title": "Space before dot",
+    "shortDescription": "Checks for extra spaces before dots at the ends of statements",
+    "extendedInformation": "\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#be-consistent\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#condense-your-code",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Quickfix",
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "sql_escape_host_variables",
+    "title": "Escape SQL host variables",
+    "shortDescription": "Escape SQL host variables, from 740sp05 and in open-abap",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#avoid-obsolete-language-elements",
+    "hasExample": true,
+    "tags": [
+      "Upport",
+      "Styleguide",
+      "Quickfix",
+      "Syntax"
+    ]
+  },
+  {
+    "key": "sql_value_conversion",
+    "title": "Implicit SQL Value Conversion",
+    "shortDescription": "Ensure types match when selecting from database",
+    "extendedInformation": "\n* Integer to CHAR conversion\n* Integer to NUMC conversion\n* NUMC to Integer conversion\n* CHAR to Integer conversion\n* Source field longer than database field, CHAR -> CHAR\n* Source field longer than database field, NUMC -> NUMC",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "start_at_tab",
+    "title": "Start at tab",
+    "shortDescription": "Checks that statements start at tabstops.",
+    "extendedInformation": "Reports max 100 issues per file\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#indent-and-snap-to-tab",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "static_call_via_instance",
+    "title": "Static call via instance variable",
+    "shortDescription": "Static method call via instance variable",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#dont-call-static-methods-through-instance-variables",
+    "hasExample": false,
+    "tags": [
+      "Styleguide"
+    ]
+  },
+  {
+    "key": "strict_sql",
+    "title": "Strict SQL",
+    "shortDescription": "Strict SQL",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abapinto_clause.htm\n\nhttps://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abenopensql_strict_mode_750.htm\n\nAlso see separate rule sql_escape_host_variables\n\nActivates from v750 and up",
+    "hasExample": true,
+    "tags": [
+      "Upport",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "superclass_final",
+    "title": "Super class final",
+    "shortDescription": "Checks that classes which are inherited from are not declared as FINAL.",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "superfluous_value",
+    "title": "Superfluous VALUE",
+    "shortDescription": "Find superfluous VALUE expressions",
+    "extendedInformation": "Left hand side is inline, VALUE is inferred, value body is simple, from v740sp02 and up",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "sy_modification",
+    "title": "Modification of SY fields",
+    "shortDescription": "Finds modification of sy fields",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abensystem_fields.htm\n\nChanges to SY-TVAR* fields are not reported\n\nModification of SY fields is not allwed in ABAP Cloud language version,\nhttps://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/ABENSYSTEM_FIELDS.html",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "tabl_enhancement_category",
+    "title": "TABL enhancement category must be set",
+    "shortDescription": "Checks that tables do not have the enhancement category 'not classified'.",
+    "extendedInformation": "SAP note 3063227 changes the default to 'Cannot be enhanced'.\n\nYou may use standard report RS_DDIC_CLASSIFICATION_FINAL for adjustment.",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "tables_declared_locally",
+    "title": "Check for locally declared TABLES",
+    "shortDescription": "TABLES are always global, so declare them globally",
+    "extendedInformation": "https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-us/abaptables.htm",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "try_without_catch",
+    "title": "TRY without CATCH",
+    "shortDescription": "Checks for TRY blocks without a CATCH and CLEANUP block",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "type_form_parameters",
+    "title": "Type FORM parameters",
+    "shortDescription": "Checks for untyped FORM parameters",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "types_naming",
+    "title": "TYPES naming conventions",
+    "shortDescription": "Allows you to enforce a pattern for TYPES definitions",
+    "extendedInformation": "Does not run for TYPE POOLS",
+    "hasExample": true,
+    "tags": [
+      "Naming",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "uncaught_exception",
+    "title": "Uncaught Exception",
+    "shortDescription": "Checks for uncaught static exception",
+    "extendedInformation": "Does not report any issues if the code contains syntax errors",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "unknown_types",
+    "title": "Unknown types",
+    "shortDescription": "Enables check for unknown data types, respects errorNamespace",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Syntax"
+    ]
+  },
+  {
+    "key": "unnecessary_chaining",
+    "title": "Unnecessary Chaining",
+    "shortDescription": "Find unnecessary chaining, all statements are checked",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "unnecessary_pragma",
+    "title": "Unnecessary Pragma",
+    "shortDescription": "Finds pragmas which can be removed",
+    "extendedInformation": "* NO_HANDLER with handler\n\n* NEEDED without definition\n\n* NO_TEXT without texts\n\n* SUBRC_OK where sy-subrc is checked\n\nNO_HANDLER inside macros are not checked",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "unnecessary_return",
+    "title": "Unnecessary Return",
+    "shortDescription": "Finds unnecessary RETURN statements",
+    "extendedInformation": "Finds unnecessary RETURN statements",
+    "hasExample": true,
+    "tags": [
+      "SingleFile",
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "unreachable_code",
+    "title": "Unreachable code",
+    "shortDescription": "Checks for unreachable code.",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "unsecure_fae",
+    "title": "Unsecure FAE",
+    "shortDescription": "Checks for unsecure FAE",
+    "extendedInformation": "Issues from rule check_syntax must be fixed before this rule takes effect",
+    "hasExample": false,
+    "tags": [
+      "Experimental",
+      "Performance"
+    ]
+  },
+  {
+    "key": "unused_ddic",
+    "title": "Unused DDIC",
+    "shortDescription": "Checks the usage of DDIC objects",
+    "extendedInformation": "Objects checked: DOMA + DTEL + TABL + TTYP + VIEW",
+    "hasExample": false,
+    "tags": []
+  },
+  {
+    "key": "unused_macros",
+    "title": "Unused macros",
+    "shortDescription": "Checks for unused macro definitions definitions",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "unused_methods",
+    "title": "Unused methods",
+    "shortDescription": "Checks for unused methods",
+    "extendedInformation": "Checks private and protected methods.\n\nUnused methods are not reported if the object contains parser or syntax errors.\nQuick fixes only appears for private methods or projected methods where the class doesnt have any subclasses.\n\nSkips:\n* methods FOR TESTING\n* methods SETUP + TEARDOWN + CLASS_SETUP + CLASS_TEARDOWN in testclasses\n* class_constructor + constructor methods\n* event handlers\n* methods that are redefined\n* INCLUDEs\n",
+    "hasExample": false,
+    "tags": [
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "unused_types",
+    "title": "Unused types",
+    "shortDescription": "Checks for unused TYPE definitions",
+    "extendedInformation": "Unused types are not reported if the object contains parser or syntax errors.",
+    "hasExample": false,
+    "tags": [
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "unused_variables",
+    "title": "Unused variables",
+    "shortDescription": "Checks for unused variables and constants",
+    "extendedInformation": "Skips event parameters.\n\nNote that this currently does not work if the source code uses macros.\n\nUnused variables are not reported if the object contains parser or syntax errors.\n\nErrors found in INCLUDES are reported for the main program.",
+    "hasExample": true,
+    "tags": [
+      "Quickfix"
+    ]
+  },
+  {
+    "key": "use_bool_expression",
+    "title": "Use boolean expression",
+    "shortDescription": "Use boolean expression, xsdbool from 740sp08 and up, boolc from 702 and up",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#use-xsdbool-to-set-boolean-variables",
+    "hasExample": true,
+    "tags": [
+      "Upport",
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "use_class_based_exceptions",
+    "title": "Use class based exceptions",
+    "shortDescription": "Use class based exceptions, checks interface and class definitions",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#use-class-based-exceptions",
+    "hasExample": true,
+    "tags": [
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "use_line_exists",
+    "title": "Use line_exists",
+    "shortDescription": "Use line_exists, from 740sp02 and up",
+    "extendedInformation": "\nhttps://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-line_exists-to-read-table-or-loop-at\n\nNot reported if the READ TABLE statement contains BINARY SEARCH.",
+    "hasExample": true,
+    "tags": [
+      "Upport",
+      "Styleguide",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "use_new",
+    "title": "Use NEW",
+    "shortDescription": "Checks for deprecated CREATE OBJECT statements.",
+    "extendedInformation": "https://github.com/SAP/styleguides/blob/main/clean-abap/CleanABAP.md#prefer-new-to-create-object\n\nIf the target variable is referenced in the CREATE OBJECT statement, no errors are issued\n\nApplicable from v740sp02 and up",
+    "hasExample": true,
+    "tags": [
+      "Upport",
+      "Styleguide",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "when_others_last",
+    "title": "WHEN OTHERS last",
+    "shortDescription": "Checks that WHEN OTHERS is placed the last within a CASE statement.",
+    "extendedInformation": "",
+    "hasExample": true,
+    "tags": [
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "whitespace_end",
+    "title": "Whitespace at end of line",
+    "shortDescription": "Checks for redundant whitespace at the end of each line.",
+    "extendedInformation": "SMIM and W3MI files are not checked.",
+    "hasExample": true,
+    "tags": [
+      "Whitespace",
+      "Quickfix",
+      "SingleFile"
+    ]
+  },
+  {
+    "key": "xml_consistency",
+    "title": "XML consistency",
+    "shortDescription": "Checks the consistency of main XML files, eg. naming for CLAS and INTF objects",
+    "extendedInformation": "",
+    "hasExample": false,
+    "tags": [
+      "Naming",
+      "Syntax"
+    ]
+  }
+]
