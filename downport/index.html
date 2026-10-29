@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ABAP,Open Source,abaplint,lint,linter,SAP,static analysis" />
+  <title>rules.abaplint.org</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+<div class="content"><h1>Downport statement</h1>
+&nbsp;<a href="/"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>home</title><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>&nbsp;<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>quick fix</title><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>&nbsp;<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="2ch"><title>downport</title><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>&nbsp;<a href="https://github.com/abaplint/abaplint/blob/main/packages/core/src/rules/downport.ts"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>edit</title><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></a>
+<p><tt>downport</tt><br>
+</p>
+<h2>Description</h2>
+<p>Downport functionality</p><h2>Extended Information</h2>
+<p>Much like the 'commented_code' rule this rule loops through unknown statements and tries parsing with<br>a higher level language version. If successful, various rules are applied to downport the statement.<br>Target downport version is always v702, thus rule is only enabled if target version is v702.<br><br>Current rules:<br>* NEW transformed to CREATE OBJECT, opposite of <a href='https://rules.abaplint.org/use_new/'>https://rules.abaplint.org/use_new/</a><br>* DATA() definitions are outlined, opposite of <a href='https://rules.abaplint.org/prefer_inline/'>https://rules.abaplint.org/prefer_inline/</a><br>* FIELD-SYMBOL() definitions are outlined<br>* CONV is outlined<br>* COND is outlined<br>* REDUCE is outlined<br>* SWITCH is outlined<br>* FILTER is outlined<br>* APPEND expression is outlined<br>* INSERT expression is outlined<br>* EMPTY KEY is changed to DEFAULT KEY, opposite of DEFAULT KEY in <a href='https://rules.abaplint.org/avoid_use/'>https://rules.abaplint.org/avoid_use/</a><br>* CAST changed to ?=<br>* LOOP AT method_call( ) is outlined<br>* VALUE # with structure fields<br>* VALUE # with internal table lines<br>* Table Expressions are outlined<br>* SELECT INTO @DATA definitions are outlined<br>* Some occurrences of string template formatting option ALPHA changed to function module call<br>* SELECT/INSERT/MODIFY/DELETE/UPDATE "," in field list removed, "@" in source/targets removed<br>* PARTIALLY IMPLEMENTED removed, it can be quick fixed via rule implement_methods<br>* RAISE EXCEPTION ... MESSAGE<br>* Moving with +=, -=, /=, *=, &&= is expanded<br>* line_exists and line_index is downported to READ TABLE<br>* ENUMs, but does not nessesarily give the correct type and value<br>* MESSAGE with non simple source<br><br>Only one transformation is applied to a statement at a time, so multiple steps might be required to do the full downport.<br><br>Make sure to test the downported code, it might not always be completely correct.</p><h2>Default Configuration</h2>
+<div id="defaultConfigEditor" style="width:700px;height:114px;border:1px solid grey"></div>
+  <script src="/_monaco/vs/loader.js"></script>
+  <script src="/schema.js"></script>
+  <script src="/pack.bundle.js"></script>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foo.json");
+      var model = monaco.editor.createModel(`{
+  "exclude": [],
+  "severity": "Error"
+}`, "json", modelUri);
+
+      const schema = abaplintSchema;
+      schema["$ref"] = "#/definitions/DownportConf",
+
+      monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+        validate: true,
+        schemas: [{
+          uri: "https://schema.abaplint.org/dummy.json",
+          fileMatch: [modelUri.toString()],
+          schema,
+        }],
+      });
+
+      var editor = monaco.editor.create(document.getElementById('defaultConfigEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+
+      editor.onDidChangeModelContent(() => configChanged(editor, "downport"));
+    });
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i></div>
+</body>
+</html>
