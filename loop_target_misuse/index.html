@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ABAP,Open Source,abaplint,lint,linter,SAP,static analysis" />
+  <title>rules.abaplint.org</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+<div class="content"><h1>LOOP and READ TABLE targets used wrongly</h1>
+&nbsp;<a href="/"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>home</title><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="2ch">
+<title>single file</title>
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" height="2ch">
+<title>example</title>
+<path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
+</svg>&nbsp;<a href="https://github.com/abaplint/abaplint/blob/main/packages/core/src/rules/loop_target_misuse.ts"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="2ch"><title>edit</title><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg></a>
+<p><tt>loop_target_misuse</tt><br>
+</p>
+<h2>Description</h2>
+<p>Reports a nested LOOP that reuses the target of the enclosing LOOP, and INTO &lt;fs&gt; where ASSIGNING was meant</p><h2>Extended Information</h2>
+<p>Option nestedLoop: a LOOP inside a LOOP with the same INTO, REFERENCE INTO or ASSIGNING target.<br>After the inner ENDLOOP, the target holds the last row of the inner table, not the row of the<br>outer loop. Reported when the outer loop body uses the target after the inner ENDLOOP, before<br>it is assigned again.<br>Not reported: a target of a loop that has already ended, a target that is not a plain variable<br>or field symbol, an enclosing LOOP with GROUP BY, and a target the outer loop body does not use<br>after the inner loop.<br><br>Option intoFieldSymbol: LOOP AT ... INTO &lt;fs&gt; or READ TABLE ... INTO &lt;fs&gt;. INTO copies the row<br>into the data object the field symbol points to. When &lt;fs&gt; was bound by ASSIGNING, that data<br>object is a row of a table, and the statement overwrites it. ASSIGNING was meant.<br>Reported only for a field symbol declared in the method, form or function module, and only when<br>no ASSIGN and no STRUCTURE ... DEFAULT binds it there, so it can only point to a table row.<br><br>Option usedAfterLoop: a field symbol of LOOP AT ... ASSIGNING used after ENDLOOP. It points to<br>the last row the loop processed. When the loop processed no row, it is not assigned, and the use<br>raises GETWA_NOT_ASSIGNED, or it still points to what it was bound to before the loop.<br>Also a field symbol of READ TABLE ... ASSIGNING used after sy-subrc was checked, outside the<br>branch of that check. When the READ fails, the field symbol keeps its previous binding.<br>Reported at the first such use in the method, form or function module.<br>Not reported: a use inside IF, ELSEIF, CASE or WHILE whose condition reads sy-subrc, the table of<br>the loop or a variable the loop body sets (a flag), a use after such a check that leaves with<br>RETURN, EXIT, CONTINUE, CHECK, RAISE or MESSAGE or that does not use the field symbol, a use after<br>CHECK or ASSERT of such a condition, and any use after IS ASSIGNED, UNASSIGN or another binding of<br>the field symbol, or after a macro call. Work areas of INTO are not checked, they keep a value.<br>A READ TABLE whose sy-subrc is not checked at all is left to check_subrc, a LOOP inside a LOOP<br>with the same field symbol to the option nestedLoop.</p><h2>Default Configuration</h2>
+<div id="defaultConfigEditor" style="width:700px;height:171px;border:1px solid grey"></div>
+  <script src="/_monaco/vs/loader.js"></script>
+  <script src="/schema.js"></script>
+  <script src="/pack.bundle.js"></script>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      var modelUri = monaco.Uri.parse("a://b/foo.json");
+      var model = monaco.editor.createModel(`{
+  "exclude": [],
+  "severity": "Error",
+  "nestedLoop": true,
+  "intoFieldSymbol": true,
+  "usedAfterLoop": true
+}`, "json", modelUri);
+
+      const schema = abaplintSchema;
+      schema["$ref"] = "#/definitions/LoopTargetMisuseConf",
+
+      monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+        validate: true,
+        schemas: [{
+          uri: "https://schema.abaplint.org/dummy.json",
+          fileMatch: [modelUri.toString()],
+          schema,
+        }],
+      });
+
+      var editor = monaco.editor.create(document.getElementById('defaultConfigEditor'), {
+        model: model,
+        autoClosingBrackets: false,
+        minimap: {enabled: false},
+        theme: "vs-dark"
+      });
+
+      editor.onDidChangeModelContent(() => configChanged(editor, "loop_target_misuse"));
+    });
+  </script><i>Hover to see descriptions, Ctrl+Space for suggestions</i><h2>Examples</h2>
+<div id="examplesEditor" style="width:700px;height:741px;border:1px solid grey"></div>
+  <script>
+    require.config({ paths: { 'vs': '/_monaco/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      initABAP(`* Bad example
+LOOP AT lt_header INTO ls_row.
+  LOOP AT lt_items INTO ls_row WHERE parent = ls_row-id.
+    lv_sum = lv_sum + ls_row-amount.
+  ENDLOOP.
+  ls_row-amount = lv_sum.
+  APPEND ls_row TO lt_result.
+ENDLOOP.
+
+LOOP AT lt_a ASSIGNING <ls_a>.
+ENDLOOP.
+READ TABLE lt_a INTO <ls_a> INDEX 1.
+
+LOOP AT lt_a ASSIGNING <ls_a> WHERE id = lv_id.
+  EXIT.
+ENDLOOP.
+<ls_a>-flag = abap_true.
+
+* Good example
+LOOP AT lt_header INTO ls_row.
+  LOOP AT lt_items INTO ls_item WHERE parent = ls_row-id.
+    lv_sum = lv_sum + ls_item-amount.
+  ENDLOOP.
+  ls_row-amount = lv_sum.
+  APPEND ls_row TO lt_result.
+ENDLOOP.
+
+LOOP AT lt_a ASSIGNING <ls_a>.
+ENDLOOP.
+READ TABLE lt_a ASSIGNING <ls_a> INDEX 1.
+
+LOOP AT lt_a ASSIGNING <ls_a> WHERE id = lv_id.
+  EXIT.
+ENDLOOP.
+IF sy-subrc = 0.
+  <ls_a>-flag = abap_true.
+ENDIF.`, "loop_target_misuse");
+    });
+  </script><br><br></div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  background-color: #333;
+  color: #ccc;
+  font-family: sans-serif;
+
+  overflow-y: scroll; /* Show vertical scrollbar */
+}
+
+.content {
+  margin: auto;
+  max-width: 800px;
+}
+
+a:link {
+  color: #808BA0;
+}
+
+a:visited {
+  color: #808BA0;
+}
+
+.hidden {
+  display: none;
+}
+
+.chip {
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #808BA0;
+  border: none;
+  cursor: pointer;
+  height: 36px;
+  outline: none;
+  padding: 0;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 18px;
+  vertical-align: middle;
+  text-decoration: none;
+  justify-content: center;
+  color: #333;
+}
+
+.shadow1 {
+  box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+}
+
+.shadow2 {
+  box-shadow: 0 0 20px rgb(0 255 0 / 70%);
+}
+
+.chip-content-enabled {
+  border-radius: 50%;
+  background-color: #ccc;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.chip-content-disabled {
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  user-select: none;
+  white-space: nowrap;
+}
+
+input {
+  padding: 12px;
+  font: inherit;
+  border-radius: 2px;
+  border: 1px solid rgba(150, 150, 150, 0.16);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  width: 100%;
+}
